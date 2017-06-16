@@ -54,7 +54,7 @@ var Remix = [
 var NintendoNew = [
     new SongData("./src/music/newtendo/1.mp3", ["Fountain of Dreams","The Fountain of Dreams","Super Smash Bros Melee","Melee"]),
     new SongData("./src/music/newtendo/2.mp3", ["XenobladeX","Xenoblade X","Uncontrollable"]),
-    new SongData("./src/music/newtendo/3.mp3", ["Dual Destinies","Keep Pressing On","Pursuit","Phoenix Wright 5", "Phoenix Wright5"]),
+    new SongData("./src/music/newtendo/3.mp3", ["Dual Destinies","Keep Pressing On","Pursuit","Phoenix Wright 5", "Phoenix Wright Dual Destinies", "Phoenix Wright: Dual Destinies"]),
     new SongData("./src/music/newtendo/4.mp3", ["Battlefield","Super Smash Bros Brawl","Brawl","SSBB"])
     ];
     
@@ -92,7 +92,28 @@ var Pokemon = [
 	];
 	
 var	Square = [
-    new SongData("./src/music/square/1.mp3", ["Kingdom Hearts 2.8","KH 2.8", "KH2.8","Simple and Clean", "Simple and Clean Ray of Hope mix"])
+    new SongData("./src/music/square/1.mp3", ["Kingdom Hearts 2.8","KH 2.8", "KH2.8","Simple and Clean", "Simple and Clean Ray of Hope mix"]),
+    new SongData("./src/music/square/2.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The Landing"]),
+    new SongData("./src/music/square/3.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Force Your Way"]),
+    new SongData("./src/music/square/4.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Don't be Afraid"]),
+    new SongData("./src/music/square/5.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The man with the machine gun"]),
+    new SongData("./src/music/square/6.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Liberi Fatali"]),
+    new SongData("./src/music/square/7.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The stage is set"]),
+    new SongData("./src/music/square/8.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Waltz for the moon"]),
+    new SongData("./src/music/square/9.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Battle 1"]),
+    new SongData("./src/music/square/10.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Battle 2"]),
+    new SongData("./src/music/square/11.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Hunter's Chance"]),
+    new SongData("./src/music/square/12.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Someone to protect"]),
+    new SongData("./src/music/square/13.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Rose of May"]),
+    new SongData("./src/music/square/14.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "You're not alone"]),
+    new SongData("./src/music/square/15.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "A Place to call home"]),
+    new SongData("./src/music/square/16.mp3", ["Final Fantasy IX","Final Fantasy 9", "FF 9","FF IX", "Vamo alla flamenco"]),
+    new SongData("./src/music/square/17.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII", "Opening theme","Bombing Mission"]),
+    new SongData("./src/music/square/18.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight"]),
+    new SongData("./src/music/square/19.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","JENOVA","J-E-N-O-V-A"]),
+    new SongData("./src/music/square/20.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Gold Saucer"]),
+    new SongData("./src/music/square/21.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Jenova Absolute"]),
+    new SongData("./src/music/square/22.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight further"])
     ];
 	
 var	Missclick = [
@@ -130,10 +151,14 @@ function act_catV() {
 }
 
 function show_res(x) {
+	$("#Song").trigger("pause");
 	$(".game").hide();
+	$(".suck").hide();
 	clearInterval(x)
 	document.getElementById("score2").innerHTML = score;
-	var HhitS = (Hhit/NGo) * 100;
+	var Hhits;
+	if(NGo == 0) Hhits = 0;
+	else HhitS = (Hhit/NGo) * 100;
 	document.getElementById("sh").innerHTML = HhitS;
 	var Ndones = (Hhit/Ntot) * 100;
 	document.getElementById("ss").innerHTML = Ndones;
@@ -144,6 +169,12 @@ function randomize() {
 	r = Math.floor((Math.random() * vec.length));
 	i = vec[r];
 	j = Math.floor((Math.random() * CategoryMatrix[i].length));
+}
+
+function show_sol() {
+	$(".suck").show();
+	solr = Math.floor((Math.random() * CategoryMatrix[i][j].sols.length));
+	document.getElementById("Last").innerHTML = CategoryMatrix[i][j].sols[solr];
 }
 
 //---------------------------------------------------------------------------------------
@@ -160,6 +191,8 @@ var vec = [];
 var i = 0;
 var j = 0;
 var r = 0;
+var objection = true;
+var solr = 0;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -180,9 +213,11 @@ $(document).ready(function() {
 					 CategoryMatrix[i][j].used = true;
 					 ++Nused;
 					 score = score - 20;
+					 
 					 $("#Skip").click();
 				 }
             },1000);
+            $("#Song").prop("volume", 0.25);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Skip").click(function() {
                 if(Nused == Ntot) show_res(i,j);
@@ -196,13 +231,31 @@ $(document).ready(function() {
 					$("#Song").attr("src", CategoryMatrix[i][j].link);
 				}
             });
+            $("#Discard").click(function() {
+				score = score - 40;
+				++Nused;
+				CategoryMatrix[i][j].used = true;
+				show_sol();
+                if(Nused == Ntot) show_res(i,j);
+				else {
+					document.getElementById("score").innerHTML = score;
+					randomize();
+					$("#Sol").val("");
+					while(CategoryMatrix[i][j].used == true) {
+						randomize();
+					}
+					$("#Song").attr("src", CategoryMatrix[i][j].link);
+				}
+            });
             $("#Go").click(function() {
+				$("#errS").attr("src", "");
                 ++NGo;
                 var k
                 var Song = CategoryMatrix[i][j];
                 var sol = $("#Sol").val();
                 for(k = 0; k < Song.sols.length; k++) {
                     if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
+						objection = false;
 						++Hhit;
 						++Nused;
                         score = score + CategoryMatrix[i][j].time;
@@ -218,10 +271,12 @@ $(document).ready(function() {
 						}
 						else show_res(i,j);
                     }
-                    else {
-						$("#errS").attr("src", Missclick[0].link);
-					}
+				}
+				if(objection) {
+					var h = Math.floor((Math.random() * Missclick.length))
+					$("#errS").attr("src", Missclick[h].link);
             	}
+            	objection = true;
         });
     });
     $("#Sol").keyup(function(event){
@@ -230,4 +285,7 @@ $(document).ready(function() {
     $(".cat").click(function(){
         $(this).hide();
     });
+    $("#Reset").click(function(){
+		$(".cat").show();
+	});
 });
