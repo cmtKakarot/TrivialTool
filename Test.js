@@ -156,8 +156,8 @@ function show_res(x) {
 	$(".suck").hide();
 	clearInterval(x)
 	document.getElementById("score2").innerHTML = score;
-	var Hhits;
-	if(NGo == 0) Hhits = 0;
+	var HhitS;
+	if(NGo == 0) HhitS = 0;
 	else HhitS = (Hhit/NGo) * 100;
 	document.getElementById("sh").innerHTML = HhitS;
 	var Ndones = (Hhit/Ntot) * 100;
