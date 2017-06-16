@@ -9,6 +9,11 @@ function SongData(link, sols) {
 	this.time = 60;
 }
 
+function ErrorData(link) {
+	this.link = link;
+	this.last = false
+}
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- SONGS DATABASE --------------------------------------
 //---------------------------------------------------------------------------------------
@@ -81,14 +86,19 @@ var Kirby = [
     new SongData("./src/music/kirby/8.mp3", ["Pop Star","Kirby 64: The Crystal Shards", "Kirby 64", "Kirby64"])
 	];
     
-    Pokemon = [
+var Pokemon = [
     new SongData("./src/music/pokemon/1.mp3", ["Omega Ruby","Omega Rubi","Alpha Sapphire","ORAS","Alfa Zafiro","Battle! Champion"]),
     new SongData("./src/music/pokemon/2.mp3", ["Omega Ruby","Omega Rubi","Alpha Sapphire","ORAS","Alfa Zafiro","Battle! Rival"])
 	];
 	
-	Square = [
+var	Square = [
     new SongData("./src/music/square/1.mp3", ["Kingdom Hearts 2.8","KH 2.8", "KH2.8","Simple and Clean", "Simple and Clean Ray of Hope mix"])
     ];
+	
+var	Missclick = [
+	new ErrorData("./src/music/other/err1.mp3"),
+	new ErrorData("./src/music/other/err2.wav")
+	];
 	
 	
 
@@ -119,6 +129,23 @@ function act_catV() {
     return vec;
 }
 
+function show_res(x) {
+	$(".game").hide();
+	clearInterval(x)
+	document.getElementById("score2").innerHTML = score;
+	var HhitS = (Hhit/NGo) * 100;
+	document.getElementById("sh").innerHTML = HhitS;
+	var Ndones = (Hhit/Ntot) * 100;
+	document.getElementById("ss").innerHTML = Ndones;
+	$(".res").show();
+}
+
+function randomize() {
+	r = Math.floor((Math.random() * vec.length));
+	i = vec[r];
+	j = Math.floor((Math.random() * CategoryMatrix[i].length));
+}
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -128,6 +155,11 @@ var Nused = 0;
 var Ntot;
 var NGo = 0;
 var Hhit = 0;
+var score = 0;
+var vec = [];
+var i = 0;
+var j = 0;
+var r = 0;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -135,18 +167,13 @@ var Hhit = 0;
 
 $(document).ready(function() {
         $("#Acc").click(function() {
-            var vec = act_catV();
+            vec = act_catV();
             $(".cat").hide();
-            var score = 0;
             document.getElementById("score").innerHTML = score;
             Ntot = numero(vec);
-            var r = Math.floor((Math.random() * vec.length));
-            var i = vec[r];
-            var j = Math.floor((Math.random() * CategoryMatrix[i].length));
+			randomize();
             $(".game").show();
             var x = setInterval(function() {
-				console.log(Ntot);
-				console.log(Nused);
                 --CategoryMatrix[i][j].time;
                 document.getElementById("demo").innerHTML = CategoryMatrix[i][j].time;
                 if(CategoryMatrix[i][j].time <= 0) {
@@ -158,26 +185,13 @@ $(document).ready(function() {
             },1000);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Skip").click(function() {
-                if(Nused == Ntot) {
-					$(".game").hide();
-					CategoryMatrix[i][j].time = 100000;
-					document.getElementById("score2").innerHTML = score;
-					var HhitS = (Hhit/NGo) * 100;
-					document.getElementById("sh").innerHTML = HhitS;
-					var Ndones = (Hhit/Ntot) * 100;
-					document.getElementById("ss").innerHTML = Ndones;
-					$(".res").show();
-				}
+                if(Nused == Ntot) show_res(i,j);
 				else {
 					document.getElementById("score").innerHTML = score;
-					r = Math.floor((Math.random() * vec.length));
-					i = vec[r];
-					j = Math.floor((Math.random() * CategoryMatrix[i].length));
+					randomize();
 					$("#Sol").val("");
 					while(CategoryMatrix[i][j].used == true) {
-						r = Math.floor((Math.random() * vec.length));
-						i = vec[r];
-						j = Math.floor((Math.random() * CategoryMatrix[i].length));
+						randomize();
 					}
 					$("#Song").attr("src", CategoryMatrix[i][j].link);
 				}
@@ -190,34 +204,24 @@ $(document).ready(function() {
                 for(k = 0; k < Song.sols.length; k++) {
                     if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
 						++Hhit;
+						++Nused;
                         score = score + CategoryMatrix[i][j].time;
                         document.getElementById("score").innerHTML = score;
                         CategoryMatrix[i][j].used = true;
-                        ++Nused;
-                        r = Math.floor((Math.random() * vec.length));
-                        i = vec[r];
-                        j = Math.floor((Math.random() * CategoryMatrix[i].length));
+                        randomize();
                         $("#Sol").val("");
                         if (Nused != Ntot) {
 							while(CategoryMatrix[i][j].used == true) {
-								r = Math.floor((Math.random() * vec.length));
-								i = vec[r];
-								j = Math.floor((Math.random() * CategoryMatrix[i].length));
+								randomize();
 							}
 							$("#Song").attr("src", CategoryMatrix[i][j].link);
 						}
-						else {
-							$(".game").hide();
-							document.getElementById("score2").innerHTML = score;
-							var HhitS = (Hhit/NGo) * 100;
-							document.getElementById("sh").innerHTML = HhitS;
-							var Ndones = (Hhit/Ntot) * 100;
-							document.getElementById("ss").innerHTML = Ndones;
-							$(".res").show();
-						}
-						
+						else show_res(i,j);
                     }
-                }		
+                    else {
+						$("#errS").attr("src", Missclick[0].link);
+					}
+            	}
         });
     });
     $("#Sol").keyup(function(event){
