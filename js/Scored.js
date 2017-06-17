@@ -240,13 +240,9 @@ function randomize() {
 function InitvSong() {
 	var iter;
 	for(iter = 0; iter < 20; ++iter) {
-		r = Math.floor((Math.random() * vec.length));
-		i = vec[r];
-		j = Math.floor((Math.random() * CategoryMatrix[i].length));
+		randomize();
 		while(CategoryMatrix[i][j].used1) {
-			r = Math.floor((Math.random() * vec.length));
-			i = vec[r];
-			j = Math.floor((Math.random() * CategoryMatrix[i].length));
+			randomize();
 		}
 		vSong.push(CategoryMatrix[i][j]);
 		CategoryMatrix[i][j].used1 = true;
@@ -271,8 +267,8 @@ function check_valid() {
 			objection = false;
 			++Hhit;
 			++Nused;
-			if (vSong[x].time >= 83) score = score + 100;
-			else score = score + vSong[x].time;
+			if (vSong[x].time >= 83) score = score + (100 * multiplier);
+			else score = score + (vSong[x].time * multiplier);
 			document.getElementById("score").innerHTML = score;
 			vSong[x].used2 = true;
 			x = Math.floor((Math.random() * vSong.length));
@@ -324,6 +320,7 @@ $(document).ready(function() {
 			$("#Ganbatte").attr("src", Ganbatte[0].link);
             vec = act_catV();
             InitvSong();
+            multiplier = (vec.length)/(CategoryMatrix.length);
             $(".cat").hide();
             document.getElementById("score").innerHTML = score;
 			x = Math.floor((Math.random() * vSong.length));
