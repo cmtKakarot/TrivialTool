@@ -68,26 +68,26 @@ p {
     overflow: hidden;
 }
 #Atlus {
-	background-image: url(./src/images/cat/atlus.png);
+	background-image: url(../src/images/cat/atlus.png);
 }
 #Remix {
-	background-image: url(./src/images/cat/remix.png);
+	background-image: url(../src/images/cat/remix.png);
 }
 #Anime {
-	background-image: url(./src/images/cat/anime.png);
+	background-image: url(../src/images/cat/anime.png);
 }
 #NNintendo {
-	background-image: url(./src/images/cat/newtendo.png);
+	background-image: url(../src/images/cat/newtendo.png);
 }
 #Touhou {
-	background-image: url(./src/images/cat/touhou.png);
+	background-image: url(../src/images/cat/touhou.png);
 }
 #Kirby {
-	background-image: url(./src/images/cat/kirby.png);
+	background-image: url(../src/images/cat/kirby.png);
 }
 #Pokemon {
-	background-image: url(./src/images/cat/pokemon.png);
+	background-image: url(../src/images/cat/pokemon.png);
 }
 #Square {
-	background-image: url(./src/images/cat/square.png);
+	background-image: url(../src/images/cat/square.png);
 }

@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+
+<html lang="es-ES">
+
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<!--Importar Fuentes -->
+	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	
+	<meta charset="utf-8">
+	<script id="js" type="text/javascript" src="../js/Scored.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/Game.css">
+</head>
+
+<body>
+	<!-- CATEGORIES -->
+    <p id="TextN" class ="cat" > Discard any categories you don't want to play and then press Start </p>
+    <p id="TextN" class ="cat" > Since The Web Server is free an ad overlaps with the Start Button sometimes. Scroll down a bit to fix it if you can't click start </p>
+    <div id="Atlus" class ="cat cat2"> </div>
+    <div id="Remix" class ="cat cat2"> </div> 
+    <div id="Anime" class ="cat cat2"> </div> 
+    <div id="NNintendo" class ="cat cat2"> </div> 
+    <div id="Touhou" class ="cat cat2"> </div> 
+    <div id="Kirby" class ="cat cat2"> </div> 
+    <div id="Pokemon" class ="cat cat2"> </div> 
+    <div id="Square" class ="cat cat2"> </div> 
+    <div id="botons">
+    <button  class="btn btn-block btn-warning cat" id="Reset" type="button" > Reset </button>
+    <button  class="btn btn-block btn-success cat" id="Acc" type="button" > Start </button></div>
+    <audio id ="Ganbatte" autoplay controls  src="" hidden> </audio>
+    <!-- GAME -->
+    <p id="TextN" class ="game" hidden> Write down below the name of the game or the name of the song and press Enter </p>
+	<div id="solsong">
+		<input class ="game" id="Sol" type="text" hidden>
+		<audio class ="game" id ="Song" autoplay controls  src="" hidden> </audio>
+	</div>	 
+	<div id="dosbotons">
+		<button class ="btn btn-block btn-warning game" id="Skip" type="button" hidden > Skip Song </button>
+		<button class ="btn btn-block btn-warning game" id="Discard" type="button" hidden > Discard Song </button>
+	</div>
+	<div id="timsc">
+		<p class="game" id="predemo" hidden> Timer </p>
+		<p class="game" id="demo"></p>
+		<p class="game" hidden> Score </p>
+		<p class="game" id="score"></p>
+		<p class="suck" hidden> Last one missed </p>
+		<p class="suck" id="Last"></p>
+	</div>
+	<audio id ="errS" autoplay controls  src="" hidden> </audio> 
+	<!-- RESULTS -->
+	<p class="res" hidden> Results </p>
+	<p class="res" hidden> Score  </p>
+	<p class="res" id="score2"></p>
+	<p class="res" hidden> % of Succesful Hits </p>
+	<p class="res" id="sh"></p>
+	<p class="res" hidden> % of Succesful Songs  </p>
+	<p class="res" id="ss"></p>
+	<br> </br>
+	<br> </br>
+	<br> </br>
+</body>
+
+</html>
