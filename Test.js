@@ -75,7 +75,7 @@ var Remix = [
     
 var NintendoNew = [
     new SongData("./src/music/newtendo/1.mp3", ["Fountain of Dreams","The Fountain of Dreams","Super Smash Bros Melee","Melee"]),
-    new SongData("./src/music/newtendo/2.mp3", ["XenobladeX","Xenoblade X","Uncontrollable"]),
+    new SongData("./src/music/newtendo/2.mp3", ["Xenoblade Chronicles X","Xenoblade X","Uncontrollable"]),
     new SongData("./src/music/newtendo/3.mp3", ["Dual Destinies","Keep Pressing On","Pursuit","Phoenix Wright 5", "Phoenix Wright Dual Destinies", "Phoenix Wright: Dual Destinies"]),
     new SongData("./src/music/newtendo/4.mp3", ["Battlefield","Super Smash Bros Brawl","Brawl","SSBB"])
     ];
@@ -267,7 +267,7 @@ function check_valid() {
 			CategoryMatrix[i][j].used = true;
 			randomize();
 			$("#Sol").val("");
-			if (Nused == Ntot || Nused == 20) {
+			if (Nused < Ntot && Nused < 20) {
 				while(CategoryMatrix[i][j].used == true) {
 					randomize();
 				}
