@@ -1,4 +1,63 @@
+body {
+	width: 100%;
+	background-color: pink;
+}
+
+button {
+  	display: inline-block;
+	width: 25%;
+}
+
+div {
+  	display: flex; 
+  	flex-direction: column;
+}
+
+p {
+	color: #ffffff; 
+	font-family: 'Raleway',sans-serif; 
+	font-size: 62px; 
+	font-weight: 800; 
+	line-height: 72px; 
+	margin: 0 0 15px; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+#botons {
+	margin: 1%;
+}
+
+#solsong {
+	width: 50%;
+	margin: 1%;
+	margin-left: 25%;
+}
+
+#dosbotons {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#timsc {
+	margin: 1%;
+
+}
+
+.cat2 {
+  	display: inline-block;
+	margin-left: 10PX;
+	height: 100px;
+	width: 49%;
+  	display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+	border-radius: 10px;
+}
+
 #TextN {
+  margin-left: 2%;
   font-family: 'Hind', sans-serif;
   font-size: 30px;
   pointer-events: none;
@@ -7,29 +66,6 @@
 #Song {
     width:200px;
     overflow: hidden;
-}
-
-body {
-	background-color: pink;
-}
-
-button {
-	width: 25%;
-}
-
-#Reset {
-	margin-left: 25%;
-}
-
-div {
-	height: 100px;
-	width: 50%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-origin: content-box;
-    margin-left: 25%;
-    margin-bottom: 5px;
-	border-radius: 10px;
 }
 #Atlus {
 	background-image: url(./src/images/cat/atlus.png);
