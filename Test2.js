@@ -5,7 +5,8 @@
 function SongData(link, sols) {
 	this.link = link;
 	this.sols = sols;
-	this.used = false;
+	this.used1 = false;
+	this.used2 = false;
 	this.time = 90;
 }
 
@@ -200,16 +201,6 @@ var Ganbatte = [
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
-    
-function numero(vec) {
-    var suma = 0;
-    for(var t = 0; t < vec.length; ++t) {
-        for(var s = 0; s < CategoryMatrix[vec[t]].length; ++s) {
-            ++suma;
-        }
-    }
-    return suma;
-}
 
 function act_catV() {
     var vec = [];
@@ -234,9 +225,7 @@ function show_res() {
 	if(NGo == 0) HhitS = 0;
 	else HhitS = (Hhit/NGo) * 100;
 	document.getElementById("sh").innerHTML = HhitS;
-	var Ndones = (Hhit/Ntot) * 100;
 	var Ndones2 = (Hhit/20) * 100;
-	if(Ndones2 > Ndones) Ndones = Ndones2;
 	document.getElementById("ss").innerHTML = Ndones;
 	$(".res").show();
 }
@@ -247,43 +236,60 @@ function randomize() {
 	j = Math.floor((Math.random() * CategoryMatrix[i].length));
 }
 
+function InitvSong() {
+	var iter;
+	for(iter = 0; iter < 20; ++iter) {
+		r = Math.floor((Math.random() * vec.length));
+		i = vec[r];
+		j = Math.floor((Math.random() * CategoryMatrix[i].length));
+		while(CategoryMatrix[i][j].used1) {
+			r = Math.floor((Math.random() * vec.length));
+			i = vec[r];
+			j = Math.floor((Math.random() * CategoryMatrix[i].length));
+		}
+		vSong.push(CategoryMatrix[i][j]);
+		CategoryMatrix[i][j].used1 = true;
+	}
+}
+
+
 function show_sol() {
 	$(".suck").show();
-	solr = Math.floor((Math.random() * CategoryMatrix[i][j].sols.length));
-	document.getElementById("Last").innerHTML = CategoryMatrix[i][j].sols[solr];
+	solr = Math.floor((Math.random() * vSong[x].sols.length));
+	document.getElementById("Last").innerHTML = vSong[x].sols[solr];
 }
 
 function check_valid() {
 	$("#errS").attr("src", "");
 	++NGo;
 	var k
-	var Song = CategoryMatrix[i][j];
+	var Song = vSong[x];
 	var sol = $("#Sol").val();
 	for(k = 0; k < Song.sols.length; k++) {
 		if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
 			objection = false;
 			++Hhit;
 			++Nused;
-			if (CategoryMatrix[i][j].time >= 83) score = score + 100;
-			else score = score + CategoryMatrix[i][j].time;
+			if (vSong[x].time >= 83) score = score + 100;
+			else score = score + vSong[x].time;
 			document.getElementById("score").innerHTML = score;
-			CategoryMatrix[i][j].used = true;
-			randomize();
+			vSong[x].used2 = true;
+			x = Math.floor((Math.random() * vSong.length));
 			$("#Sol").val("");
-			if (Nused < Ntot) {
-				while(CategoryMatrix[i][j].used == true) {
-					randomize();
+			if (Nused < vSong.length) {
+				while(vSong[x].used2) {
+					x = Math.floor((Math.random() * vSong.length));
 				}
-			$("#Song").attr("src", CategoryMatrix[i][j].link);
+			$("#Song").attr("src", vSong[x].link);
 			}
-			else show_res(i,j);
+			else show_res();
 		}
 	}
 	if(objection) {
 		$("#Sol").val("");
 		var h = Math.floor((Math.random() * Missclick.length))
 		$("#errS").attr("src", Missclick[h].link);
-		}
+	}
 	objection = true;
 }
 	
@@ -293,7 +299,6 @@ function check_valid() {
 
 var CategoryMatrix = [Atlus,Anime,Remix,NintendoNew,Touhou,Kirby,Pokemon,Square];
 var Nused = 0;
-var Ntot;
 var NGo = 0;
 var Hhit = 0;
 var score = 0;
@@ -301,10 +306,12 @@ var vec = [];
 var i = 0;
 var j = 0;
 var r = 0;
+var x = 0;
 var objection = true;
 var solr = 0;
 var multiplier = 1;
 var interval
+var vSong = [];
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -315,55 +322,51 @@ $(document).ready(function() {
         $("#Acc").click(function() {
 			$("#Ganbatte").attr("src", Ganbatte[0].link);
             vec = act_catV();
+            InitvSong();
             $(".cat").hide();
             document.getElementById("score").innerHTML = score;
-            Ntot = numero(vec);
-			randomize();
+			x = Math.floor((Math.random() * vSong.length));
             $(".game").show();
             interval = setInterval(function() {
-                --CategoryMatrix[i][j].time;
-                document.getElementById("demo").innerHTML = CategoryMatrix[i][j].time;
-                if(CategoryMatrix[i][j].time <= 0) {
-					 CategoryMatrix[i][j].used = true;
+                --vSong[x].time;
+                document.getElementById("demo").innerHTML = vSong[x].time;
+                if(vSong[x].time <= 0) {
+					 vSong[x].used2 = true;
 					 ++Nused;
 					 score = score - 30;
-					 
 					 $("#Skip").click();
 				 }
             },1000);
             $("#Song").prop("volume", 0.25);
-            $("#Song").attr("src", CategoryMatrix[i][j].link);
+            $("#Song").attr("src", vSong[x].link);
             $("#Skip").click(function() {
-				if (Nused == Ntot) show_res(i,j);
+				if (Nused == 20) show_res();
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
 					$("#Sol").val("");
-					while(CategoryMatrix[i][j].used == true) {
-						randomize();
+					while(vSong[x].used2 == true) {
+						x = Math.floor((Math.random() * vSong.length));
 					}
-					$("#Song").attr("src", CategoryMatrix[i][j].link);
+					$("#Song").attr("src", vSong[x].link);
 				}
             });
             $("#Discard").click(function() {
 				score = score - 30;
 				++Nused;
-				CategoryMatrix[i][j].used = true;
+				vSong[x].used2 = true;
 				show_sol();
-				if (Nused == Ntot) show_res(i,j);
+				if (Nused == 20) show_res();
 				else {
 					document.getElementById("score").innerHTML = score;
-					randomize();
+					x = Math.floor((Math.random() * vSong.length));
 					$("#Sol").val("");
-					while(CategoryMatrix[i][j].used == true) {
-						randomize();
+					while(vSong[x].used2 == true) {
+						x = Math.floor((Math.random() * vSong.length));
 					}
-					$("#Song").attr("src", CategoryMatrix[i][j].link);
+					$("#Song").attr("src", vSong[x].link);
 				}
             });
-            $("#Go").click(function() {
-				
-        });
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
