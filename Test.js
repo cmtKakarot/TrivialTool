@@ -224,17 +224,19 @@ function act_catV() {
     return vec;
 }
 
-function show_res(x) {
+function show_res() {
 	$("#Song").trigger("pause");
 	$(".game").hide();
 	$(".suck").hide();
-	clearInterval(x)
+	clearInterval(interval)
 	document.getElementById("score2").innerHTML = score;
 	var HhitS;
 	if(NGo == 0) HhitS = 0;
 	else HhitS = (Hhit/NGo) * 100;
 	document.getElementById("sh").innerHTML = HhitS;
 	var Ndones = (Hhit/Ntot) * 100;
+	var Ndones2 = (Hhit/20) * 100;
+	if(Ndones2 > Ndones) Ndones = Ndones2;
 	document.getElementById("ss").innerHTML = Ndones;
 	$(".res").show();
 }
@@ -262,7 +264,8 @@ function check_valid() {
 			objection = false;
 			++Hhit;
 			++Nused;
-			score = score + CategoryMatrix[i][j].time;
+			if (CategoryMatrix[i][j].time >= 83) score = score + 100;
+			else score = score + CategoryMatrix[i][j].time;
 			document.getElementById("score").innerHTML = score;
 			CategoryMatrix[i][j].used = true;
 			randomize();
@@ -301,6 +304,7 @@ var r = 0;
 var objection = true;
 var solr = 0;
 var multiplier = 1;
+var interval
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -316,7 +320,7 @@ $(document).ready(function() {
             Ntot = numero(vec);
 			randomize();
             $(".game").show();
-            var x = setInterval(function() {
+            interval = setInterval(function() {
                 --CategoryMatrix[i][j].time;
                 document.getElementById("demo").innerHTML = CategoryMatrix[i][j].time;
                 if(CategoryMatrix[i][j].time <= 0) {
