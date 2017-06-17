@@ -60,7 +60,8 @@ var Anime = [
     new SongData("./src/music/anime/22.mp3", ["Sword Art Online 2","SAO 2","Light Your Sword","SAO II","Sword Art Online II"]),
     new SongData("./src/music/anime/23.mp3", ["Sword Art Online 2","SAO 2","Gunland","SAO II","Sword Art Online II"]),
     new SongData("./src/music/anime/24.mp3", ["Angel Beats","My Soul Your Beats","My Soul Your Beats (Yui ver)"]),
-    new SongData("./src/music/anime/25.mp3", ["Clannad","Nagisa"])
+    new SongData("./src/music/anime/25.mp3", ["Clannad","Nagisa"]),
+    new SongData("./src/music/anime/26.mp3", ["Haikyuu","Evolution","Haikyu"]),
     ];
 
 var Remix = [ 
