@@ -129,8 +129,8 @@ var Pokemon = [
     new SongData("./src/music/pokemon/19.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Red"]),
     new SongData("./src/music/pokemon/20.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Ho-oh"]),
     new SongData("./src/music/pokemon/21.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rayquaza"]),
-    new SongData("./src/music/pokemon/16.mp3", ["Diamond","Pearl","Battle! Rival"]),
-    new SongData("./src/music/pokemon/19.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Rival"])
+    new SongData("./src/music/pokemon/22.mp3", ["Diamond","Pearl","Battle! Rival"]),
+    new SongData("./src/music/pokemon/23.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Rival"])
 	];
 	
 var	Square = [
