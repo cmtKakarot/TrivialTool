@@ -300,6 +300,7 @@ var j = 0;
 var r = 0;
 var objection = true;
 var solr = 0;
+var multiplier = 1;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -308,6 +309,7 @@ var solr = 0;
 $(document).ready(function() {
 		$(".game").hide()
         $("#Acc").click(function() {
+			$("#Ganbatte").attr("src", Ganbatte[0].link);
             vec = act_catV();
             $(".cat").hide();
             document.getElementById("score").innerHTML = score;
