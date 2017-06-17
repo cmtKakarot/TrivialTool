@@ -6,7 +6,7 @@ function SongData(link, sols) {
 	this.link = link;
 	this.sols = sols;
 	this.used = false;
-	this.time = 60;
+	this.time = 90;
 }
 
 function ErrorData(link) {
@@ -19,13 +19,20 @@ function ErrorData(link) {
 //---------------------------------------------------------------------------------------
 
 var Atlus = [
-    new SongData("./src/music/atlus/1.mp3", ["Persona4","Persona 4","Time To Make History"]),
-    new SongData("./src/music/atlus/2.mp3", ["Persona4","Persona 4","Reach Out To The Truth"]),
-    new SongData("./src/music/atlus/3.mp3", ["PersonaQ","Persona Q","Maze of Life"]),
-    new SongData("./src/music/atlus/4.mp3", ["Persona4","Persona 4","Shadow World"]),
-    new SongData("./src/music/atlus/5.mp3", ["Persona5","Persona 5","Life Will Change"]),
-    new SongData("./src/music/atlus/6.mp3", ["Persona5","Persona 5","Last Surprise"]),
-    new SongData("./src/music/atlus/7.mp3", ["Persona5","Persona 5","Rivers in the desert"])
+    new SongData("./src/music/atlus/1.mp3", ["Persona 4","Time To Make History"]),
+    new SongData("./src/music/atlus/2.mp3", ["Persona 4","Reach Out To The Truth"]),
+    new SongData("./src/music/atlus/3.mp3", ["Persona Q","Maze of Life"]),
+    new SongData("./src/music/atlus/4.mp3", ["Persona 4","Shadow World"]),
+    new SongData("./src/music/atlus/5.mp3", ["Persona 5","Life Will Change"]),
+    new SongData("./src/music/atlus/6.mp3", ["Persona 5","Last Surprise"]),
+    new SongData("./src/music/atlus/7.mp3", ["Persona 5","Rivers in the desert"]),
+    new SongData("./src/music/atlus/8.mp3", ["Persona 4 Arena","Reach out to the Truth"]),
+    new SongData("./src/music/atlus/9.mp3", ["Persona 4 Arena","Princess Amagi"]),
+    new SongData("./src/music/atlus/10.mp3", ["Persona 4 Arena","Best Friends"]),
+    new SongData("./src/music/atlus/11.mp3", ["Persona 3","The Battle for Everyone Souls"]),
+    new SongData("./src/music/atlus/12.mp3", ["Persona 3","Mass Destruction"]),
+    new SongData("./src/music/atlus/13.mp3", ["Persona 4 Dancing All Night","Dancing all night","Junes Theme (Vocal Version)"]),
+    new SongData("./src/music/atlus/14.mp3", ["Persona 4 Dancing All Night","Dancing all night","DANCE"])
     ];
     
 var Anime = [
@@ -101,8 +108,29 @@ var Kirby = [
 	];
     
 var Pokemon = [
-    new SongData("./src/music/pokemon/1.mp3", ["Omega Ruby","Omega Rubi","Alpha Sapphire","ORAS","Alfa Zafiro","Battle! Champion"]),
-    new SongData("./src/music/pokemon/2.mp3", ["Omega Ruby","Omega Rubi","Alpha Sapphire","ORAS","Alfa Zafiro","Battle! Rival"])
+    new SongData("./src/music/pokemon/1.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Champion"]),
+    new SongData("./src/music/pokemon/2.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rival"]),
+    new SongData("./src/music/pokemon/3.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Zinnia"]),
+    new SongData("./src/music/pokemon/4.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Wally"]),
+    new SongData("./src/music/pokemon/5.mp3", ["Sun","Moon","Battle! Legend Red"]),
+    new SongData("./src/music/pokemon/6.mp3", ["Sun","Moon","Battle! Champion"]),   
+    new SongData("./src/music/pokemon/7.mp3", ["Sun","Moon","Battle! Kahuna"]),
+    new SongData("./src/music/pokemon/8.mp3", ["Sun","Moon","Battle! Hau"]),
+    new SongData("./src/music/pokemon/9.mp3", ["X","Y","Snowbelee City"]),
+    new SongData("./src/music/pokemon/10.mp3", ["X","Y","Battle! Gym Leader"]),
+    new SongData("./src/music/pokemon/11.mp3", ["X","Y","Battle! Lyssandre"]),
+    new SongData("./src/music/pokemon/12.mp3", ["X","Y","Battle! Diantha"]),
+    new SongData("./src/music/pokemon/13.mp3", ["Black","White","Battle! N"]),
+    new SongData("./src/music/pokemon/14.mp3", ["Black","White","Battle! Reshiram","Battle! Zekrom","Battle! Kyurem"]),
+    new SongData("./src/music/pokemon/15.mp3", ["Black","White","Battle! Elite Four"]),
+    new SongData("./src/music/pokemon/16.mp3", ["Diamond","Pearl","Battle! Cynthia"]),
+    new SongData("./src/music/pokemon/17.mp3", ["Diamond","Pearl","Battle! Team Galactic Boss"]),
+    new SongData("./src/music/pokemon/18.mp3", ["Sun","Moon","Battle! Gladion"]),
+    new SongData("./src/music/pokemon/19.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Red"]),
+    new SongData("./src/music/pokemon/20.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Ho-oh"]),
+    new SongData("./src/music/pokemon/21.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rayquaza"]),
+    new SongData("./src/music/pokemon/16.mp3", ["Diamond","Pearl","Battle! Rival"]),
+    new SongData("./src/music/pokemon/19.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Rival"])
 	];
 	
 var	Square = [
@@ -226,7 +254,7 @@ $(document).ready(function() {
                 if(CategoryMatrix[i][j].time <= 0) {
 					 CategoryMatrix[i][j].used = true;
 					 ++Nused;
-					 score = score - 20;
+					 score = score - 30;
 					 
 					 $("#Skip").click();
 				 }
@@ -246,7 +274,7 @@ $(document).ready(function() {
 				}
             });
             $("#Discard").click(function() {
-				score = score - 40;
+				score = score - 30;
 				++Nused;
 				CategoryMatrix[i][j].used = true;
 				show_sol();
