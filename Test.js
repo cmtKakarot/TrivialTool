@@ -9,7 +9,7 @@ function SongData(link, sols) {
 	this.time = 90;
 }
 
-function ErrorData(link) {
+function SoundData(link) {
 	this.link = link;
 	this.last = false
 }
@@ -131,7 +131,34 @@ var Pokemon = [
     new SongData("./src/music/pokemon/20.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Ho-oh"]),
     new SongData("./src/music/pokemon/21.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rayquaza"]),
     new SongData("./src/music/pokemon/22.mp3", ["Diamond","Pearl","Battle! Rival"]),
-    new SongData("./src/music/pokemon/23.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Rival"])
+    new SongData("./src/music/pokemon/23.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Rival"]),
+    new SongData("./src/music/pokemon/24.mp3", ["Fire Red","Leaf Green","FRLG","Battle! Champion"]),
+    new SongData("./src/music/pokemon/25.mp3", ["X","Y","Professor Sycanore's Theme"]),
+    new SongData("./src/music/pokemon/26.mp3", ["Black 2","White 2","Battle! Rival"]),
+    new SongData("./src/music/pokemon/27.mp3", ["Black","White","Emotion"]),
+    new SongData("./src/music/pokemon/28.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Gym Leader"]),
+    new SongData("./src/music/pokemon/29.mp3", ["Black","White","Last Pokemon"]),
+    new SongData("./src/music/pokemon/30.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Team Rocket"]),
+    new SongData("./src/music/pokemon/31.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Elite Four"]),
+    new SongData("./src/music/pokemon/32.mp3", ["Red","Blue","Yellow","RBY","Indigo Plateau"]),
+    new SongData("./src/music/pokemon/33.mp3", ["X","Y","Battle! Mewtwo"]),
+    new SongData("./src/music/pokemon/34.mp3", ["X","Y","Battle! Emotion"]),
+    new SongData("./src/music/pokemon/35.mp3", ["Red","Blue","Yellow","RBY","Opening"]),
+    new SongData("./src/music/pokemon/36.mp3", ["Red","Blue","Yellow","RBY","Pallet Town"]),
+    new SongData("./src/music/pokemon/37.mp3", ["Red","Blue","Yellow","RBY","Professor Oak"]),
+    new SongData("./src/music/pokemon/38.mp3", ["Red","Blue","Yellow","RBY","Oak's Research Lab"]),
+    new SongData("./src/music/pokemon/39.mp3", ["Red","Blue","Yellow","RBY","Rival appears"]),
+    new SongData("./src/music/pokemon/40.mp3", ["Red","Blue","Yellow","RBY","Victory Fanfare"]),
+    new SongData("./src/music/pokemon/41.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Kanto Gym Leader"]),
+    new SongData("./src/music/pokemon/42.mp3", ["Fire Red","Leaf Green","FRLG","Battle! Gym Leader"]),
+    new SongData("./src/music/pokemon/43.mp3", ["Red","Blue","Yellow","RBY","Indigo Plateau"]),
+    new SongData("./src/music/pokemon/44.mp3", ["Ruby","Sapphire","Emerald", "Battle! Rival"]),
+    new SongData("./src/music/pokemon/45.mp3", ["Ruby","Sapphire","Emerald", "Opening"]),
+    new SongData("./src/music/pokemon/46.mp3", ["Ruby","Sapphire","Emerald", "Title Screen"]),
+    new SongData("./src/music/pokemon/47.mp3", ["Colosseum","Battle! Cipher Admin"]),
+    new SongData("./src/music/pokemon/48.mp3", ["Colosseum","First Battle"]),
+    new SongData("./src/music/pokemon/49.mp3", ["Colosseum","Normal Battle"]),
+    new SongData("./src/music/pokemon/50.mp3", ["Black 2","White 2","Battle! Cynthia"])
 	];
 	
 var	Square = [
@@ -160,14 +187,18 @@ var	Square = [
     ];
 	
 var	Missclick = [
-	new ErrorData("./src/music/other/err1.mp3"),
-	new ErrorData("./src/music/other/err2.wav")
+	new SoundData("./src/music/other/err1.mp3"),
+	new SoundData("./src/music/other/err2.wav")
 	];
 	
+var Ganbatte = [
+	new SoundData("./src/music/other/go1.wav")
+	];
+
 	
 
 //---------------------------------------------------------------------------------------
-//--------------------------------- SOME FUNCS ------------------------------------------
+//--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
     
 function numero(vec) {
@@ -236,7 +267,7 @@ function check_valid() {
 			CategoryMatrix[i][j].used = true;
 			randomize();
 			$("#Sol").val("");
-			if (Nused != Ntot) {
+			if (Nused != Ntot || Nused != 20) {
 				while(CategoryMatrix[i][j].used == true) {
 					randomize();
 				}
@@ -275,6 +306,7 @@ var solr = 0;
 //---------------------------------------------------------------------------------------
 
 $(document).ready(function() {
+		$(".game").hide()
         $("#Acc").click(function() {
             vec = act_catV();
             $(".cat").hide();
@@ -296,7 +328,7 @@ $(document).ready(function() {
             $("#Song").prop("volume", 0.25);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Skip").click(function() {
-                if(Nused == Ntot) show_res(i,j);
+                if (Nused != Ntot || Nused != 20) show_res(i,j);
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
@@ -312,7 +344,7 @@ $(document).ready(function() {
 				++Nused;
 				CategoryMatrix[i][j].used = true;
 				show_sol();
-                if(Nused == Ntot) show_res(i,j);
+                if (Nused != Ntot || Nused != 20) show_res(i,j);
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
