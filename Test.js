@@ -39,21 +39,7 @@ var Anime = [
     new SongData("./src/music/anime/8.mp3", ["Kuroko","Sessen","Kuroko no Basket"]),
     new SongData("./src/music/anime/9.mp3", ["Kuroko","Can do it","Kuroko no Basket"]),
     new SongData("./src/music/anime/10.mp3", ["Haikyuu","Imagination","Haikyu"]),
-    new SongData("./src/music/anime/11.mp3", ["Before my body is dry","Kill la Kill"]),
-    new SongData("./src/music/anime/12.mp3", ["Boku no Hero Academia","My Hero Academy","You say run"]),
-    new SongData("./src/music/anime/13.mp3", ["Boku no Hero Academia","My Hero Academy","You can become a Hero"]),
-    new SongData("./src/music/anime/14.mp3", ["One Piece","Overtaken"]),
-    new SongData("./src/music/anime/15.mp3", ["One Piece","The very very very strongest"]),
-    new SongData("./src/music/anime/16.mp3", ["One Piece","Brand New World"]),
-    new SongData("./src/music/anime/17.mp3", ["One Piece","We go"]),
-    new SongData("./src/music/anime/18.mp3", ["One Piece","Crazy Rainbow Star"]),
-    new SongData("./src/music/anime/19.mp3", ["Mirai Nikki","Battle Theme"]),
-    new SongData("./src/music/anime/20.mp3", ["Sword Art Online","SAO","Swordland"]),
-    new SongData("./src/music/anime/21.mp3", ["Sword Art Online","SAO","Luminous Sword"]),
-    new SongData("./src/music/anime/22.mp3", ["Sword Art Online 2","SAO 2","Light Your Sword","SAO II","Sword Art Online II"]),
-    new SongData("./src/music/anime/23.mp3", ["Sword Art Online 2","SAO 2","Gunland","SAO II","Sword Art Online II"]),
-    new SongData("./src/music/anime/24.mp3", ["Angel Beats","My Soul Your Beats","My Soul Your Beats (Yui ver)"]),
-    new SongData("./src/music/anime/25.mp3", ["Clannad","Nagisa"])
+    new SongData("./src/music/anime/11.mp3", ["Before my body is dry","Kill la Kill"])
     ];
 
 var Remix = [ 

@@ -8,3 +8,50 @@
     width:200px;
     overflow: hidden;
 }
+
+body {
+	background-color: pink;
+}
+
+button {
+	width: 25%;
+}
+
+#Reset {
+	margin-left: 25%;
+}
+
+div {
+	height: 100px;
+	width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+    margin-left: 25%;
+    margin-bottom: 5px;
+	border-radius: 10px;
+}
+#Atlus {
+	background-image: url(./src/images/cat/atlus.png);
+}
+#Remix {
+	background-image: url(./src/images/cat/remix.png);
+}
+#Anime {
+	background-image: url(./src/images/cat/anime.png);
+}
+#NNintendo {
+	background-image: url(./src/images/cat/newtendo.png);
+}
+#Touhou {
+	background-image: url(./src/images/cat/touhou.png);
+}
+#Kirby {
+	background-image: url(./src/images/cat/kirby.png);
+}
+#Pokemon {
+	background-image: url(./src/images/cat/pokemon.png);
+}
+#Square {
+	background-image: url(./src/images/cat/square.png);
+}
