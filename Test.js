@@ -291,39 +291,41 @@ $(document).ready(function() {
 				}
             });
             $("#Go").click(function() {
-				$("#errS").attr("src", "");
-                ++NGo;
-                var k
-                var Song = CategoryMatrix[i][j];
-                var sol = $("#Sol").val();
-                for(k = 0; k < Song.sols.length; k++) {
-                    if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
-						objection = false;
-						++Hhit;
-						++Nused;
-                        score = score + CategoryMatrix[i][j].time;
-                        document.getElementById("score").innerHTML = score;
-                        CategoryMatrix[i][j].used = true;
-                        randomize();
-                        $("#Sol").val("");
-                        if (Nused != Ntot) {
-							while(CategoryMatrix[i][j].used == true) {
-								randomize();
-							}
-							$("#Song").attr("src", CategoryMatrix[i][j].link);
-						}
-						else show_res(i,j);
-                    }
-				}
-				if(objection) {
-					var h = Math.floor((Math.random() * Missclick.length))
-					$("#errS").attr("src", Missclick[h].link);
-            	}
-            	objection = true;
+				
         });
     });
     $("#Sol").keyup(function(event){
-        if(event.keyCode == 13) $("#Go").click();
+        if(event.keyCode == 13) {
+			$("#errS").attr("src", "");
+            ++NGo;
+            var k
+            var Song = CategoryMatrix[i][j];
+            var sol = $("#Sol").val();
+            for(k = 0; k < Song.sols.length; k++) {
+				if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
+					objection = false;
+					++Hhit;
+					++Nused;
+                    score = score + CategoryMatrix[i][j].time;
+                    document.getElementById("score").innerHTML = score;
+                    CategoryMatrix[i][j].used = true;
+                    randomize();
+                    $("#Sol").val("");
+                    if (Nused != Ntot) {
+						while(CategoryMatrix[i][j].used == true) {
+							randomize();
+						}
+					$("#Song").attr("src", CategoryMatrix[i][j].link);
+					}
+					else show_res(i,j);
+				}
+			}
+			if(objection) {
+				var h = Math.floor((Math.random() * Missclick.length))
+				$("#errS").attr("src", Missclick[h].link);
+				}
+            objection = true;
+		}
     });
     $(".cat").click(function(){
         $(this).hide();
