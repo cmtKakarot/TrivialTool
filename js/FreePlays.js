@@ -303,7 +303,6 @@ $(document).ready(function() {
             $("#Skip").click(function() {
 				if (Nused == Ntot) show_res();
 				else {
-					document.getElementById("score").innerHTML = score;
 					randomize();
 					$("#Sol").val("");
 					while(CategoryMatrix[i][j].used == true) {
