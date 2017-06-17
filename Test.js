@@ -267,7 +267,7 @@ function check_valid() {
 			CategoryMatrix[i][j].used = true;
 			randomize();
 			$("#Sol").val("");
-			if (Nused != Ntot || Nused != 20) {
+			if (Nused == Ntot || Nused == 20) {
 				while(CategoryMatrix[i][j].used == true) {
 					randomize();
 				}
@@ -330,7 +330,7 @@ $(document).ready(function() {
             $("#Song").prop("volume", 0.25);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Skip").click(function() {
-                if (Nused != Ntot || Nused != 20) show_res(i,j);
+                if (Nused == Ntot || Nused == 20) show_res(i,j);
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
@@ -346,7 +346,7 @@ $(document).ready(function() {
 				++Nused;
 				CategoryMatrix[i][j].used = true;
 				show_sol();
-                if (Nused != Ntot || Nused != 20) show_res(i,j);
+                if (Nused == Ntot || Nused == 20) show_res(i,j);
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
