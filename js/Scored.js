@@ -196,7 +196,7 @@ var Ganbatte = [
 	new SoundData("../src/music/other/go1.wav")
 	];
 
-	
+	 
 	
 
 //---------------------------------------------------------------------------------------
@@ -346,6 +346,7 @@ $(document).ready(function() {
 					document.getElementById("score").innerHTML = score;
 					randomize();
 					$("#Sol").val("");
+					x = Math.floor((Math.random() * vSong.length));
 					while(vSong[x].used2 == true) {
 						x = Math.floor((Math.random() * vSong.length));
 					}

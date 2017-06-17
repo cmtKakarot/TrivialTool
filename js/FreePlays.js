@@ -6,7 +6,6 @@ function SongData(link, sols) {
 	this.link = link;
 	this.sols = sols;
 	this.used = false;
-	this.time = 90;
 }
 
 function SoundData(link) {
@@ -228,16 +227,6 @@ function show_res() {
 	$("#Song").trigger("pause");
 	$(".game").hide();
 	$(".suck").hide();
-	clearInterval(interval)
-	document.getElementById("score2").innerHTML = score;
-	var HhitS;
-	if(NGo == 0) HhitS = 0;
-	else HhitS = (Hhit/NGo) * 100;
-	document.getElementById("sh").innerHTML = HhitS;
-	var Ndones = (Hhit/Ntot) * 100;
-	var Ndones2 = (Hhit/20) * 100;
-	if(Ndones2 > Ndones) Ndones = Ndones2;
-	document.getElementById("ss").innerHTML = Ndones;
 	$(".res").show();
 }
 
@@ -255,18 +244,13 @@ function show_sol() {
 
 function check_valid() {
 	$("#errS").attr("src", "");
-	++NGo;
 	var k
 	var Song = CategoryMatrix[i][j];
 	var sol = $("#Sol").val();
 	for(k = 0; k < Song.sols.length; k++) {
 		if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
 			objection = false;
-			++Hhit;
 			++Nused;
-			if (CategoryMatrix[i][j].time >= 83) score = score + 100;
-			else score = score + CategoryMatrix[i][j].time;
-			document.getElementById("score").innerHTML = score;
 			CategoryMatrix[i][j].used = true;
 			randomize();
 			$("#Sol").val("");
@@ -276,7 +260,7 @@ function check_valid() {
 				}
 			$("#Song").attr("src", CategoryMatrix[i][j].link);
 			}
-			else show_res(i,j);
+			else show_res();
 		}
 	}
 	if(objection) {
@@ -294,17 +278,12 @@ function check_valid() {
 var CategoryMatrix = [Atlus,Anime,Remix,NintendoNew,Touhou,Kirby,Pokemon,Square];
 var Nused = 0;
 var Ntot;
-var NGo = 0;
-var Hhit = 0;
-var score = 0;
 var vec = [];
 var i = 0;
 var j = 0;
 var r = 0;
 var objection = true;
 var solr = 0;
-var multiplier = 1;
-var interval
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -316,25 +295,13 @@ $(document).ready(function() {
 			$("#Ganbatte").attr("src", Ganbatte[0].link);
             vec = act_catV();
             $(".cat").hide();
-            document.getElementById("score").innerHTML = score;
             Ntot = numero(vec);
 			randomize();
             $(".game").show();
-            interval = setInterval(function() {
-                --CategoryMatrix[i][j].time;
-                document.getElementById("demo").innerHTML = CategoryMatrix[i][j].time;
-                if(CategoryMatrix[i][j].time <= 0) {
-					 CategoryMatrix[i][j].used = true;
-					 ++Nused;
-					 score = score - 30;
-					 
-					 $("#Skip").click();
-				 }
-            },1000);
             $("#Song").prop("volume", 0.25);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Skip").click(function() {
-				if (Nused == Ntot) show_res(i,j);
+				if (Nused == Ntot) show_res();
 				else {
 					document.getElementById("score").innerHTML = score;
 					randomize();
@@ -346,13 +313,11 @@ $(document).ready(function() {
 				}
             });
             $("#Discard").click(function() {
-				score = score - 30;
 				++Nused;
 				CategoryMatrix[i][j].used = true;
 				show_sol();
-				if (Nused == Ntot) show_res(i,j);
+				if (Nused == Ntot) show_res();
 				else {
-					document.getElementById("score").innerHTML = score;
 					randomize();
 					$("#Sol").val("");
 					while(CategoryMatrix[i][j].used == true) {
