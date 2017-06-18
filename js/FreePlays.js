@@ -227,11 +227,15 @@ var	Square = [
 	
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
-	new SoundData("../src/music/other/err2.wav")
+	new SoundData("../src/music/other/err2.wav"),
+	new SoundData("../src/music/other/err3.wav")
 	];
 	
 var Ganbatte = [
-	new SoundData("../src/music/other/go1.wav")
+	new SoundData("../src/music/other/go1.wav"),
+	new SoundData("../src/music/other/go2.wav"),
+	new SoundData("../src/music/other/go3.wav"),
+	new SoundData("../src/music/other/go4.wav")
 	];
 
 	
@@ -332,7 +336,8 @@ var solr = 0;
 $(document).ready(function() {
 		$(".game").hide()
         $("#Acc").click(function() {
-			$("#Ganbatte").attr("src", Ganbatte[0].link);
+			var h2 = Math.floor((Math.random() * Ganbatte.length))
+			$("#Ganbatte").attr("src", Ganbatte[h2].link);
             vec = act_catV();
             $(".cat").hide();
             Ntot = numero(vec);
