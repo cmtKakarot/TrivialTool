@@ -372,4 +372,11 @@ $(document).ready(function() {
     $("#Reset").click(function(){
 		$(".cat").show();
 	});
+	 $("#Back").click(function(){
+		$("#Song").trigger("pause");
+		$(".cat").show();
+		$(".res").hide();
+		$(".suck").hide();
+		$(".game").hide();
+	});
 });
