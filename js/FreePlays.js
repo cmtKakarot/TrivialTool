@@ -294,7 +294,7 @@ function check_valid() {
 	for(k = 0; k < Song.sols.length; k++) {
 		if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
 			objection = false;
-			++Nused;
+			++Nused
 			CategoryMatrix[i][j].used = true;
 			randomize();
 			$("#Sol").val("");
@@ -346,7 +346,7 @@ $(document).ready(function() {
             $("#Song").prop("volume", 0.25);
             $("#Song").attr("src", CategoryMatrix[i][j].link);
             $("#Discard").click(function() {
-				++Nused;
+				++Nused
 				CategoryMatrix[i][j].used = true;
 				show_sol();
 				if (Nused == Ntot) show_res();
@@ -359,9 +359,6 @@ $(document).ready(function() {
 					$("#Song").attr("src", CategoryMatrix[i][j].link);
 				}
             });
-            $("#Go").click(function() {
-				
-        });
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
@@ -378,5 +375,6 @@ $(document).ready(function() {
 		$(".res").hide();
 		$(".suck").hide();
 		$(".game").hide();
+		Nused = 0;
 	});
 });
