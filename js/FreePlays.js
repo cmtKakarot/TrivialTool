@@ -314,6 +314,16 @@ function check_valid() {
 		}
 	objection = true;
 }
+
+function ResetGame() {
+	var ir, ic;
+	for(ir = 0; ir < CategoryMatrix.length; ++ir) {
+		for(ic = 0; ic < CategoryMatrix[ir].length; ++ic) {
+			CategoryMatrix[ir][ic].used = false;
+		}
+	}
+	Nused = 0;
+}
 	
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
@@ -375,6 +385,6 @@ $(document).ready(function() {
 		$(".res").hide();
 		$(".suck").hide();
 		$(".game").hide();
-		Nused = 0;
+		ResetGame();
 	});
 });
