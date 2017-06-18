@@ -33,7 +33,29 @@ var Atlus = [
     new SongData("../src/music/atlus/11.mp3", ["Persona 3","The Battle for Everyone Souls"]),
     new SongData("../src/music/atlus/12.mp3", ["Persona 3","Mass Destruction"]),
     new SongData("../src/music/atlus/13.mp3", ["Persona 4 Dancing All Night","Dancing all night","Junes Theme (Vocal Version)"]),
-    new SongData("../src/music/atlus/14.mp3", ["Persona 4 Dancing All Night","Dancing all night","DANCE"])
+    new SongData("../src/music/atlus/14.mp3", ["Persona 4 Dancing All Night","Dancing all night","DANCE"]),
+    new SongData("../src/music/atlus/15.mp3", ["Persona 4","Snowflakes"]),
+    new SongData("../src/music/atlus/16.mp3", ["Persona 3","Time"]),
+    new SongData("../src/music/atlus/17.mp3", ["Persona 4","I'll face myself"]),
+    new SongData("../src/music/atlus/18.mp3", ["Persona 3","Danger Zone"]),
+    new SongData("../src/music/atlus/19.mp3", ["Persona 4","Backside of the TV"]),
+    new SongData("../src/music/atlus/20.mp3", ["Persona 5","Will Power"]),
+    new SongData("../src/music/atlus/21.mp3", ["Persona 3","Burn my Dread"]),
+    new SongData("../src/music/atlus/22.mp3", ["Persona 5","Beneath the mask"]),
+    new SongData("../src/music/atlus/23.mp3", ["Persona 4","Heaven"]),
+    new SongData("../src/music/atlus/24.mp3", ["Persona 3","Burn my Dread"]),
+    new SongData("../src/music/atlus/25.mp3", ["Persona 4","Electronica in the velvet room"]),
+    new SongData("../src/music/atlus/26.mp3", ["Persona 4","Like a dream come True"]),
+    new SongData("../src/music/atlus/27.mp3", ["Persona 4","Signs of love"]),
+    new SongData("../src/music/atlus/28.mp3", ["Persona 3","Heartful Cry"]),
+    new SongData("../src/music/atlus/29.mp3", ["Persona 4 Arena","Now I Know"]),
+    new SongData("../src/music/atlus/30.mp3", ["Persona 3","Iwatodai Station"]),
+    new SongData("../src/music/atlus/31.mp3", ["Persona 5","Keeper of Lust"]),
+    new SongData("../src/music/atlus/32.mp3", ["Persona 4","Never More"]),
+    new SongData("../src/music/atlus/33.mp3", ["Persona 4","A New World Fool"]),
+    new SongData("../src/music/atlus/34.mp3", ["Persona 5","The days when my mother was there"]),
+    new SongData("../src/music/atlus/35.mp3", ["Persona 3","Master of Tartarus"]),
+    new SongData("../src/music/atlus/34.mp3", ["Persona 5","Blooming Villain"]),
     ];
     
 var Anime = [
@@ -42,7 +64,7 @@ var Anime = [
     new SongData("../src/music/anime/3.mp3", ["Clannad After Story","Toki Wo Kizamu Uta"]),
     new SongData("../src/music/anime/4.mp3", ["your name","Kimi no Na wa", "Zen Zen Zense"]),
     new SongData("../src/music/anime/5.mp3", ["Shingeki no Kyojin","Attack on Titan","Wings of Freedom"]),
-    new SongData("../src/music/anime/6.mp3", ["Katekyo Hitman Reborn","Hitman Reborn!","Katekyo Hitman Reborn!","Tsuna Awakens"]),
+    new SongData("../src/music/anime/6.mp3", ["Katekyo Hitman Reborn","Katekyo Hitman Reborn!","Tsuna Awakens"]),
     new SongData("../src/music/anime/7.mp3", ["Full Metal Alchemist: Brotherhood","FMA: B","Shunkan Sentimental","FMAB"]),
     new SongData("../src/music/anime/8.mp3", ["Kuroko","Sessen","Kuroko no Basket"]),
     new SongData("../src/music/anime/9.mp3", ["Kuroko","Can do it","Kuroko no Basket"]),
@@ -63,6 +85,24 @@ var Anime = [
     new SongData("../src/music/anime/24.mp3", ["Angel Beats","My Soul Your Beats","My Soul Your Beats (Yui ver)"]),
     new SongData("../src/music/anime/25.mp3", ["Clannad","Nagisa"]),
     new SongData("../src/music/anime/26.mp3", ["Haikyuu","Evolution","Haikyu"]),
+    new SongData("../src/music/anime/27.mp3", ["Shingeki no Kyojin","Attack on Titan","Counterattack Mankind"]),
+    new SongData("../src/music/anime/28.mp3", ["One Piece","After Eating, the Grand Line"]),
+    new SongData("../src/music/anime/29.mp3", ["No Game No Life","All of you is all of me"]),
+    new SongData("../src/music/anime/30.mp3", ["One Piece","World's number one oden store"]),
+    new SongData("../src/music/anime/31.mp3", ["Kuroko","Under the hoop","Kuroko no Basket"]),
+    new SongData("../src/music/anime/32.mp3", ["Shingeki no Kyojin","Attack on Titan","Armored Titan"]),
+    new SongData("../src/music/anime/33.mp3", ["Shingeki no Kyojin","Attack on Titan","XL-TT"]),
+    new SongData("../src/music/anime/34.mp3", ["Fairy Tail","Fairy Tail 2016","Main Theme"]),
+    new SongData("../src/music/anime/35.mp3", ["Madder Sky","Code Geass"]),
+    new SongData("../src/music/anime/36.mp3", ["Death Note","L's Theme"]),
+    new SongData("../src/music/anime/37.mp3", ["Kuroko","Triple Threat","Kuroko no Basket"]),
+    new SongData("../src/music/anime/38.mp3", ["Fairy Tail","Against Magic"]),
+    new SongData("../src/music/anime/39.mp3", ["Fairy Tail","Three Dragon Slayers"]),
+    new SongData("../src/music/anime/40.mp3", ["Fairy Tail","Invoke Magic"]),
+    new SongData("../src/music/anime/41.mp3", ["Parasyte","Hypnotik","Parasyte the Maxim","Kiseiju"]),
+    new SongData("../src/music/anime/42.mp3", ["Parasyte","Next to you","Parasyte the Maxim","Kiseiju"]),
+    new SongData("../src/music/anime/43.mp3", ["Clannad","Hurry, Starfish!"]),
+    new SongData("../src/music/anime/44.mp3", ["Clannad","Roaring Tides"])
     ];
 
 var Remix = [ 
@@ -343,9 +383,10 @@ $(document).ready(function() {
 					document.getElementById("score").innerHTML = score;
 					randomize();
 					$("#Sol").val("");
-					x = Math.floor((Math.random() * vSong.length));
+					x = x + 1;
+					if (x == 20) x = 0;
 					while(vSong[x].used2 == true) {
-						x = Math.floor((Math.random() * vSong.length));
+						x = x + 1;
 					}
 					$("#Song").attr("src", vSong[x].link);
 				}
