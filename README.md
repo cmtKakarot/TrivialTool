@@ -11,4 +11,4 @@ Thanks to anyone who is testing the web. I love you <3
 
 Trivial Tool (c) by Éric López Clavero
 
-Trivial Tool is licensed under a Creative Comons Atribution-ShareAlike 3.0 Unported License.
+Trivial Tool is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
