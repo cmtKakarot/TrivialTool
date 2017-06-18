@@ -400,10 +400,7 @@ $(document).ready(function() {
                 --vSong[x].time;
                 document.getElementById("demo").innerHTML = vSong[x].time;
                 if(vSong[x].time <= 0) {
-					 vSong[x].used2 = true;
-					 ++Nused;
-					 score = score - 30;
-					 $("#Skip").click();
+					 $("#Discard").click();
 				 }
             },1000);
             $("#Song").prop("volume", 0.25);
