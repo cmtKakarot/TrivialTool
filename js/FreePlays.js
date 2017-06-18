@@ -112,11 +112,18 @@ var Remix = [
     new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"])
     ];
     
-var NintendoNew = [
-    new SongData("../src/music/newtendo/1.mp3", ["Fountain of Dreams","The Fountain of Dreams","Super Smash Bros Melee","Melee"]),
-    new SongData("../src/music/newtendo/2.mp3", ["Xenoblade Chronicles X","Xenoblade X","Uncontrollable"]),
-    new SongData("../src/music/newtendo/3.mp3", ["Dual Destinies","Keep Pressing On","Pursuit","Phoenix Wright 5", "Phoenix Wright Dual Destinies", "Phoenix Wright: Dual Destinies"]),
-    new SongData("../src/music/newtendo/4.mp3", ["Battlefield","Super Smash Bros Brawl","Brawl","SSBB"])
+var Mario = [
+    new SongData("../src/music/mario/1.mp3", ["Jump Up, Super Star!","Super Mario Odyssey","Mario Odyssey"]),
+    new SongData("../src/music/mario/2.mp3", ["Delfino Plaza","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/3.mp3", ["Bianco Hills","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/4.mp3", ["A Secret Course","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/5.mp3", ["Ricco Harbor","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/6.mp3", ["Into the Tunnels","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/7.mp3", ["Mecha-Bowser","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/8.mp3", ["The Manta Storm","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/9.mp3", ["Corona Mountain","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/10.mp3", ["Final Bowser Battle","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/10.mp3", ["Staff Roll","Super Mario Sunshine","Mario Sunshine"]),
     ];
     
 var Touhou = [
@@ -329,7 +336,7 @@ function ResetGame() {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,NintendoNew,Touhou,Kirby,Pokemon,Square];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square];
 var Nused = 0;
 var Ntot;
 var vec = [];
