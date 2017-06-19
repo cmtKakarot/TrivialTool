@@ -269,6 +269,12 @@ var Sonic = [
     new SongData("http://trivial2.net16.net/src/music/sonic/12.mp3", ["Sonic Unleashed","Spagonia Day","Rooftop Run"]),
     new SongData("http://trivial2.net16.net/src/music/sonic/13.mp3", ["Sonic Adventure 2","It doesn't matter"]),
     new SongData("http://trivial2.net16.net/src/music/sonic/14.mp3", ["Sonic and The Black Knight","Sonic & The Black Knight","Knights of the wind", "Sonic Black Knight"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/15.mp3", ["Sonic Adventure 2","That's the way I like it","Metal Harbor"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/16.mp3", ["Sonic Generations","Crisis City (Modern)"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/17.mp3", ["Sonic The Hedgehog 2006","Sonic The Hedgehog","Sonic 2006","Dreams of an Absolution"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/18.mp3", ["Sonic Unleashed","Perfect Dark Gaia"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/19.mp3", ["Sonic Adventure 2 Battle","Sonic Vs Shadow"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/11.mp3", ["Sonic Heroes","What I'm made of"])
     ];
     
 var SpikeChun = [
@@ -395,7 +401,7 @@ function check_valid() {
 			++Nused;
 			if (vSong[x].time >= 83) score = score + (100 * multiplier * combo);
 			else score = score + (vSong[x].time * multiplier * combo);
-            combo = combo + 0.5
+            combo = combo + 1;
 			document.getElementById("score").innerHTML = score;
 			vSong[x].used2 = true;
 			x = Math.floor((Math.random() * vSong.length));
