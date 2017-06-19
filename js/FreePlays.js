@@ -306,10 +306,10 @@ var SpikeChun = [
 	new SongData("../src/music/spikechun/28.mp3", ["Danganronpa 2","Ikoroshia"]),
 	new SongData("../src/music/spikechun/29.mp3", ["Danganronpa 2","Dive Drive"]),
 	new SongData("../src/music/spikechun/30.mp3", ["Danganronpa 2","Welcome to DANGAN Island"]),
-	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Wonderful Dead"]),
-	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Welcome to TOWA Tower"]),
-	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Warriors of Hope"]),
-	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Alice in the Childrens Land"])
+	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Wonderful Dead"]),
+	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Welcome to TOWA Tower"]),
+	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Warriors of Hope"]),
+	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Alice in the Childrens Land"])
 	];
    
 var	Missclick = [

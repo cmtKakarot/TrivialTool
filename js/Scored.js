@@ -308,10 +308,10 @@ var SpikeChun = [
 	new SongData("../src/music/spikechun/28.mp3", ["Danganronpa 2","Ikoroshia"]),
 	new SongData("../src/music/spikechun/29.mp3", ["Danganronpa 2","Dive Drive"]),
 	new SongData("../src/music/spikechun/30.mp3", ["Danganronpa 2","Welcome to DANGAN Island"]),
-	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Wonderful Dead"]),
-	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Welcome to TOWA Tower"]),
-	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Warriors of Hope"]),
-	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Alice in the Childrens Land"])
+	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Wonderful Dead"]),
+	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Welcome to TOWA Tower"]),
+	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Warriors of Hope"]),
+	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Alice in the Childrens Land"])
 	];
   
 var	Missclick = [
@@ -396,6 +396,7 @@ function check_valid() {
 	var sol = $("#Sol").val();
 	for(k = 0; k < Song.sols.length; k++) {
 		if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
+			comboBreak = 0;
 			objection = false;
 			++Hhit;
 			++Nused;
@@ -416,6 +417,8 @@ function check_valid() {
 		}
 	}
 	if(objection) {
+		++comboBreak;
+		if(comboBreak == 3) combo = 1;
 		$("#Sol").val("");
 		var h = Math.floor((Math.random() * Missclick.length))
 		$("#errS").attr("src", Missclick[h].link);
@@ -443,6 +446,7 @@ var multiplier = 1;
 var interval
 var vSong = [];
 var combo = 1;
+var comboBreak = 0;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
