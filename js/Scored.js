@@ -55,21 +55,21 @@ var Atlus = [
     new SongData("../src/music/atlus/33.mp3", ["Persona 4","A New World Fool"]),
     new SongData("../src/music/atlus/34.mp3", ["Persona 5","The days when my mother was there"]),
     new SongData("../src/music/atlus/35.mp3", ["Persona 3","Master of Tartarus"]),
-    new SongData("../src/music/atlus/34.mp3", ["Persona 5","Blooming Villain"]),
+    new SongData("../src/music/atlus/34.mp3", ["Persona 5","Blooming Villain"])
     ];
     
 var Anime = [
     new SongData("../src/music/anime/1.mp3", ["Haikyuu","Team Of Soil Fertility","Chimu No Jiriki","Haikyu"]),
-    new SongData("../src/music/anime/2.mp3", ["Kuroko","Gyakushuu","Kuroko no Basket"]),
+    new SongData("../src/music/anime/2.mp3", ["Kuroko no Basket","Gyakushuu","Kuroko no Basuke"]),
     new SongData("../src/music/anime/3.mp3", ["Clannad After Story","Toki Wo Kizamu Uta"]),
     new SongData("../src/music/anime/4.mp3", ["your name","Kimi no Na wa", "Zen Zen Zense"]),
     new SongData("../src/music/anime/5.mp3", ["Shingeki no Kyojin","Attack on Titan","Wings of Freedom"]),
-    new SongData("../src/music/anime/6.mp3", ["Katekyo Hitman Reborn","Katekyo Hitman Reborn!","Tsuna Awakens"]),
+    new SongData("../src/music/anime/6.mp3", ["Katekyo Hitman Reborn!","Katekyo Hitman Reborn","Tsuna Awakens"]),
     new SongData("../src/music/anime/7.mp3", ["Full Metal Alchemist: Brotherhood","FMA: B","Shunkan Sentimental","FMAB"]),
-    new SongData("../src/music/anime/8.mp3", ["Kuroko","Sessen","Kuroko no Basket"]),
-    new SongData("../src/music/anime/9.mp3", ["Kuroko","Can do it","Kuroko no Basket"]),
+    new SongData("../src/music/anime/8.mp3", ["Kuroko no Basket","Sessen","Kuroko no Basuke"]),
+    new SongData("../src/music/anime/9.mp3", ["Kuroko no Basket","Can do it","Kuroko no Basuke"]),
     new SongData("../src/music/anime/10.mp3", ["Haikyuu","Imagination","Haikyu"]),
-    new SongData("../src/music/anime/11.mp3", ["Before my body is dry","Kill la Kill"]),
+    new SongData("../src/music/anime/11.mp3", ["Kill la Kill","Before my body is dry"]),
     new SongData("../src/music/anime/12.mp3", ["Boku no Hero Academia","My Hero Academy","You say run"]),
     new SongData("../src/music/anime/13.mp3", ["Boku no Hero Academia","My Hero Academy","You can become a Hero"]),
     new SongData("../src/music/anime/14.mp3", ["One Piece","Overtaken"]),
@@ -89,13 +89,13 @@ var Anime = [
     new SongData("../src/music/anime/28.mp3", ["One Piece","After Eating, the Grand Line"]),
     new SongData("../src/music/anime/29.mp3", ["No Game No Life","All of you is all of me"]),
     new SongData("../src/music/anime/30.mp3", ["One Piece","World's number one oden store"]),
-    new SongData("../src/music/anime/31.mp3", ["Kuroko","Under the hoop","Kuroko no Basket"]),
+    new SongData("../src/music/anime/31.mp3", ["Kuroko no Basket","Under the Hoop","Kuroko no Basuke"]),
     new SongData("../src/music/anime/32.mp3", ["Shingeki no Kyojin","Attack on Titan","Armored Titan"]),
     new SongData("../src/music/anime/33.mp3", ["Shingeki no Kyojin","Attack on Titan","XL-TT"]),
     new SongData("../src/music/anime/34.mp3", ["Fairy Tail","Fairy Tail 2016","Main Theme"]),
-    new SongData("../src/music/anime/35.mp3", ["Madder Sky","Code Geass"]),
+    new SongData("../src/music/anime/35.mp3", ["Code Geass","Madder Sky"]),
     new SongData("../src/music/anime/36.mp3", ["Death Note","L's Theme"]),
-    new SongData("../src/music/anime/37.mp3", ["Kuroko","Triple Threat","Kuroko no Basket"]),
+    new SongData("../src/music/anime/37.mp3", ["Kuroko no Basket","Triple Threat","Kuroko no Basuke"]),
     new SongData("../src/music/anime/38.mp3", ["Fairy Tail","Against Magic"]),
     new SongData("../src/music/anime/39.mp3", ["Fairy Tail","Three Dragon Slayers"]),
     new SongData("../src/music/anime/40.mp3", ["Fairy Tail","Invoke Magic"]),
@@ -106,73 +106,73 @@ var Anime = [
     ];
 
 var Remix = [ 
-    new SongData("../src/music/remix/1.mp3", ["Megalovania","Undertale"]),
+    new SongData("../src/music/remix/1.mp3", ["Undertale","Megalovania"]),
     new SongData("../src/music/remix/2.mp3", ["Undertale","Heartache"]),
-    new SongData("../src/music/remix/3.mp3", ["Native Faith","Suwako's Theme", "Touhou 10"]),
-    new SongData("../src/music/remix/4.mp3", ["Forest Maze","Super Mario RPG", "Mario RPG"]),
+    new SongData("../src/music/remix/3.mp3", ["Touhou 10","Suwako's Theme", "Native Faith"]),
+    new SongData("../src/music/remix/4.mp3", ["Super Mario RPG","Forest Maze", "Mario RPG"]),
     new SongData("../src/music/remix/5.mp3", ["Final Fantasy IX","Final Fantasy 9", "Battle 1", "You're not alone"]),
     new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"])
     ];
     
 var Mario = [
-    new SongData("../src/music/mario/1.mp3", ["Jump Up, Super Star!","Super Mario Odyssey","Mario Odyssey"]),
-    new SongData("../src/music/mario/2.mp3", ["Delfino Plaza","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/3.mp3", ["Bianco Hills","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/4.mp3", ["A Secret Course","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/5.mp3", ["Ricco Harbor","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/6.mp3", ["Into the Tunnels","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/7.mp3", ["Mecha-Bowser","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/8.mp3", ["The Manta Storm","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/9.mp3", ["Corona Mountain","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/10.mp3", ["Final Bowser Battle","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/11.mp3", ["Staff Roll","Super Mario Sunshine","Mario Sunshine"]),
-    new SongData("../src/music/mario/12.mp3", ["Overworld","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/13.mp3", ["Athletic","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/14.mp3", ["Underwater","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/15.mp3", ["Cursed Kings","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/17.mp3", ["Airship Theme","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/18.mp3", ["World Map 1","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/19.mp3", ["World Map 4","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/20.mp3", ["Hammer Bros","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/21.mp3", ["Bowser Battle","Super Mario Bros 3","Mario Bros 3"]),
-    new SongData("../src/music/mario/22.mp3", ["Starbit Festival","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/23.mp3", ["Batterlock","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/24.mp3", ["Floater Land","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/25.mp3", ["To the Gateway","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/26.mp3", ["Hell Prominence","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/27.mp3", ["Egg Galaxy","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/28.mp3", ["Stardust Road","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/29.mp3", ["Wind Garden","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/30.mp3", ["Figth to the Death at Koopa's Fort","Super Mario Galaxy","Mario Galaxy"]),
-    new SongData("../src/music/mario/31.mp3", ["Staff Roll","Super Mario Galaxy","Mario Galaxy"]),
+    new SongData("../src/music/mario/1.mp3", ["Super Mario Odyssey","Jump Up, Super Star!","Mario Odyssey"]),
+    new SongData("../src/music/mario/2.mp3", ["Super Mario Sunshine","Delfino Plaza","Mario Sunshine"]),
+    new SongData("../src/music/mario/3.mp3", ["Super Mario Sunshine","Bianco Hills","Super Mario Sunshine","Mario Sunshine"]),
+    new SongData("../src/music/mario/4.mp3", ["Super Mario Sunshine","A Secret Course","Mario Sunshine"]),
+    new SongData("../src/music/mario/5.mp3", ["Super Mario Sunshine","Ricco Harbor","Mario Sunshine"]),
+    new SongData("../src/music/mario/6.mp3", ["Super Mario Sunshine","Into the Tunnels","Mario Sunshine"]),
+    new SongData("../src/music/mario/7.mp3", ["Super Mario Sunshine","Mecha-Bowser","Mario Sunshine"]),
+    new SongData("../src/music/mario/8.mp3", ["Super Mario Sunshine","The Manta Storm","Mario Sunshine"]),
+    new SongData("../src/music/mario/9.mp3", ["Super Mario Sunshine","Corona Mountain","Mario Sunshine"]),
+    new SongData("../src/music/mario/10.mp3", ["Super Mario Sunshine","Final Bowser Battle","Mario Sunshine"]),
+    new SongData("../src/music/mario/11.mp3", ["Super Mario Sunshine","Staff Roll","Mario Sunshine"]),
+    new SongData("../src/music/mario/12.mp3", ["Super Mario Bros 3","Overworld","Mario Bros 3"]),
+    new SongData("../src/music/mario/13.mp3", ["Super Mario Bros 3","Athletic","Mario Bros 3"]),
+    new SongData("../src/music/mario/14.mp3", ["Super Mario Bros 3","Underwater","Mario Bros 3"]),
+    new SongData("../src/music/mario/15.mp3", ["Super Mario Bros 3","Cursed Kings","Mario Bros 3"]),
+    new SongData("../src/music/mario/17.mp3", ["Super Mario Bros 3","Airship Theme","Mario Bros 3"]),
+    new SongData("../src/music/mario/18.mp3", ["Super Mario Bros 3","World Map 1","Mario Bros 3"]),
+    new SongData("../src/music/mario/19.mp3", ["Super Mario Bros 3","World Map 4","Mario Bros 3"]),
+    new SongData("../src/music/mario/20.mp3", ["Super Mario Bros 3","Hammer Bros","Mario Bros 3"]),
+    new SongData("../src/music/mario/21.mp3", ["Super Mario Bros 3","Bowser Battle","Mario Bros 3"]),
+    new SongData("../src/music/mario/22.mp3", ["Super Mario Galaxy","Starbit Festival","Mario Galaxy"]),
+    new SongData("../src/music/mario/23.mp3", ["Super Mario Galaxy","Batterlock","Mario Galaxy"]),
+    new SongData("../src/music/mario/24.mp3", ["Super Mario Galaxy","Floater Land","Mario Galaxy"]),
+    new SongData("../src/music/mario/25.mp3", ["Super Mario Galaxy","To the Gateway","Mario Galaxy"]),
+    new SongData("../src/music/mario/26.mp3", ["Super Mario Galaxy","Hell Prominence","Mario Galaxy"]),
+    new SongData("../src/music/mario/27.mp3", ["Super Mario Galaxy","Egg Galaxy","Mario Galaxy"]),
+    new SongData("../src/music/mario/28.mp3", ["Super Mario Galaxy","Stardust Road","Mario Galaxy"]),
+    new SongData("../src/music/mario/29.mp3", ["Super Mario Galaxy","Wind Garden","Mario Galaxy"]),
+    new SongData("../src/music/mario/30.mp3", ["Super Mario Galaxy","Figth to the Death at Koopa's Fort","Mario Galaxy"]),
+    new SongData("../src/music/mario/31.mp3", ["Super Mario Galaxy","Staff Roll","Mario Galaxy"]),
     ];
     
 var Touhou = [
-    new SongData("../src/music/touhou/1.mp3", ["UN OWEN WAS HER","U.N. OWEN WAS HER?","Flandre's Theme","The Embodiment of Scarlet Devil","Touhou 6"]),
-    new SongData("../src/music/touhou/2.mp3", ["The Prismriver Sisters' Theme","Prismriver Sisters' Theme","Phantom Ensemble","Touhou 7"]),
-    new SongData("../src/music/touhou/3.mp3", ["Yukari's Theme","Necrofantasia","Perfect Cherry Blossom","Touhou 7"]),
-    new SongData("../src/music/touhou/4.mp3", ["Demystify Feast","Touhou 7.5","Immaterial and Missing Power"]),
-    new SongData("../src/music/touhou/5.mp3", ["Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night","Touhou 8"]),
-    new SongData("../src/music/touhou/6.mp3", ["Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night","Touhou 8"]),
-    new SongData("../src/music/touhou/7.mp3", ["Mokou's Theme","Reach for the moon","Inmortal smoke","Imperishable Night","Touhou 8"]),
-    new SongData("../src/music/touhou/8.mp3", ["Road of the Apotropaic God","Dark Road","Mountain of Faith","Touhou 10"]),
-    new SongData("../src/music/touhou/9.mp3", ["Nitori's Theme","The Candid Friend","Candid Friend","Mountain of Faith","Touhou 10"]),
-    new SongData("../src/music/touhou/10.mp3", ["Fires of Hokkai","Touhou 12","Undefined Fantastic Object"]),
-    new SongData("../src/music/touhou/11.mp3", ["Suwako's Theme","Touhou 10","Mountain of Faith","Native Faith"]),
-    new SongData("../src/music/touhou/12.mp3", ["Sakuya's Theme","Flowering Night","Phantasmagoria of Flower View","Touhou 9"]),
-    new SongData("../src/music/touhou/13.mp3", ["Utsuho Reiuji's Theme","Solar Sect of Mystic Wisdom","Nuclear Fusion","Subterranean Animism","Touhou 11"]),
-    new SongData("../src/music/touhou/14.mp3", ["Bad Apple","Touhou 4","Lotus Land Story"])
+    new SongData("../src/music/touhou/1.mp3", ["Touhou 6","UN OWEN WAS HER","U.N. OWEN WAS HER?","Flandre's Theme","The Embodiment of Scarlet Devil"]),
+    new SongData("../src/music/touhou/2.mp3", ["Touhou 7","The Prismriver Sisters' Theme","Prismriver Sisters' Theme","Phantom Ensemble"]),
+    new SongData("../src/music/touhou/3.mp3", ["Touhou 7","Yukari's Theme","Necrofantasia","Perfect Cherry Blossom"]),
+    new SongData("../src/music/touhou/4.mp3", ["Touhou 7.5","Demystify Feast","Immaterial and Missing Power"]),
+    new SongData("../src/music/touhou/5.mp3", ["Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
+    new SongData("../src/music/touhou/6.mp3", ["Touhou 8","Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night","Touhou 8"]),
+    new SongData("../src/music/touhou/7.mp3", ["Touhou 8","Mokou's Theme","Reach for the moon","Inmortal smoke","Imperishable Night",]),
+    new SongData("../src/music/touhou/8.mp3", ["Touhou 10","Road of the Apotropaic God","Dark Road","Mountain of Faith"]),
+    new SongData("../src/music/touhou/9.mp3", ["Touhou 10","Nitori's Theme","The Candid Friend","Candid Friend","Mountain of Faith"]),
+    new SongData("../src/music/touhou/10.mp3", ["Touhou 12","Fires of Hokkai","Undefined Fantastic Object"]),
+    new SongData("../src/music/touhou/11.mp3", ["Touhou 10","Suwako's Theme","Mountain of Faith","Native Faith"]),
+    new SongData("../src/music/touhou/12.mp3", ["Touhou 9","Sakuya's Theme","Flowering Night","Phantasmagoria of Flower View"]),
+    new SongData("../src/music/touhou/13.mp3", ["Touhou 11","Utsuho Reiuji's Theme","Solar Sect of Mystic Wisdom","Nuclear Fusion","Subterranean Animism"]),
+    new SongData("../src/music/touhou/14.mp3", ["Touhou 4","Bad Apple","Lotus Land Story"])
     ];
     
 var Kirby = [
-	new SongData("../src/music/kirby/1.mp3", ["C-R-O-W-N-E-D","CROWNED","Kirby's return to dream land","Kirby's return to dreamland"]),
-    new SongData("../src/music/kirby/2.mp3", ["Masked Dedede","Dedede's Royal Payback","Kirby triple deluxe"]),
-    new SongData("../src/music/kirby/3.mp3", ["The World to win","Kirby triple deluxe"]),
-    new SongData("../src/music/kirby/4.mp3", ["Green Greens","Kirby's Dream Land","Kirby's DreamLand"]),
-    new SongData("../src/music/kirby/5.mp3", ["Mt. Dedede","Kirby's Dream Land","Kirby's DreamLand"]),
-    new SongData("../src/music/kirby/6.mp3", ["Gourmet Race","Kirby Super Star"]),
-    new SongData("../src/music/kirby/7.mp3", ["Gourmet Race","Kirby 64: The Crystal Shards", "Kirby 64", "Kirby64"]),
-    new SongData("../src/music/kirby/8.mp3", ["Pop Star","Kirby 64: The Crystal Shards", "Kirby 64", "Kirby64"])
+	new SongData("../src/music/kirby/1.mp3", ["Kirby's return to dream land","C-R-O-W-N-E-D","CROWNED","Kirby's return to dreamland"]),
+    new SongData("../src/music/kirby/2.mp3", ["Kirby triple deluxe","Masked Dedede","Dedede's Royal Payback"]),
+    new SongData("../src/music/kirby/3.mp3", ["Kirby triple deluxe","The World to win"]),
+    new SongData("../src/music/kirby/4.mp3", ["Kirby's Dream Land","Green Greens","Kirby's DreamLand"]),
+    new SongData("../src/music/kirby/5.mp3", ["Kirby's Dream Land","Mt. Dedede","Kirby's DreamLand"]),
+    new SongData("../src/music/kirby/6.mp3", ["Kirby Super Star","Gourmet Race"]),
+    new SongData("../src/music/kirby/7.mp3", ["Kirby 64: The Crystal Shards","Gourmet Race", "Kirby 64", "Kirby64"]),
+    new SongData("../src/music/kirby/8.mp3", ["Kirby 64: The Crystal Shards","Pop Star","Kirby 64", "Kirby64"])
 	];
     
 var Pokemon = [
@@ -289,7 +289,7 @@ function act_catV() {
 function show_res() {
 	$("#Song").trigger("pause");
 	$(".game").hide();
-	$(".suck").hide();
+	$(".suck").show();
 	clearInterval(interval)
 	document.getElementById("score2").innerHTML = score;
 	var HhitS;
@@ -322,8 +322,7 @@ function InitvSong() {
 
 function show_sol() {
 	$(".suck").show();
-	solr = Math.floor((Math.random() * vSong[x].sols.length));
-	document.getElementById("Last").innerHTML = vSong[x].sols[solr];
+	document.getElementById("Last").innerHTML = vSong[x].sols[0];
 }
 
 function check_valid() {
@@ -385,56 +384,26 @@ var vSong = [];
 //---------------------------------------------------------------------------------------
 
 $(document).ready(function() {
-		$(".game").hide()
-        $("#Acc").click(function() {
-			var h2 = Math.floor((Math.random() * Ganbatte.length))
-			$("#Ganbatte").attr("src", Ganbatte[h2].link);
-            vec = act_catV();
-            InitvSong();
-            multiplier = (vec.length)/(CategoryMatrix.length);
-            $(".cat").hide();
-            document.getElementById("score").innerHTML = score;
-			x = Math.floor((Math.random() * vSong.length));
-            $(".game").show();
-            interval = setInterval(function() {
-                --vSong[x].time;
-                document.getElementById("demo").innerHTML = vSong[x].time;
-                if(vSong[x].time <= 0) {
-					 $("#Discard").click();
-				 }
-            },1000);
-            $("#Song").prop("volume", 0.25);
-            $("#Song").attr("src", vSong[x].link);
-            $("#Skip").click(function() {
-				if (Nused == 20) show_res();
-				else {
-					document.getElementById("score").innerHTML = score;
-					randomize();
-					$("#Sol").val("");
-					x = x + 1;
-					if (x == 20) x = 0;
-					while(vSong[x].used2 == true) {
-						x = x + 1;
-					}
-					$("#Song").attr("src", vSong[x].link);
-				}
-            });
-            $("#Discard").click(function() {
-				score = score - 30;
-				++Nused;
-				vSong[x].used2 = true;
-				show_sol();
-				if (Nused == 20) show_res();
-				else {
-					document.getElementById("score").innerHTML = score;
-					x = Math.floor((Math.random() * vSong.length));
-					$("#Sol").val("");
-					while(vSong[x].used2 == true) {
-						x = Math.floor((Math.random() * vSong.length));
-					}
-					$("#Song").attr("src", vSong[x].link);
-				}
-            });
+	$(".game").hide()
+	$("#Acc").click(function() {
+		var h2 = Math.floor((Math.random() * Ganbatte.length))
+		$("#Ganbatte").attr("src", Ganbatte[h2].link);
+		vec = act_catV();
+		InitvSong();
+		multiplier = (vec.length)/(CategoryMatrix.length);
+		$(".cat").hide();
+		document.getElementById("score").innerHTML = score;
+		x = Math.floor((Math.random() * vSong.length));
+		$(".game").show();
+		interval = setInterval(function() {
+			--vSong[x].time;
+			document.getElementById("demo").innerHTML = vSong[x].time;
+			if(vSong[x].time <= 0) {
+				 $("#Discard").click();
+			 }
+		},1000);
+		$("#Song").prop("volume", 0.25);
+		$("#Song").attr("src", vSong[x].link);
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
@@ -444,5 +413,35 @@ $(document).ready(function() {
     });
     $("#Reset").click(function(){
 		$(".cat").show();
+	});
+	$("#Skip").click(function() {
+		if (Nused == 20) show_res();
+		else {
+			document.getElementById("score").innerHTML = score;
+			randomize();
+			$("#Sol").val("");
+			x = x + 1;
+			if (x == 20) x = 0;
+			while(vSong[x].used2 == true) {
+				x = x + 1;
+			}
+			$("#Song").attr("src", vSong[x].link);
+		}
+	});
+	$("#Discard").click(function() {
+		score = score - 30;
+		++Nused;
+		vSong[x].used2 = true;
+		show_sol();
+		if (Nused == 20) show_res();
+		else {
+			document.getElementById("score").innerHTML = score;
+			x = Math.floor((Math.random() * vSong.length));
+			$("#Sol").val("");
+			while(vSong[x].used2 == true) {
+				x = Math.floor((Math.random() * vSong.length));
+			}
+			$("#Song").attr("src", vSong[x].link);
+		}
 	});
 });
