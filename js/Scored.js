@@ -152,7 +152,7 @@ var Touhou = [
     new SongData("../src/music/touhou/2.mp3", ["Touhou 7","The Prismriver Sisters' Theme","Prismriver Sisters' Theme","Phantom Ensemble"]),
     new SongData("../src/music/touhou/3.mp3", ["Touhou 7","Yukari's Theme","Necrofantasia","Perfect Cherry Blossom"]),
     new SongData("../src/music/touhou/4.mp3", ["Touhou 7.5","Demystify Feast","Immaterial and Missing Power"]),
-    new SongData("../src/music/touhou/5.mp3", ["Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
+    new SongData("../src/music/touhou/5.mp3", ["Touhou 10","Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
     new SongData("../src/music/touhou/6.mp3", ["Touhou 8","Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night","Touhou 8"]),
     new SongData("../src/music/touhou/7.mp3", ["Touhou 8","Mokou's Theme","Reach for the moon","Inmortal smoke","Imperishable Night",]),
     new SongData("../src/music/touhou/8.mp3", ["Touhou 10","Road of the Apotropaic God","Dark Road","Mountain of Faith"]),
@@ -252,7 +252,24 @@ var	Square = [
     new SongData("../src/music/square/21.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Jenova Absolute"]),
     new SongData("../src/music/square/22.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight further"])
     ];
-	
+    
+var Sonic = [
+    new SongData("http://trivial2.net16.net/src/music/sonic/1.mp3", ["Sonic The Hedgehog 2006","Sonic The Hedgehog","Sonic 2006","Solaris Phase 2"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/2.mp3", ["Sonic Generations","Rooftop Run (Modern)"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/3.mp3", ["Sonic Generations","Rooftop Run (Classic)"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/4.mp3", ["Sonic Adventure 2","Escape From the City"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/5.mp3", ["Sonic Adventure 2 Battle","Live and Learn"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/6.mp3", ["Sonic Colors","Reach for the stars"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/7.mp3", ["Sonic Colors","Final Boss Phase 2"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/8.mp3", ["Sonic Generations","City Escape (Modern)"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/9.mp3", ["Sonic The Hedgehog 3 & Knuckles","Sonic The Hedgehog 3","Sonic 3","Ice Cap"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/10.mp3", ["Sonic The Hedgehog","Sonic 1","Metropolis Zone"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/11.mp3", ["Sonic Heroes","Sonic Heroes Theme"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/12.mp3", ["Sonic Unleashed","Spagonia Day","Rooftop Run"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/13.mp3", ["Sonic Adventure 2","It doesn't matter"]),
+    new SongData("http://trivial2.net16.net/src/music/sonic/14.mp3", ["Sonic and The Black Knight","Sonic & The Black Knight","Knights of the wind", "Sonic Black Knight"]),
+    ];
+    
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),
@@ -336,8 +353,9 @@ function check_valid() {
 			objection = false;
 			++Hhit;
 			++Nused;
-			if (vSong[x].time >= 83) score = score + (100 * multiplier);
-			else score = score + (vSong[x].time * multiplier);
+			if (vSong[x].time >= 83) score = score + (100 * multiplier * combo);
+			else score = score + (vSong[x].time * multiplier * combo);
+            combo = combo + 0.5
 			document.getElementById("score").innerHTML = score;
 			vSong[x].used2 = true;
 			x = Math.floor((Math.random() * vSong.length));
@@ -378,6 +396,7 @@ var solr = 0;
 var multiplier = 1;
 var interval
 var vSong = [];
+var combo = 1;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -430,6 +449,7 @@ $(document).ready(function() {
 	});
 	$("#Discard").click(function() {
 		score = score - 30;
+        combo = 1;
 		++Nused;
 		vSong[x].used2 = true;
 		show_sol();
