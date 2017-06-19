@@ -1,6 +1,6 @@
 body {
 	width: 100%;
-	background-color: pink;
+	background-color: black;
 }
 
 button {
@@ -90,4 +90,21 @@ p {
 }
 #Square {
 	background-image: url(../src/images/cat/square.png);
+}
+#SpikeChun {
+	background-image: url(../src/images/cat/spikechun.png);
+}
+#Sonic {
+	background-image: url(../src/images/cat/sonic.png);
+}
+
+#Acc {
+  	display: inline-block;
+	width: 25%;
+	background-image: url(../src/images/bttns/start.png);
+}
+#Reset {
+  	display: inline-block;
+	width: 25%;
+	background-image: url(../src/images/bttns/reset.png);
 }

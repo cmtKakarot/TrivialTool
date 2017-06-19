@@ -269,6 +269,43 @@ var Sonic = [
     new SongData("http://trivial2.net16.net/src/music/sonic/14.mp3", ["Sonic and The Black Knight","Sonic & The Black Knight","Knights of the wind", "Sonic Black Knight"]),
     ];
     
+var SpikeChun = [
+	new SongData("../src/music/spikechun/1.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Main Theme"]),
+	new SongData("../src/music/spikechun/2.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Unary Game"]),
+	new SongData("../src/music/spikechun/3.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Binary Game"]),
+	new SongData("../src/music/spikechun/4.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Riddle and Puzzle"]),
+	new SongData("../src/music/spikechun/5.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Trepidation"]),
+	new SongData("../src/music/spikechun/6.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Morphogenetic Sorrow"]),
+	new SongData("../src/music/spikechun/7.mp3", ["Virtue's Last Reward","VLR","Ambidexterity"]),
+	new SongData("../src/music/spikechun/8.mp3", ["Virtue's Last Reward","VLR","Pantry"]),
+	new SongData("../src/music/spikechun/9.mp3", ["Virtue's Last Reward","VLR","Sinesterness"]),
+	new SongData("../src/music/spikechun/10.mp3", ["Virtue's Last Reward","VLR","Placidity"]),
+	new SongData("../src/music/spikechun/11.mp3", ["Virtue's Last Reward","VLR","Strain"]),
+	new SongData("../src/music/spikechun/12.mp3", ["Virtue's Last Reward","VLR","Confession"]),
+	new SongData("../src/music/spikechun/13.mp3", ["Virtue's Last Reward","VLR","Clarification"]),
+	new SongData("../src/music/spikechun/14.mp3", ["Virtue's Last Reward","VLR","Blue Bird"]),
+	new SongData("../src/music/spikechun/15.mp3", ["Zero Time Dilemma","ZTD","Trash Disposal"]),
+	new SongData("../src/music/spikechun/16.mp3", ["Zero Time Dilemma","ZTD","Make your decision"]),
+	new SongData("../src/music/spikechun/17.mp3", ["Zero Time Dilemma","ZTD","Reminiscence"]),
+	new SongData("../src/music/spikechun/18.mp3", ["Zero Time Dilemma","ZTD","Extreme Urgency"]),
+	new SongData("../src/music/spikechun/19.mp3", ["Danganronpa","Punishment"]),
+	new SongData("../src/music/spikechun/20.mp3", ["Danganronpa","Beautiful days"]),
+	new SongData("../src/music/spikechun/21.mp3", ["Danganronpa","Class trial"]),
+	new SongData("../src/music/spikechun/22.mp3", ["Danganronpa","Distrust"]),
+	new SongData("../src/music/spikechun/23.mp3", ["Danganronpa","Welcome to despair Academy"]),
+	new SongData("../src/music/spikechun/24.mp3", ["Danganronpa","Beautiful Morning"]),
+	new SongData("../src/music/spikechun/25.mp3", ["Danganronpa","Climaz Reasoning"]),
+	new SongData("../src/music/spikechun/26.mp3", ["Danganronpa 2","Beautiful Ruin"]),
+	new SongData("../src/music/spikechun/27.mp3", ["Danganronpa 2","Monomi's Lesson"]),
+	new SongData("../src/music/spikechun/28.mp3", ["Danganronpa 2","Ikoroshia"]),
+	new SongData("../src/music/spikechun/29.mp3", ["Danganronpa 2","Dive Drive"]),
+	new SongData("../src/music/spikechun/30.mp3", ["Danganronpa 2","Welcome to DANGAN Island"]),
+	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Wonderful Dead"]),
+	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Welcome to TOWA Tower"]),
+	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Warriors of Hope"]),
+	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","DUDG","Alice in the Childrens Land"])
+	];
+   
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),
@@ -307,6 +344,8 @@ function act_catV() {
     if (!$("#Kirby").is(":hidden")) vec.push(5);
     if (!$("#Pokemon").is(":hidden")) vec.push(6);
     if (!$("#Square").is(":hidden")) vec.push(7);
+    if (!$("#SpikeChun").is(":hidden")) vec.push(8);
+    if (!$("#Sonic").is(":hidden")) vec.push(9);
     return vec;
 }
 
@@ -377,7 +416,7 @@ function ResetGame() {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic];
 var Nused = 0;
 var Ntot;
 var vec = [];
