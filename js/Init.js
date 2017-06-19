@@ -1,3 +1,4 @@
+onClick="window.location.reload(true)"
 $(document).ready(function() {
 	$("#freeplay").click(function() {
 		$("#js").attr("src", "Test.js");
