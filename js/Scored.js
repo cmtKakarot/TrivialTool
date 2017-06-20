@@ -122,7 +122,7 @@ var Remix = [
     new SongData("../src/music/remix/4.mp3", ["Super Mario RPG","Forest Maze", "Mario RPG"]),
     new SongData("../src/music/remix/5.mp3", ["Final Fantasy IX","Final Fantasy 9", "Battle 1", "You're not alone"]),
     new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"]),
-    new SongData("../src/music/remix/7.mp3", ["Mario & Luigi: Bowser's Inside Story","Bowser's inside history","The Grand finale", "Mario and Luigi Bowser's Inside Story"]),
+    new SongData("../src/music/remix/7.mp3", ["Kingdom Hearts","Dearly Beloved"]),
     new SongData("../src/music/remix/8.mp3", ["Megaman 2", "Willy Stage"]),
     new SongData("../src/music/remix/9.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The man with the machine gun"]),
     new SongData("../src/music/remix/10.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight"]),

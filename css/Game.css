@@ -98,6 +98,10 @@ p {
 	background-image: url(../src/images/cat/sonic.png);
 }
 
+#K3 {
+	background-image: url(../src/images/cat/k3.png);
+}
+
 #Acc {
   	display: inline-block;
 	width: 25%;

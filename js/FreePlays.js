@@ -119,7 +119,19 @@ var Remix = [
     new SongData("../src/music/remix/3.mp3", ["Touhou 10","Suwako's Theme", "Native Faith"]),
     new SongData("../src/music/remix/4.mp3", ["Super Mario RPG","Forest Maze", "Mario RPG"]),
     new SongData("../src/music/remix/5.mp3", ["Final Fantasy IX","Final Fantasy 9", "Battle 1", "You're not alone"]),
-    new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"])
+    new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"]),
+    new SongData("../src/music/remix/7.mp3", ["Kingdom Hearts","Dearly Beloved"]),
+    new SongData("../src/music/remix/8.mp3", ["Megaman 2", "Willy Stage"]),
+    new SongData("../src/music/remix/9.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The man with the machine gun"]),
+    new SongData("../src/music/remix/10.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight"]),
+    new SongData("../src/music/remix/11.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Force Your Way"]),
+    new SongData("../src/music/remix/12.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X", "Fight With Seymour"]),
+    new SongData("../src/music/remix/13.mp3", ["Kingdom Hearts","Simple and Clean", "Hikari"]),
+    new SongData("../src/music/remix/14.mp3", ["The Legend of Zelda: Ocarina of Time","Ocarina of Time", "Song of Storms"]),
+    new SongData("../src/music/remix/15.mp3", ["Super Mario World", "Overworld"]),
+    new SongData("../src/music/remix/16.mp3", ["Red","Blue","Yellow","RBY","Title Theme"]),
+    new SongData("../src/music/remix/17.mp3", ["The Legend of Zelda: Ocarina of Time","Ocarina of Time", "Lost Woods"]),
+    new SongData("../src/music/remix/18.mp3", ["Donkey Kong 64","DK 64", "DK Rap"])
     ];
     
 var Mario = [
