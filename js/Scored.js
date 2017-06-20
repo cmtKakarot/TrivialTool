@@ -73,11 +73,11 @@ var Anime = [
     new SongData("../src/music/anime/11.mp3", ["Kill la Kill","Before my body is dry"]),
     new SongData("../src/music/anime/12.mp3", ["Boku no Hero Academia","My Hero Academy","You say run"]),
     new SongData("../src/music/anime/13.mp3", ["Boku no Hero Academia","My Hero Academy","You can become a Hero"]),
-    new SongData("../src/music/anime/14.mp3", ["One Piece","Overtaken"]),
-    new SongData("../src/music/anime/15.mp3", ["One Piece","The very very very strongest"]),
-    new SongData("../src/music/anime/16.mp3", ["One Piece","Brand New World"]),
-    new SongData("../src/music/anime/17.mp3", ["One Piece","We go"]),
-    new SongData("../src/music/anime/18.mp3", ["One Piece","Crazy Rainbow Star"]),
+    new SongData("../src/music/anime/14.mp3", ["Naruto Shippuden","Shoryu"]),
+    new SongData("../src/music/anime/15.mp3", ["Bleach","What Can You See In Their Eyes"]),
+    new SongData("../src/music/anime/16.mp3", ["Bleach","Pleasure of Combat"]),
+    new SongData("../src/music/anime/17.mp3", ["Death Parade","Flyers"]),
+    new SongData("../src/music/anime/18.mp3", ["The Melancholy of Haruhi Suzumiya","Haruhi Suzumiya","God Knows"]),
     new SongData("../src/music/anime/19.mp3", ["Mirai Nikki","Battle Theme"]),
     new SongData("../src/music/anime/20.mp3", ["Sword Art Online","SAO","Swordland"]),
     new SongData("../src/music/anime/21.mp3", ["Sword Art Online","SAO","Luminous Sword"]),
@@ -103,7 +103,14 @@ var Anime = [
     new SongData("../src/music/anime/41.mp3", ["Parasyte","Hypnotik","Parasyte the Maxim","Kiseiju"]),
     new SongData("../src/music/anime/42.mp3", ["Parasyte","Next to you","Parasyte the Maxim","Kiseiju"]),
     new SongData("../src/music/anime/43.mp3", ["Clannad","Hurry, Starfish!"]),
-    new SongData("../src/music/anime/44.mp3", ["Clannad","Roaring Tides"])
+    new SongData("../src/music/anime/44.mp3", ["Clannad","Roaring Tides"]),
+    new SongData("../src/music/anime/45.mp3", ["mirai nikki","Minene Uryuu's death"]),
+    new SongData("../src/music/anime/46.mp3", ["Puella Magi Madoka Magica","Sayaka Miki's theme","decretum","madoka magica"]),
+    new SongData("../src/music/anime/47.mp3", ["guilty crown","release my soul"]),
+    new SongData("../src/music/anime/48.mp3", ["guilty crown","the everlasting","everlasting"]),
+    new SongData("../src/music/anime/49.mp3", ["steins;gate","steins gate","gate of steiner"]),
+    new SongData("../src/music/anime/50.mp3", ["steins;gate","steins gate","hacking to the gate"]),
+    new SongData("../src/music/anime/51.mp3", ["tokyo ghoul","glassy sky"])
     ];
 
 var Remix = [ 
@@ -313,7 +320,17 @@ var SpikeChun = [
 	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Warriors of Hope"]),
 	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Alice in the Childrens Land"])
 	];
-  
+
+var K3 = [
+    new SongData("../src/music/k3/1.mp3", ["One Piece","Overtaken"]),
+    new SongData("../src/music/k3/2.mp3", ["One Piece","The very very very strongest"]),
+    new SongData("../src/music/k3/3.mp3", ["One Piece","Brand New World"]),
+    new SongData("../src/music/k3/4.mp3", ["One Piece","We go"]),
+    new SongData("../src/music/k3/5.mp3", ["One Piece","Crazy Rainbow Star"]),
+];
+
+
+
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),
