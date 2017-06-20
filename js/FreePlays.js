@@ -382,7 +382,7 @@ function act_catV() {
     if (!$("#Square").is(":hidden")) vec.push(7);
     if (!$("#SpikeChun").is(":hidden")) vec.push(8);
     if (!$("#Sonic").is(":hidden")) vec.push(9);
-    if (!$("#K3").is(":hidden")) vec.push(10);
+    //if (!$("#K3").is(":hidden")) vec.push(10);
     return vec;
 }
 
