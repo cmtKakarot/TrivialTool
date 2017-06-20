@@ -57,7 +57,8 @@ var Atlus = [
     new SongData("../src/music/atlus/34.mp3", ["Persona 5","The days when my mother was there"]),
     new SongData("../src/music/atlus/35.mp3", ["Persona 3","Master of Tartarus"]),
     new SongData("../src/music/atlus/36.mp3", ["Persona 5","Blooming Villain"]),
-    new SongData("../src/music/atlus/37.mp3", ["Catherine","It's a golden show"])
+    new SongData("../src/music/atlus/37.mp3", ["Catherine","It's a golden show"]),
+    new SongData("../src/music/atlus/38.mp3", ["etrian odyssey 4","etrian odyssey iv","faith is my pillar"])
     ];
     
 var Anime = [
@@ -269,7 +270,7 @@ var	Square = [
     new SongData("../src/music/square/29.mp3", ["Bravely Default: Flying Fairy","bravely default","Wind's Course"]),
     new SongData("../src/music/square/30.mp3", ["Bravely Default: Flying Fairy","bravely default","Conflict's Chime"]),
     new SongData("../src/music/square/31.mp3", ["Bravely Default: Flying Fairy","bravely default","Wicked Flight"]),
-    new SongData("../src/music/square/32.mp3", ["Bravely Default: Flying Fairy","bravely default","Serpent Eating the Ground"])
+    new SongData("../src/music/square/32.mp3", ["Bravely Default: Flying Fairy","bravely default","Serpent Eating the Ground"]),
     new SongData("../src/music/square/33.mp3", ["Bravely Default: Flying Fairy","bravely default","Fighting to the End"])
     ];
     
@@ -375,6 +376,7 @@ function act_catV() {
     if (!$("#Square").is(":hidden")) vec.push(7);
     if (!$("#SpikeChun").is(":hidden")) vec.push(8);
     if (!$("#Sonic").is(":hidden")) vec.push(9);
+    if (!$("#K3").is(":hidden")) vec.push(10);
     return vec;
 }
 
@@ -459,7 +461,7 @@ function check_valid() {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3];
 var Nused = 0;
 var NGo = 0;
 var Hhit = 0;

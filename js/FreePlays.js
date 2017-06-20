@@ -54,7 +54,9 @@ var Atlus = [
     new SongData("../src/music/atlus/33.mp3", ["Persona 4","A New World Fool"]),
     new SongData("../src/music/atlus/34.mp3", ["Persona 5","The days when my mother was there"]),
     new SongData("../src/music/atlus/35.mp3", ["Persona 3","Master of Tartarus"]),
-    new SongData("../src/music/atlus/34.mp3", ["Persona 5","Blooming Villain"])
+    new SongData("../src/music/atlus/36.mp3", ["Persona 5","Blooming Villain"]),
+    new SongData("../src/music/atlus/37.mp3", ["Catherine","It's a golden show"]),
+    new SongData("../src/music/atlus/38.mp3", ["etrian odyssey 4","etrian odyssey iv","faith is my pillar"])
     ];
     
 var Anime = [
@@ -91,7 +93,7 @@ var Anime = [
     new SongData("../src/music/anime/31.mp3", ["Kuroko no Basket","Under the Hoop","Kuroko no Basuke"]),
     new SongData("../src/music/anime/32.mp3", ["Shingeki no Kyojin","Attack on Titan","Armored Titan"]),
     new SongData("../src/music/anime/33.mp3", ["Shingeki no Kyojin","Attack on Titan","XL-TT"]),
-    new SongData("../src/music/anime/34.mp3", ["Fairy Tail","Fairy Tail 2016","Main Theme"]),
+    new SongData("../src/music/anime/34.mp3", ["Fairy Tail","Fairy Tail 2016"]),
     new SongData("../src/music/anime/35.mp3", ["Code Geass","Madder Sky"]),
     new SongData("../src/music/anime/36.mp3", ["Death Note","L's Theme"]),
     new SongData("../src/music/anime/37.mp3", ["Kuroko no Basket","Triple Threat","Kuroko no Basuke"]),
@@ -256,7 +258,18 @@ var	Square = [
     new SongData("../src/music/square/19.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","JENOVA","J-E-N-O-V-A"]),
     new SongData("../src/music/square/20.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Gold Saucer"]),
     new SongData("../src/music/square/21.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Jenova Absolute"]),
-    new SongData("../src/music/square/22.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight further"])
+    new SongData("../src/music/square/22.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight further"]),
+    new SongData("../src/music/square/23.mp3", ["Bravely Second: End Layer","battle against emperor oblivion","Bravely Second"]),
+    new SongData("../src/music/square/24.mp3", ["Bravely Second: End Layer","Bravely Second","anne form 1"]),
+    new SongData("../src/music/square/25.mp3", ["Bravely Default: Flying Fairy","love's vagrant"]),
+    new SongData("../src/music/square/26.mp3", ["Bravely Default: Flying Fairy","bravely default","that person's name is"]),
+    new SongData("../src/music/square/27.mp3", ["Bravely Default: Flying Fairy","bravely default","You're my Hope"]),
+    new SongData("../src/music/square/28.mp3", ["Bravely Default: Flying Fairy","bravely default","Baby Bird"]),
+    new SongData("../src/music/square/29.mp3", ["Bravely Default: Flying Fairy","bravely default","Wind's Course"]),
+    new SongData("../src/music/square/30.mp3", ["Bravely Default: Flying Fairy","bravely default","Conflict's Chime"]),
+    new SongData("../src/music/square/31.mp3", ["Bravely Default: Flying Fairy","bravely default","Wicked Flight"]),
+    new SongData("../src/music/square/32.mp3", ["Bravely Default: Flying Fairy","bravely default","Serpent Eating the Ground"]),
+    new SongData("../src/music/square/33.mp3", ["Bravely Default: Flying Fairy","bravely default","Fighting to the End"])
     ];
     
 var Sonic = [
@@ -283,7 +296,7 @@ var Sonic = [
     ];
     
 var SpikeChun = [
-	new SongData("../src/music/spikechun/1.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Main Theme"]),
+	new SongData("../src/music/spikechun/1.mp3", ["Nine Hours, Nine Persons, Nine Doors","999"]),
 	new SongData("../src/music/spikechun/2.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Unary Game"]),
 	new SongData("../src/music/spikechun/3.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Binary Game"]),
 	new SongData("../src/music/spikechun/4.mp3", ["Nine Hours, Nine Persons, Nine Doors","999","Riddle and Puzzle"]),
@@ -341,7 +354,7 @@ var Ganbatte = [
 	new SoundData("../src/music/other/go3.wav"),
 	new SoundData("../src/music/other/go4.wav")
 	];
-	
+
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
@@ -369,6 +382,7 @@ function act_catV() {
     if (!$("#Square").is(":hidden")) vec.push(7);
     if (!$("#SpikeChun").is(":hidden")) vec.push(8);
     if (!$("#Sonic").is(":hidden")) vec.push(9);
+    if (!$("#K3").is(":hidden")) vec.push(10);
     return vec;
 }
 
@@ -439,7 +453,7 @@ function ResetGame() {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3];
 var Nused = 0;
 var Ntot;
 var vec = [];
