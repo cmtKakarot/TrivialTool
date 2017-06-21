@@ -281,7 +281,20 @@ var	Square = [
     new SongData("../src/music/square/30.mp3", ["Bravely Default: Flying Fairy","bravely default","Conflict's Chime"]),
     new SongData("../src/music/square/31.mp3", ["Bravely Default: Flying Fairy","bravely default","Wicked Flight"]),
     new SongData("../src/music/square/32.mp3", ["Bravely Default: Flying Fairy","bravely default","Serpent Eating the Ground"]),
-    new SongData("../src/music/square/33.mp3", ["Bravely Default: Flying Fairy","bravely default","Fighting to the End"])
+    new SongData("../src/music/square/33.mp3", ["Bravely Default: Flying Fairy","bravely default","Fighting to the End"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Oui are Al Bhed"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Normal Battle"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Calm Before the Storm"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Tidus's Theme"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Rikku's Theme"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Yuna's Theme"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Suteki Da Ne"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Revealed True"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Someday The Dream Will End"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","To Zanarkand"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Sprouting"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Decisive Battle"]),
+    new SongData("../src/music/square/34.mp3", ["Final Fantasy X","Final Fantasy 10", "FF 10","FF X","Blitz Off!"]),
     ];
     
 var Sonic = [
