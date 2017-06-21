@@ -110,7 +110,8 @@ var Anime = [
     new SongData("../src/music/anime/48.mp3", ["guilty crown","the everlasting","everlasting"]),
     new SongData("../src/music/anime/49.mp3", ["steins;gate","steins gate","gate of steiner"]),
     new SongData("../src/music/anime/50.mp3", ["steins;gate","steins gate","hacking to the gate"]),
-    new SongData("../src/music/anime/51.mp3", ["tokyo ghoul","glassy sky"])
+    new SongData("../src/music/anime/51.mp3", ["tokyo ghoul","glassy sky"]),
+	new SongData("../src/music/anime/52.mp3", ["Dragon Ball Z","Bola de Drac Z","We got the power"])
     ];
 
 var Remix = [ 
@@ -375,7 +376,7 @@ var K3 = [
     new SongData("http://trivial2.net16.net/src/music/k3/8.mp3", ["Dragon Ball Z","Bola de Drac Z"]),
     new SongData("http://trivial2.net16.net/src/music/k3/9.mp3", ["Dragon Ball Z","Bola de Drac Z"]),
     new SongData("http://trivial2.net16.net/src/music/k3/10.mp3", ["Dragon Ball Z","Bola de Drac Z"]),
-    new SongData("http://trivial2.net16.net/src/music/k3/11.mp3", ["Dragon Ball Z","Bola de Drac Z"]),
+    new SongData("http://trivial2.net16.net/src/music/k3/11.mp3", ["Bob the builder","Bob el manetes"]),
     new SongData("http://trivial2.net16.net/src/music/k3/12.mp3", ["Bobobo-bo Bo-bobo","Bobobo"]),
     new SongData("http://trivial2.net16.net/src/music/k3/13.mp3", ["Bobobo-bo Bo-bobo","Bobobo"]),
     new SongData("http://trivial2.net16.net/src/music/k3/14.mp3", ["Detective Conan","Detectiu Conan"]),
