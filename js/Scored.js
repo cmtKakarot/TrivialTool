@@ -166,7 +166,7 @@ var Mario = [
     new SongData("../src/music/mario/28.mp3", ["Super Mario Galaxy","Stardust Road","Mario Galaxy"]),
     new SongData("../src/music/mario/29.mp3", ["Super Mario Galaxy","Wind Garden","Mario Galaxy"]),
     new SongData("../src/music/mario/30.mp3", ["Super Mario Galaxy","Figth to the Death at Koopa's Fort","Mario Galaxy"]),
-    new SongData("../src/music/mario/31.mp3", ["Super Mario Galaxy","Staff Roll","Mario Galaxy"]),
+    new SongData("../src/music/mario/31.mp3", ["Super Mario Galaxy","Staff Roll","Mario Galaxy"])
     ];
     
 var Touhou = [
@@ -303,7 +303,7 @@ var	Square = [
     new SongData("http://trivial2.net16.net/src/music/square/50.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Destiny's Force"]),
     new SongData("http://trivial2.net16.net/src/music/square/51.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Squirming Evil"]),
     new SongData("http://trivial2.net16.net/src/music/square/52.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Gummi Ship Level 3"]),
-    new SongData("http://trivial2.net16.net/src/music/square/53.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Hollow Bastion"]),
+    new SongData("http://trivial2.net16.net/src/music/square/53.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Hollow Bastion"])
     ];
     
 var Sonic = [
