@@ -251,7 +251,7 @@ var Pokemon = [
 	];
 	
 var	Square = [
-    new SongData("../src/music/square/1.mp3", ["Kingdom Hearts 2.8","KH 2.8", "KH2.8","Simple and Clean", "Simple and Clean Ray of Hope mix"]),
+    new SongData("../src/music/square/1.mp3", ["Kingdom Hearts 2.8","KH 2.8","Simple and Clean", "Simple and Clean Ray of Hope mix"]),
     new SongData("../src/music/square/2.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "The Landing"]),
     new SongData("../src/music/square/3.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Force Your Way"]),
     new SongData("../src/music/square/4.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII", "Don't be Afraid"]),
@@ -384,18 +384,18 @@ var K3 = [
     new SongData("http://trivial2.net16.net/src/music/k3/35.mp3", ["The Law of Ueki","La Llei de Ueki","Falco"]),
     new SongData("http://trivial2.net16.net/src/music/k3/36.mp3", ["Love Hina"]),
     new SongData("http://trivial2.net16.net/src/music/k3/37.mp3", ["Ojamajo Doremi","La magica Doremi","Ojamajo Carnival"]),
-    new SongData("http://trivial2.net16.net/src/music/k3/38.mp3", ["Yuyu Hakusho","Yuyu Hakusho: Els defensors del mes enlla"]),
+    new SongData("http://trivial2.net16.net/src/music/k3/38.mp3", ["Yuyu Hakusho","Yuyu Hakusho Els defensors del mes enlla"]),
     new SongData("http://trivial2.net16.net/src/music/k3/39.mp3", ["Slam Dunk","Slam Dunk: La Gran Esmaixada"]),
     new SongData("http://trivial2.net16.net/src/music/k3/40.mp3", ["Shin Chan"]),
     new SongData("http://trivial2.net16.net/src/music/k3/41.mp3", ["Shin Chan"]),
     new SongData("http://trivial2.net16.net/src/music/k3/42.mp3", ["Code Lyoko","Codi Lyoko"]),
     new SongData("http://trivial2.net16.net/src/music/k3/43.mp3", ["CatDog","Gat i Gos","Gatigos"]),
-    new SongData("http://trivial2.net16.net/src/music/k3/44.mp3", ["Galactick Football","Futbol Galactic"]),
+    new SongData("http://trivial2.net16.net/src/music/k3/44.mp3", ["Galactik Football","Futbol Galactic"]),
     new SongData("http://trivial2.net16.net/src/music/k3/45.mp3", ["Card Captor Sakura","Sakura, la caçadora de cartes","Sakura la caçadora de cartes"]),
     new SongData("http://trivial2.net16.net/src/music/k3/46.mp3", ["Card Captor Sakura","Sakura, la caçadora de cartes","Sakura la caçadora de cartes"]),
     new SongData("http://trivial2.net16.net/src/music/k3/47.mp3", ["Card Captor Sakura","Sakura, la caçadora de cartes","Sakura la caçadora de cartes"]),
-	new SongData("http://trivial2.net16.net/src/music/k3/48.mp3", ["Tsubasa Reservoir Chronicle","Tsubasa: les croniques perdudes","Tsubasa les croniques perdudes"]),
-	new SongData("http://trivial2.net16.net/src/music/k3/49.mp3", ["Tsubasa Reservoir Chronicle","Tsubasa: les croniques perdudes","Tsubasa les croniques perdudes"]),
+	new SongData("http://trivial2.net16.net/src/music/k3/48.mp3", ["Tsubasa Reservoir Chronicle","Tsubasa les croniques perdudes"]),
+	new SongData("http://trivial2.net16.net/src/music/k3/49.mp3", ["Tsubasa Reservoir Chronicle","Tsubasa les croniques perdudes"]),
 	new SongData("http://trivial2.net16.net/src/music/k3/50.mp3", ["Sailor Moon"]),
 	new SongData("http://trivial2.net16.net/src/music/k3/51.mp3", ["Detective Conan","Detectiu Conan"]),
 	new SongData("http://trivial2.net16.net/src/music/k3/52.mp3", ["Hey Arnold"]),
@@ -403,7 +403,6 @@ var K3 = [
 	new SongData("http://trivial2.net16.net/src/music/k3/54.mp3", ["Ninja Boy Rantaro","Nintama Rantaro","Rantaro"]),
 	new SongData("http://trivial2.net16.net/src/music/k3/55.mp3", ["DNA2","DNA 2","DNA"])
 ];
-
 
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
@@ -417,7 +416,6 @@ var Ganbatte = [
 	new SoundData("../src/music/other/go3.wav"),
 	new SoundData("../src/music/other/go4.wav")
 	];
-
 	 
 	
 
@@ -437,7 +435,7 @@ function act_catV() {
     if (!$("#Square").is(":hidden")) vec.push(7);
     if (!$("#SpikeChun").is(":hidden")) vec.push(8);
     if (!$("#Sonic").is(":hidden")) vec.push(9);
-    //if (!$("#K3").is(":hidden")) vec.push(10);
+    if (!$("#K3").is(":hidden")) vec.push(10);
     return vec;
 }
 
@@ -487,7 +485,7 @@ function check_valid() {
 	var Song = vSong[x];
 	var sol = $("#Sol").val();
 	for(k = 0; k < Song.sols.length; k++) {
-		if(Song.sols[k].toLowerCase() == sol.toLowerCase()) {
+		if(Song.sols[k].toLowerCase().replace(/[^0-9a-z]/gi, '') == sol.toLowerCase().replace(/[^0-9a-z]/gi, '')) {
 			comboBreak = 0;
 			objection = false;
 			++Hhit;
