@@ -119,12 +119,14 @@ p {
 }
 
 #Freeplay {
+	margin-top: 7.5%;
 	height: 600px;
 	width: 48%;
 	background-image: url(../src/images/bttns/freeplay.png);
 }
 
 #Scored {
+	margin-top: 7.5%
 	display: inline-block;
 	width: 48%;
 	height: 600px;
