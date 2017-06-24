@@ -117,3 +117,16 @@ p {
 	width: 100%;
 	background-image: url(../src/images/bttns/reset.png);
 }
+
+#Freeplay {
+	height: 600px;
+	width: 48%;
+	background-image: url(../src/images/bttns/freeplay.png);
+}
+
+#Scored {
+	display: inline-block;
+	width: 48%;
+	height: 600px;
+	background-image: url(../src/images/bttns/scored.png);
+}
