@@ -153,11 +153,12 @@ p {
  * COMBO SYSTEM USING GIFS */
 
 #comb {
+	display: inline-block;
 	width: 100%;
 	margin: 1%;
 }
 .combo {
-	float;
+	display: inline-block;
 	margin-left: 10PX;
 	height: 100px;
 	width: 5%;
@@ -165,6 +166,7 @@ p {
 }
 
 #c1 {
+	margin-left: 50px;
 	background-image: url(../src/images/combo/1.gif);
 }
 

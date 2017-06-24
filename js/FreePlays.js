@@ -230,7 +230,7 @@ var Pokemon = [
     new SongData("http://trivial2.net16.net/src/music/pokemon/31.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Elite Four"]),
     new SongData("http://trivial2.net16.net/src/music/pokemon/32.mp3", ["Red","Blue","Yellow","RBY","Indigo Plateau"]),
     new SongData("http://trivial2.net16.net/src/music/pokemon/33.mp3", ["X","Y","Battle! Mewtwo"]),
-    new SongData("http://trivial2.net16.net/src/music/pokemon/34.mp3", ["X","Y","Battle! Emotion"]),
+    new SongData("http://trivial2.net16.net/src/music/pokemon/34.mp3", ["X","Y","Emotion"]),
     new SongData("http://trivial2.net16.net/src/music/pokemon/35.mp3", ["Red","Blue","Yellow","RBY","Opening"]),
     new SongData("http://trivial2.net16.net/src/music/pokemon/36.mp3", ["Red","Blue","Yellow","RBY","Pallet Town"]),
     new SongData("http://trivial2.net16.net/src/music/pokemon/37.mp3", ["Red","Blue","Yellow","RBY","Professor Oak"]),
