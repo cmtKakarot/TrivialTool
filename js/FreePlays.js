@@ -474,6 +474,21 @@ var Disney = [
 	new SongData("http://trivial2.net16.net/src/music/disney/48.mp3", ["Jhonny Test"])
 	];
 
+var Indie = [
+	new SongData("../src/music/indie/1.mp3", ["Shovel knight","In the halls of the usurper","Pridemor keep"]), 
+    new SongData("../src/music/indie/2.mp3", ["Shovel knight","high above the land","the flying machine"]),
+    new SongData("../src/music/indie/3.mp3", ["Shovel knight","plague of shadows","waltz for one"]), 
+    new SongData("../src/music/indie/4.mp3", ["bastion","set sail","setting sail","coming home"]), 
+	new SongData("../src/music/indie/5.mp3", ["bastion","spike in a rail"]), 
+    new SongData("../src/music/indie/6.mp3", ["transistor","impossible"]), 
+    new SongData("../src/music/indie/7.mp3", ["transistor","the spine"]),
+    new SongData("../src/music/indie/8.mp3", ["lisa","the end is nigh"]), 
+    new SongData("../src/music/indie/9.mp3", ["lisa","goodbye baby"]), 
+    new SongData("../src/music/indie/10.mp3", ["lisa","summer love"]), 
+    new SongData("../src/music/indie/11.mp3", ["Crypt of the Necrodancer","For Whom the Knell Tolls","dead ringer"]),
+    new SongData("../src/music/indie/12.mp3", ["Crypt of the Necrodancer","The Wight to Remain"]) 
+];
+
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),

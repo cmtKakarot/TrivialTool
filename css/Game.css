@@ -44,6 +44,11 @@ p {
 	margin-left: 32%;
 }
 
+#comb {
+	width: 100%;
+	margin: 1%;
+}
+
 #timsc {
 	margin: 1%;
 
@@ -54,7 +59,6 @@ p {
 	margin-left: 10PX;
 	height: 100px;
 	width: 49%;
-  	display: inline-block;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-origin: content-box;
@@ -112,6 +116,7 @@ p {
 	width: 100%;
 	background-image: url(../src/images/bttns/start.png);
 }
+
 #Reset {
   	display: inline-block;
 	width: 100%;
@@ -131,4 +136,51 @@ p {
 	width: 48%;
 	height: 600px;
 	background-image: url(../src/images/bttns/scored.png);
+}
+
+.combo {
+	float;
+	margin-left: 10PX;
+	height: 100px;
+	width: 5%;
+    background-size: 100% 100%;
+}
+
+#c1 {
+	background-image: url(../src/images/combo/1.gif);
+}
+
+#c2 {
+	background-image: url(../src/images/combo/2.gif);
+}
+
+#c3 {
+	background-image: url(../src/images/combo/3.gif);
+}
+#c4 {
+	background-image: url(../src/images/combo/4.gif);
+}
+
+#c5 {
+	background-image: url(../src/images/combo/5.gif);
+}
+
+#c6 {
+	background-image: url(../src/images/combo/6.gif);
+}
+
+#c7 {
+	background-image: url(../src/images/combo/7.gif);
+}
+
+#c8 {
+	background-image: url(../src/images/combo/8.gif);
+}
+
+#c9 {
+	background-image: url(../src/images/combo/9.gif);
+}
+
+#c10 {
+	background-image: url(../src/images/combo/10.gif);
 }

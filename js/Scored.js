@@ -1,4 +1,3 @@
-onClick="window.location.reload(true)"
 //---------------------------------------------------------------------------------------
 //--------------------------------- SONG STRUCTURE --------------------------------------
 //---------------------------------------------------------------------------------------
@@ -476,6 +475,21 @@ var Disney = [
 	new SongData("http://trivial2.net16.net/src/music/disney/48.mp3", ["Jhonny Test"])
 	];
 
+var Indie = [
+	new SongData("../src/music/indie/1.mp3", ["Shovel knight","In the halls of the usurper","Pridemor keep"]), 
+    new SongData("../src/music/indie/2.mp3", ["Shovel knight","high above the land","the flying machine"]),
+    new SongData("../src/music/indie/3.mp3", ["Shovel knight","plague of shadows","waltz for one"]), 
+    new SongData("../src/music/indie/4.mp3", ["bastion","set sail","setting sail","coming home"]), 
+	new SongData("../src/music/indie/5.mp3", ["bastion","spike in a rail"]), 
+    new SongData("../src/music/indie/6.mp3", ["transistor","impossible"]), 
+    new SongData("../src/music/indie/7.mp3", ["transistor","the spine"]),
+    new SongData("../src/music/indie/8.mp3", ["lisa","the end is nigh"]), 
+    new SongData("../src/music/indie/9.mp3", ["lisa","goodbye baby"]), 
+    new SongData("../src/music/indie/10.mp3", ["lisa","summer love"]), 
+    new SongData("../src/music/indie/11.mp3", ["Crypt of the Necrodancer","For Whom the Knell Tolls","dead ringer"]),
+    new SongData("../src/music/indie/12.mp3", ["Crypt of the Necrodancer","The Wight to Remain"]) 
+];
+
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),
@@ -494,7 +508,6 @@ var Ganbatte = [
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
-
 function act_catV() {
     var vec = [];
     if (!$("#Atlus").is(":hidden")) vec.push(0);
@@ -544,10 +557,22 @@ function InitvSong() {
 	}
 }
 
-
 function show_sol() {
 	$(".suck").show();
 	document.getElementById("Last").innerHTML = vSong[x].sols[0];
+}
+
+function check_combo() {
+	if(combo == 2) $("#c1").show();
+	if(combo == 4) $("#c2").show();
+	if(combo == 6) $("#c3").show();
+	if(combo == 8) $("#c4").show();
+	if(combo == 10) $("#c5").show();
+	if(combo == 12) $("#c6").show();
+	if(combo == 14) $("#c7").show();
+	if(combo == 16) $("#c8").show();
+	if(combo == 18) $("#c9").show();
+	if(combo == 20) $("#c10").show();
 }
 
 function check_valid() {
@@ -565,6 +590,7 @@ function check_valid() {
 			if (vSong[x].time >= 83) score = score + (100 * multiplier * combo);
 			else score = score + (vSong[x].time * multiplier * combo);
             combo = combo + 1;
+            check_combo();
 			document.getElementById("score").innerHTML = score;
 			vSong[x].used2 = true;
 			x = Math.floor((Math.random() * vSong.length));
@@ -580,14 +606,18 @@ function check_valid() {
 	}
 	if(objection) {
 		++comboBreak;
-		if(comboBreak == 3) combo = 1;
+		if(comboBreak == 3) {
+			combo = 1;
+			combo_break = 0;
+			$(".combo").hide();
+		}
 		$("#Sol").val("");
 		var h = Math.floor((Math.random() * Missclick.length))
 		$("#errS").attr("src", Missclick[h].link);
 	}
 	objection = true;
 }
-	
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -616,6 +646,7 @@ var comboBreak = 0;
 
 $(document).ready(function() {
 	$(".game").hide()
+	$(".combo").hide()
 	$("#Acc").click(function() {
 		var h2 = Math.floor((Math.random() * Ganbatte.length))
 		$("#Ganbatte").attr("src", Ganbatte[h2].link);
@@ -646,6 +677,9 @@ $(document).ready(function() {
 		$(".cat").show();
 	});
 	$("#Skip").click(function() {
+		combo = 1;
+		combo_break = 0;
+		$(".combo").hide();
 		if (Nused == 20) show_res();
 		else {
 			document.getElementById("score").innerHTML = score;
@@ -662,6 +696,8 @@ $(document).ready(function() {
 	$("#Discard").click(function() {
 		score = score - 30;
         combo = 1;
+		combo_break = 0;
+		$(".combo").hide();
 		++Nused;
 		vSong[x].used2 = true;
 		show_sol();
