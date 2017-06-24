@@ -527,6 +527,7 @@ function act_catV() {
 function show_res() {
 	$("#Song").trigger("pause");
 	$(".game").hide();
+	$(".combo").hide();
 	$(".suck").show();
 	clearInterval(interval)
 	document.getElementById("score2").innerHTML = score;
@@ -575,10 +576,18 @@ function check_combo() {
 	if(combo == 20) $("#c10").show();
 }
 
+function check_combo2() {
+	if(combo == 2) $("#c1").show();
+	else if (combo%2 == 0) {
+		var ran2 = Math.floor((Math.random() * ComboVec.length));
+		$(ComboVec[ran2]).show();
+	}
+}
+
 function check_valid() {
 	$("#errS").attr("src", "");
 	++NGo;
-	var k
+	var k;
 	var Song = vSong[x];
 	var sol = $("#Sol").val();
 	for(k = 0; k < Song.sols.length; k++) {
@@ -623,6 +632,7 @@ function check_valid() {
 //---------------------------------------------------------------------------------------
 
 var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3];
+var ComboVec = ["#c2","#c3","#c4","#c5","#c6","#c7","#c8","#c9","#c10"];
 var Nused = 0;
 var NGo = 0;
 var Hhit = 0;
@@ -645,8 +655,8 @@ var comboBreak = 0;
 //---------------------------------------------------------------------------------------
 
 $(document).ready(function() {
-	$(".game").hide()
-	$(".combo").hide()
+	$(".game").hide();
+	$(".combo").hide();
 	$("#Acc").click(function() {
 		var h2 = Math.floor((Math.random() * Ganbatte.length))
 		$("#Ganbatte").attr("src", Ganbatte[h2].link);
