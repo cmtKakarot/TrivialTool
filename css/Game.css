@@ -39,16 +39,6 @@ p {
 	margin-left: 25%;
 }
 
-#ResetAcc {
-	width: 35%;
-	margin-left: 32%;
-}
-
-#comb {
-	width: 100%;
-	margin: 1%;
-}
-
 #timsc {
 	margin: 1%;
 
@@ -76,39 +66,56 @@ p {
     width:200px;
     overflow: hidden;
 }
+
+/*CATEGORY BANNERS AND BUTTONS */
+
 #Atlus {
 	background-image: url(../src/images/cat/atlus.png);
 }
+
 #Remix {
 	background-image: url(../src/images/cat/remix.png);
 }
+
 #Anime {
 	background-image: url(../src/images/cat/anime.png);
 }
+
 #NNintendo {
 	background-image: url(../src/images/cat/mario.png);
 }
+
 #Touhou {
 	background-image: url(../src/images/cat/touhou.png);
 }
+
 #Kirby {
 	background-image: url(../src/images/cat/kirby.png);
 }
+
 #Pokemon {
 	background-image: url(../src/images/cat/pokemon.png);
 }
+
 #Square {
 	background-image: url(../src/images/cat/square.png);
 }
+
 #SpikeChun {
 	background-image: url(../src/images/cat/spikechun.png);
 }
+
 #Sonic {
 	background-image: url(../src/images/cat/sonic.png);
 }
 
 #K3 {
 	background-image: url(../src/images/cat/k3.png);
+}
+
+#ResetAcc {
+	width: 35%;
+	margin-left: 32%;
 }
 
 #Acc {
@@ -122,6 +129,9 @@ p {
 	width: 100%;
 	background-image: url(../src/images/bttns/reset.png);
 }
+
+/* ONLY IN INIC.HTML
+ * FREEPLAYS AND SCORED BUTTONS */
 
 #Freeplay {
 	margin-top: 7.5%;
@@ -138,6 +148,14 @@ p {
 	background-image: url(../src/images/bttns/scored.png);
 }
 
+
+/* ONLY IN SCORED.JS
+ * COMBO SYSTEM USING GIFS */
+
+#comb {
+	width: 100%;
+	margin: 1%;
+}
 .combo {
 	float;
 	margin-left: 10PX;
