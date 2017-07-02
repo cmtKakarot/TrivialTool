@@ -521,6 +521,7 @@ function act_catV() {
     if (!$("#SpikeChun").is(":hidden")) vec.push(8);
     if (!$("#Sonic").is(":hidden")) vec.push(9);
     if (!$("#K3").is(":hidden")) vec.push(10);
+    if (!$("#Disney").is(":hidden")) vec.push(11);
     return vec;
 }
 
@@ -631,7 +632,7 @@ function check_valid() {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney];
 var ComboVec = ["#c2","#c3","#c4","#c5","#c6","#c7","#c8","#c9","#c10"];
 var Nused = 0;
 var NGo = 0;

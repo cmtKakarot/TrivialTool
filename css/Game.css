@@ -113,6 +113,10 @@ p {
 	background-image: url(../src/images/cat/k3.png);
 }
 
+#Disney {
+	background-image: url(../src/images/cat/disney.png);
+}
+
 #ResetAcc {
 	width: 35%;
 	margin-left: 32%;
