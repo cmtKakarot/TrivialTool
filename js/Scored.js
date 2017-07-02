@@ -508,6 +508,16 @@ var Ganbatte = [
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
+function numero(vec) {
+    var suma = 0;
+    for(var t = 0; t < vec.length; ++t) {
+        for(var s = 0; s < CategoryMatrix[vec[t]].length; ++s) {
+            ++suma;
+        }
+    }
+    return suma;
+}
+
 function act_catV() {
     var vec = [];
     if (!$("#Atlus").is(":hidden")) vec.push(0);
@@ -628,6 +638,10 @@ function check_valid() {
 	objection = true;
 }
 
+function Error_20(){
+	alert("You need to add more categories! Press Reset");
+	vec = [];
+}
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -659,24 +673,28 @@ $(document).ready(function() {
 	$(".game").hide();
 	$(".combo").hide();
 	$("#Acc").click(function() {
-		var h2 = Math.floor((Math.random() * Ganbatte.length))
-		$("#Ganbatte").attr("src", Ganbatte[h2].link);
 		vec = act_catV();
-		InitvSong();
-		multiplier = (vec.length)/(CategoryMatrix.length);
-		$(".cat").hide();
-		document.getElementById("score").innerHTML = score;
-		x = Math.floor((Math.random() * vSong.length));
-		$(".game").show();
-		interval = setInterval(function() {
-			--vSong[x].time;
-			document.getElementById("demo").innerHTML = vSong[x].time;
-			if(vSong[x].time <= 0) {
-				 $("#Discard").click();
-			 }
-		},1000);
-		$("#Song").prop("volume", 0.25);
-		$("#Song").attr("src", vSong[x].link);
+		Ntot = numero(vec);
+		if(Ntot < 20) Error_20();
+		else {
+			var h2 = Math.floor((Math.random() * Ganbatte.length))
+			$("#Ganbatte").attr("src", Ganbatte[h2].link);
+			InitvSong();
+			multiplier = (vec.length)/(CategoryMatrix.length);
+			$(".cat").hide();
+			document.getElementById("score").innerHTML = score;
+			x = Math.floor((Math.random() * vSong.length));
+			$(".game").show();
+			interval = setInterval(function() {
+				--vSong[x].time;
+				document.getElementById("demo").innerHTML = vSong[x].time;
+				if(vSong[x].time <= 0) {
+					 $("#Discard").click();
+				 }
+			},1000);
+			$("#Song").prop("volume", 0.25);
+			$("#Song").attr("src", vSong[x].link);
+		}
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
