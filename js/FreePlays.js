@@ -119,7 +119,7 @@ var Remix = [
     new SongData("../src/music/remix/2.mp3", ["Undertale","Heartache"]),
     new SongData("../src/music/remix/3.mp3", ["Touhou 10","Suwako's Theme", "Native Faith"]),
     new SongData("../src/music/remix/4.mp3", ["Super Mario RPG","Forest Maze", "Mario RPG"]),
-    new SongData("../src/music/remix/5.mp3", ["Final Fantasy IX","Final Fantasy 9", "Battle 1", "You're not alone"]),
+    new SongData("../src/music/remix/5.mp3", ["Final Fantasy IX","Final Fantasy 9","FF IX","FF 9", "Battle 1", "You're not alone"]),
     new SongData("../src/music/remix/6.mp3", ["Ducktales","Moon", "The Moon"]),
     new SongData("../src/music/remix/7.mp3", ["Kingdom Hearts","Dearly Beloved"]),
     new SongData("../src/music/remix/8.mp3", ["Megaman 2", "Willy Stage"]),
