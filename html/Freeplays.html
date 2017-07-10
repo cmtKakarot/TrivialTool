@@ -14,6 +14,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<!--Importar Fuentes -->
+	<link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	
 	<meta charset="utf-8">
@@ -23,33 +24,92 @@
 
 <body>
 	<!-- CATEGORIES -->
-    <p id="TextN" class ="cat" > Discard any categories you don't want to play and then press Start </p>
-    <div id="Atlus" class ="cat cat2"> </div>
-    <div id="Remix" class ="cat cat2"> </div> 
-    <div id="Anime" class ="cat cat2"> </div> 
-    <div id="NNintendo" class ="cat cat2"> </div> 
-    <div id="Touhou" class ="cat cat2"> </div> 
-    <div id="Kirby" class ="cat cat2"> </div> 
-    <div id="Pokemon" class ="cat cat2"> </div> 
-    <div id="Square" class ="cat cat2"> </div> 
-    <div id="SpikeChun" class ="cat cat2"> </div> 
-    <div id="Sonic" class ="cat cat2"> </div>  
-    <div id="K3" class ="cat cat2"> </div>
-    <div id="Disney" class ="cat cat2"> </div>  
-    <div id="ResetAcc">
-	    <div class="cat cat2" id="Reset" > </div>
-	    <div class="cat cat2" id="Acc" > </div></div>
-    <audio id ="Ganbatte" autoplay controls  src="" hidden> </audio>
+	<table>
+		<tbody>
+			<tr>
+   				<p id="TextN" class ="cat" > Discard any categories you don't want to play and then press Start </p>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Anime" class ="cat cat2"> </div> 
+   				</td>
+   				<td>
+   					<div id="Atlus" class ="cat cat2"> </div>
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Disney" class ="cat cat2"> </div> 
+   				</td>
+   				<td>
+   					<div id="K3" class ="cat cat2"> </div>
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Kirby" class ="cat cat2"> </div> 
+   				</td>
+   				<td>
+   					<div id="NNintendo" class ="cat cat2"> </div>	
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Pokemon" class ="cat cat2"> </div>
+   				</td>
+   				<td>
+   					<div id="Remix" class ="cat cat2"> </div>
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Sonic" class ="cat cat2"> </div> 
+   				</td>
+   				<td>
+   					<div id="SpikeChun" class ="cat cat2"> </div>
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div id="Square" class ="cat cat2"> </div> 
+   				</td>
+   				<td>
+   					<div id="Touhou" class ="cat cat2"> </div> 
+   				</td>
+   			</tr>
+   			<tr>
+   				<td>
+   					<div class="cat cat2" id="Reset" > </div>
+   				</td>
+   				<td>
+   					<div class="cat cat2" id="Acc" > </div>
+   				</td>
+   			</tr>
+		</tbody>
+	</table>
     <!-- GAME -->
-    <p id="TextN" class ="game" hidden> Write down below the name of the game or the name of the song and press Enter </p>
-	<div id="solsong">
-		<input class ="game" id="Sol" type="text" hidden>
-		<audio class ="game" id ="Song" autoplay controls  src="" hidden> </audio>
-	</div>	 
-	<div id="dosbotons">
-		<button class ="btn btn-block btn-warning game" id="Discard" type="button" hidden > Discard Song </button>
-		<button class ="btn btn-block btn-warning game res" id="Back" type="button" hidden > Back </button>
-	</div>
+    <audio id ="Ganbatte" autoplay controls  src="" hidden> </audio>
+	<table>
+		<tbody>
+			<tr>
+				<p id="TextN" class ="game" hidden> Write down below the name of the game or the name of the song and press Enter </p>
+			</tr>
+			<tr>
+				<td>
+					<div id="solsong">
+						<input class ="game" id="Sol" type="text" hidden>
+						<audio class ="game" id ="Song" autoplay controls  src="" hidden> </audio>
+					</div>	
+				</td>
+				<td>
+					<div id="dosbotons">
+						<button class ="btn btn-primary btn-warning game" id="Discard" type="button" hidden > Discard Song </button>
+						<button class ="btn btn-primary btn-warning game res" id="Back" type="button" hidden > Back </button>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 	<div id="timsc">
 		<p class="suck" hidden> Last one missed </p>
 		<p class="suck" id="Last"></p>
