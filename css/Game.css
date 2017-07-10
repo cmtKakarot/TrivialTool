@@ -1,5 +1,6 @@
 body {
 	width: 100%;
+	height: 100%;
 	background-color: black;
 }
 
@@ -15,8 +16,8 @@ div {
 
 p {
 	color: #ffffff; 
-	font-family: 'Raleway',sans-serif; 
-	font-size: 62px; 
+	font-family: 'Passion One', cursive;
+	font-size: 70px;
 	font-weight: 800; 
 	line-height: 72px; 
 	margin: 0 0 15px; 
@@ -30,35 +31,51 @@ p {
 
 #solsong {
 	width: 50%;
-	margin: 1%;
-	margin-left: 25%;
+	margin:auto;
 }
 
 #dosbotons {
 	width: 50%;
-	margin-left: 25%;
+	margin:auto;
+}
+
+#Discard,#Back {
+	width: 100%;
+	margin:auto;
+}
+
+#Sol,#Song{
+	width: 100%;
+	margin:auto;
 }
 
 #timsc {
 	margin: 1%;
 
 }
+/*WORKING ON */
+#idpredemo, #demo{
+	padding-left: 0px;
+}
+
+#score, #prescore{
+	padding-right: 0px;
+}
 
 .cat2 {
-  	display: inline-block;
-	margin-left: 10PX;
 	height: 100px;
-	width: 49%;
+	width: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-origin: content-box;
 	border-radius: 10px;
+	padding: 1px;
 }
 
 #TextN {
   margin-left: 2%;
-  font-family: 'Hind', sans-serif;
-  font-size: 30px;
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
   pointer-events: none;
 }
 
@@ -117,38 +134,44 @@ p {
 	background-image: url(../src/images/cat/disney.png);
 }
 
-#ResetAcc {
-	width: 35%;
-	margin-left: 32%;
-}
-
 #Acc {
-  	display: inline-block;
 	width: 100%;
 	background-image: url(../src/images/bttns/start.png);
 }
 
 #Reset {
-  	display: inline-block;
 	width: 100%;
 	background-image: url(../src/images/bttns/reset.png);
 }
-
+/*TABLE ONLY*/
+table {
+	width: 100%;
+}
+tr {
+	width: 100%;
+}
+td {
+	width: 50%;
+}
 /* ONLY IN INIC.HTML
  * FREEPLAYS AND SCORED BUTTONS */
 
+#InicTitle{
+	color: white;
+	text-align: center;
+	font-family: 'Passion One', cursive;
+	font-size: 70px;
+}
+
 #Freeplay {
-	margin-top: 7.5%;
 	height: 600px;
-	width: 48%;
+	width: 100%;
 	background-image: url(../src/images/bttns/freeplay.png);
 }
 
 #Scored {
-	margin-top: 7.5%
-	display: inline-block;
-	width: 48%;
 	height: 600px;
+	width: 100%;
 	background-image: url(../src/images/bttns/scored.png);
 }
 
