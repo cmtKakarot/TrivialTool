@@ -85,7 +85,9 @@ p {
 }
 
 /*CATEGORY BANNERS AND BUTTONS */
-
+td > div {
+	filter:grayscale(0%);
+}
 #Atlus {
 	background-image: url(../src/images/cat/atlus.png);
 }
@@ -137,11 +139,15 @@ p {
 #Acc {
 	width: 100%;
 	background-image: url(../src/images/bttns/start.png);
+    background-size: 100% 100%;
+    padding-right: 50%;
 }
 
 #Reset {
 	width: 100%;
 	background-image: url(../src/images/bttns/reset.png);
+    background-size: 100% 100%;
+    padding-left: 50%;
 }
 /*TABLE ONLY*/
 table {
