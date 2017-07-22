@@ -447,7 +447,7 @@ var Disney = [
     new SongData("http://trivial2.net16.net/src/music/disney/20.mp3", ["Hannah Montana","You've got the best of both worlds"]),
     new SongData("http://trivial2.net16.net/src/music/disney/21.mp3", ["Wizards of Waverly Place","Los magos de Waverly Place"]),
     new SongData("http://trivial2.net16.net/src/music/disney/22.mp3", ["Camp Rock","We Rock"]),
-    new SongData("http://trivial2.net16.net/src/music/disney/23.mp3", ["The Nightmare before Christmas","What's This?"]),
+    new SongData("http://trivial2.net16.net/src/music/disney/23.mp3", ["The Nightmare before Christmas","What's This?","Pesadilla antes de navidad"]),
     new SongData("http://trivial2.net16.net/src/music/disney/24.mp3", ["Hercules","A star is born"]),
     new SongData("http://trivial2.net16.net/src/music/disney/25.mp3", ["Camp Rock","Gotta find you"]),
     new SongData("http://trivial2.net16.net/src/music/disney/26.mp3", ["The Lion King","Hakuna Matata"]),
