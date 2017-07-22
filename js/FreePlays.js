@@ -424,7 +424,7 @@ var K3 = [
 ];
 
 var Disney = [
-	new SongData("http://trivial2.net16.net/src/music/disney/1.mp3", ["The Little Mermaid","Under the sea"]),
+	new SongData("http://trivial2.net16.net/src/music/disney/1.mp3", ["The Little Mermaid","Under the sea","Sirenita"]),
     new SongData("http://trivial2.net16.net/src/music/disney/2.mp3", ["The Lion King","I Just Can't Wait to be King"]),
     new SongData("http://trivial2.net16.net/src/music/disney/3.mp3", ["The Lion King","Circle of Life"]),
     new SongData("http://trivial2.net16.net/src/music/disney/4.mp3", ["Aladdin","A Whole New World"]),
