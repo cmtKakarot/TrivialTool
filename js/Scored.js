@@ -166,7 +166,17 @@ var Mario = [
     new SongData("../src/music/mario/28.mp3", ["Super Mario Galaxy","Stardust Road","Mario Galaxy"]),
     new SongData("../src/music/mario/29.mp3", ["Super Mario Galaxy","Wind Garden","Mario Galaxy"]),
     new SongData("../src/music/mario/30.mp3", ["Super Mario Galaxy","Figth to the Death at Koopa's Fort","Mario Galaxy"]),
-    new SongData("../src/music/mario/31.mp3", ["Super Mario Galaxy","Staff Roll","Mario Galaxy"])
+    new SongData("../src/music/mario/31.mp3", ["Super Mario Galaxy","Staff Roll","Mario Galaxy"]),
+    new SongData("../src/music/mario/32.mp3", ["Super Mario Bros 3","Melty Monster Galaxy","Mario Bros 3"]),
+    new SongData("../src/music/mario/33.mp3", ["Super Mario Bros 3","Title Theme","Mario Bros 3"]),
+    new SongData("../src/music/mario/34.mp3", ["Super Mario Galaxy 2","Bowser's Galaxy Generator","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/35.mp3", ["Super Mario Galaxy 2","Something Special","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/36.mp3", ["Super Mario Galaxy 2","Time attack","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/37.mp3", ["Super Mario Galaxy 2","Bowser Jr's Fiery Flotilla","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/38.mp3", ["Super Mario Galaxy 2","Bowser's Lava Lair","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/39.mp3", ["Super Mario Galaxy 2","Sky Station Galaxy","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/40.mp3", ["Super Mario Galaxy 2","Staff Credits","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/41.mp3", ["Super Mario Galaxy 2","Cloudy Court Galaxy","Mario Galaxy 2"])
     ];
     
 var Touhou = [
