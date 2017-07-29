@@ -176,7 +176,8 @@ var Mario = [
     new SongData("../src/music/mario/38.mp3", ["Super Mario Galaxy 2","Bowser's Lava Lair","Mario Galaxy 2"]),
     new SongData("../src/music/mario/39.mp3", ["Super Mario Galaxy 2","Sky Station Galaxy","Mario Galaxy 2"]),
     new SongData("../src/music/mario/40.mp3", ["Super Mario Galaxy 2","Staff Credits","Mario Galaxy 2"]),
-    new SongData("../src/music/mario/41.mp3", ["Super Mario Galaxy 2","Cloudy Court Galaxy","Mario Galaxy 2"])
+    new SongData("../src/music/mario/41.mp3", ["Super Mario Galaxy 2","Cloudy Court Galaxy","Mario Galaxy 2"]),
+    new SongData("../src/music/mario/15.mp3", ["Super Mario Bros 2","Overworld Theme","Mario Bros 2"])
     ];
     
 var Touhou = [
