@@ -550,6 +550,7 @@ function show_res() {
 	$(".game").hide();
 	$(".suck").show();
 	$(".res").show();
+	$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 }
 
 function randomize() {
@@ -607,6 +608,21 @@ function ResetGame() {
 	objection = true;
 	solr = 0;	
 }
+
+function show_cat() {
+	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("atlus") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/sonic.png)");
+	if(CategoryMatrix[i][j].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
+}
 	
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
@@ -638,6 +654,7 @@ $(document).ready(function() {
 		$(".game").show();
 		$("#Song").prop("volume", 0.25);
 		$("#Song").attr("src", CategoryMatrix[i][j].link);
+		show_cat();
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
@@ -660,6 +677,7 @@ $(document).ready(function() {
 				randomize();
 			}
 			$("#Song").attr("src", CategoryMatrix[i][j].link);
+			show_cat();
 		}
 	});
 	$("#Back").click(function(){

@@ -560,6 +560,7 @@ function show_res() {
 	var Ndones = (Hhit/20) * 100;
 	document.getElementById("ss").innerHTML = Ndones;
 	$(".res").show();
+	$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 }
 
 function randomize() {
@@ -598,12 +599,19 @@ function check_combo() {
 	if(combo == 20) $("#c10").show();
 }
 
-function check_combo2() {
-	if(combo == 2) $("#c1").show();
-	else if (combo%2 == 0) {
-		var ran2 = Math.floor((Math.random() * ComboVec.length));
-		$(ComboVec[ran2]).show();
-	}
+function show_cat() {
+	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
+	if(vSong[x].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
+	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.jpg)");
+	if(vSong[x].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
+	if(vSong[x].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
+	if(vSong[x].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
+	if(vSong[x].link.indexOf("atlus") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
+	if(vSong[x].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
+	if(vSong[x].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
+	if(vSong[x].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
+	if(vSong[x].link.indexOf("sonic") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/sonic.png)");
+	if(vSong[x].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
 }
 
 function check_valid() {
@@ -658,7 +666,6 @@ function Error_20(){
 //---------------------------------------------------------------------------------------
 
 var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney];
-var ComboVec = ["#c2","#c3","#c4","#c5","#c6","#c7","#c8","#c9","#c10"];
 var Nused = 0;
 var NGo = 0;
 var Hhit = 0;
@@ -705,6 +712,7 @@ $(document).ready(function() {
 			},1000);
 			$("#Song").prop("volume", 0.25);
 			$("#Song").attr("src", vSong[x].link);
+			show_cat();
 		}
     });
     $("#Sol").keyup(function(event){
@@ -731,6 +739,7 @@ $(document).ready(function() {
 				x = x + 1;
 			}
 			$("#Song").attr("src", vSong[x].link);
+			show_cat();
 		}
 	});
 	$("#Discard").click(function() {
@@ -750,6 +759,7 @@ $(document).ready(function() {
 				x = Math.floor((Math.random() * vSong.length));
 			}
 			$("#Song").attr("src", vSong[x].link);
+			show_cat();
 		}
 	});
 });
