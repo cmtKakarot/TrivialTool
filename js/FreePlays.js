@@ -512,7 +512,21 @@ var Ganbatte = [
 	new SoundData("../src/music/other/go3.wav"),
 	new SoundData("../src/music/other/go4.wav")
 	];
+	
+//---------------------------------------------------------------------------------------
+//--------------------------------- WALLPAPERS VECTORS ----------------------------------
+//---------------------------------------------------------------------------------------	 
 
+var SonicWall = [
+	"../src/images/wallpaper/sonic.jpg",
+	"../src/images/wallpaper/sonic.png"
+	];
+
+var SquareWall = [
+	"../src/images/wallpaper/square.jpg",
+	"../src/images/wallpaper/square2.png"
+	];
+//--------
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
@@ -611,8 +625,12 @@ function ResetGame() {
 }
 
 function show_cat() {
+	var wallpaper;
 	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("square") != -1) {
+		 wallpaper = SquareWall[Math.floor((Math.random() * SquareWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
 	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
 	if(CategoryMatrix[i][j].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
@@ -621,7 +639,10 @@ function show_cat() {
 	if(CategoryMatrix[i][j].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/sonic.png)");
+	if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) {
+		 wallpaper = SonicWall[Math.floor((Math.random() * SonicWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
 	if(CategoryMatrix[i][j].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
 }
 	

@@ -523,6 +523,10 @@ var SonicWall = [
 	"../src/images/wallpaper/sonic.png"
 	];
 
+var SquareWall = [
+	"../src/images/wallpaper/square.jpg",
+	"../src/images/wallpaper/square2.png"
+	];
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
@@ -609,7 +613,10 @@ function check_combo() {
 function show_cat() {
 	var wallpaper;
 	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
-	if(vSong[x].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square2.jpg)");
+	if(vSong[x].link.indexOf("square") != -1) {
+		 wallpaper = SquareWall[Math.floor((Math.random() * SquareWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
 	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
 	if(vSong[x].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
 	if(vSong[x].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
