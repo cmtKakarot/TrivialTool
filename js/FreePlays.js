@@ -613,7 +613,7 @@ function ResetGame() {
 function show_cat() {
 	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
 	if(CategoryMatrix[i][j].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
 	if(CategoryMatrix[i][j].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
@@ -687,6 +687,7 @@ $(document).ready(function() {
 		$(".res").hide();
 		$(".suck").hide();
 		$(".game").hide();
+		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 		ResetGame();
 	});
 });

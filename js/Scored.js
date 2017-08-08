@@ -602,7 +602,7 @@ function check_combo() {
 function show_cat() {
 	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
 	if(vSong[x].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
-	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.jpg)");
+	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
 	if(vSong[x].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
 	if(vSong[x].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
 	if(vSong[x].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
