@@ -525,7 +525,7 @@ var SonicWall = [
 
 var SquareWall = [
 	"../src/images/wallpaper/square.jpg",
-	"../src/images/wallpaper/square2.png"
+	"../src/images/wallpaper/square2.jpg"
 	];
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
