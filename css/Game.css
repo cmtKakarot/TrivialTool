@@ -262,5 +262,13 @@ td {
 	background-image: url(../src/images/combo/10.gif);
 }
 
-#donation {
-	margin-left: 40%;
+a {
+	position:relative;
+	display:inline-block
+}
+
+img {
+	position:relative;
+	display:inline-block;
+	margin-left: 150%;
+}

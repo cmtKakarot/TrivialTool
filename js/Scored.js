@@ -513,8 +513,15 @@ var Ganbatte = [
 	new SoundData("../src/music/other/go3.wav"),
 	new SoundData("../src/music/other/go4.wav")
 	];
-	 
 	
+//---------------------------------------------------------------------------------------
+//--------------------------------- WALLPAPERS VECTORS ----------------------------------
+//---------------------------------------------------------------------------------------	 
+
+var SonicWall = [
+	"../src/images/wallpaper/sonic.jpg",
+	"../src/images/wallpaper/sonic.png"
+	];
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
@@ -600,8 +607,9 @@ function check_combo() {
 }
 
 function show_cat() {
+	var wallpaper;
 	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
-	if(vSong[x].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square.jpg)");
+	if(vSong[x].link.indexOf("square") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/square2.jpg)");
 	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
 	if(vSong[x].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
 	if(vSong[x].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
@@ -610,7 +618,10 @@ function show_cat() {
 	if(vSong[x].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
 	if(vSong[x].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
 	if(vSong[x].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
-	if(vSong[x].link.indexOf("sonic") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/sonic.png)");
+	if(vSong[x].link.indexOf("sonic") != -1) {
+		 wallpaper = SonicWall[Math.floor((Math.random() * SonicWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
 	if(vSong[x].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
 }
 

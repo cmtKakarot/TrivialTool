@@ -89,7 +89,7 @@
 	</table>
     <!-- GAME -->
     <audio id ="Ganbatte" autoplay controls  src="" hidden> </audio>
-	<table>
+	<table class ="game">
 		<tbody>
 			<tr>
 				<p id="TextN" class ="game" hidden> Write down below the name of the game or the name of the song and press Enter </p>
@@ -98,7 +98,7 @@
 				<td>
 					<div id="solsong">
 						<input class ="game" id="Sol" type="text" hidden>
-						<audio class ="game" id ="Song" autoplay controls  src="" hidden> </audio>
+						<audio class ="game" id ="Song" autoplay controls controlsList="nodownload" src="" hidden> </audio>
 					</div>	
 				</td>
 				<td>
@@ -150,15 +150,9 @@
 	<p class="res" hidden> % of Succesful Songs  </p>
 	<p class="res" id="ss"></p>
 	<!--DONATE -->
-	<p id="TextN" class ="cat" > We need 15€ to buy a domain in order to add a higher number of songs. Every donation is helpful :D! </p>
-	<div id="donation">
-		<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-		<input type="hidden" name="cmd" value="_s-xclick">
-		<input type="hidden" name="hosted_button_id" value="B9YJA7LNQZLXG">
-		<input type="image" src="https://www.paypalobjects.com/es_ES/ES/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal, la forma rápida y segura de pagar en Internet." width="368" height="104">
-		<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
-		</form>
-	</div>
+	<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=EA9E8FV9UU4BQ">
+		<img src="../src/images/other/donate.png" width="475" height="403">
+	</a>
 </body>
 
 </html>
