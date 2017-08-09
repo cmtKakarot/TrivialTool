@@ -482,7 +482,7 @@ var Disney = [
     new SongData("http://trivial2.net16.net/src/music/disney/45.mp3", ["The Jungle Book","El libro de la selva","I wanna be like you"]),
     new SongData("http://trivial2.net16.net/src/music/disney/46.mp3", ["Moana","How far i'll go"]),
     new SongData("http://trivial2.net16.net/src/music/disney/47.mp3", ["Zootopia","Try Everything"]),
-	new SongData("http://trivial2.net16.net/src/music/disney/48.mp3", ["Jhonny Test"])
+	new SongData("http://trivial2.net16.net/src/music/disney/48.mp3", ["Johnny Test"])
 	];
 
 var Indie = [
