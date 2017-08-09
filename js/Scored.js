@@ -657,6 +657,7 @@ function check_valid() {
 					x = Math.floor((Math.random() * vSong.length));
 				}
 			$("#Song").attr("src", vSong[x].link);
+			show_cat();
 			}
 			else show_res();
 		}

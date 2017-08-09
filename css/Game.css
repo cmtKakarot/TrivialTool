@@ -2,6 +2,12 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: black;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+html {
+	max-width: 100%;
+    overflow-x: hidden;
 }
 
 button {
@@ -16,7 +22,7 @@ div {
 
 p {
 	color: #f0dddd;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 	font-family: 'Passion One', cursive;
 	font-size: 70px;
 	font-weight: 800; 
@@ -46,9 +52,18 @@ p {
 	margin:auto;
 }
 
-#Sol,#Song{
+#Song{
 	width: 100%;
 	margin:auto;
+}
+
+#Sol {
+	width: 100%;
+	margin:auto;
+	height: 40px;
+	font-size:20px;
+	border:solid black 2.5px;
+	font-family: 'Press Start 2P', cursive;
 }
 
 #timsc {
@@ -80,7 +95,7 @@ p {
   font-size: 50px;
   pointer-events: none;
   color: #f0dddd;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
 #Song {
