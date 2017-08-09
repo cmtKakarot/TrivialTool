@@ -729,7 +729,7 @@ $(document).ready(function() {
 					 $("#Discard").click();
 				 }
 			},1000);
-			$("#Song").prop("volume", 0.25);
+			$("#Song").prop("volume", 0.35);
 			$("#Song").attr("src", vSong[x].link);
 			show_cat();
 		}

@@ -674,7 +674,7 @@ $(document).ready(function() {
 		Ntot = numero(vec);
 		randomize();
 		$(".game").show();
-		$("#Song").prop("volume", 0.25);
+		$("#Song").prop("volume", 0.35);
 		$("#Song").attr("src", CategoryMatrix[i][j].link);
 		show_cat();
     });
