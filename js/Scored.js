@@ -185,7 +185,7 @@ var Touhou = [
     new SongData("../src/music/touhou/2.mp3", ["Touhou 7","The Prismriver Sisters' Theme","Prismriver Sisters' Theme","Phantom Ensemble"]),
     new SongData("../src/music/touhou/3.mp3", ["Touhou 7","Yukari's Theme","Necrofantasia","Perfect Cherry Blossom"]),
     new SongData("../src/music/touhou/4.mp3", ["Touhou 7.5","Demystify Feast","Immaterial and Missing Power"]),
-    new SongData("../src/music/touhou/5.mp3", ["Touhou 10","Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
+    new SongData("../src/music/touhou/5.mp3", ["Touhou 8","Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
     new SongData("../src/music/touhou/6.mp3", ["Touhou 8","Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night","Touhou 8"]),
     new SongData("../src/music/touhou/7.mp3", ["Touhou 8","Mokou's Theme","Reach for the moon","Inmortal smoke","Imperishable Night",]),
     new SongData("../src/music/touhou/8.mp3", ["Touhou 10","Road of the Apotropaic God","Dark Road","Mountain of Faith"]),
@@ -286,7 +286,7 @@ var	Square = [
     new SongData("../src/music/square/22.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Those who fight further"]),
     new SongData("../src/music/square/23.mp3", ["Bravely Second: End Layer","battle against emperor oblivion","Bravely Second"]),
     new SongData("../src/music/square/24.mp3", ["Bravely Second: End Layer","Bravely Second","anne form 1"]),
-    new SongData("../src/music/square/25.mp3", ["Bravely Default: Flying Fairy","love's vagrant"]),
+    new SongData("../src/music/square/25.mp3", ["Bravely Default: Flying Fairy","bravely default","love's vagrant"]),
     new SongData("../src/music/square/26.mp3", ["Bravely Default: Flying Fairy","bravely default","that person's name is"]),
     new SongData("../src/music/square/27.mp3", ["Bravely Default: Flying Fairy","bravely default","You're my Hope"]),
     new SongData("../src/music/square/28.mp3", ["Bravely Default: Flying Fairy","bravely default","Baby Bird"]),
@@ -436,9 +436,9 @@ var K3 = [
 ];
 
 var Disney = [
-	new SongData("../src/music/disney/1.mp3", ["The Little Mermaid","Under the sea","Sirenita"]),
-    new SongData("../src/music/disney/2.mp3", ["The Lion King","I Just Can't Wait to be King"]),
-    new SongData("../src/music/disney/3.mp3", ["The Lion King","Circle of Life"]),
+	new SongData("../src/music/disney/1.mp3", ["The Little Mermaid","Under the sea","La Sirenita","Sirenita"]),
+    new SongData("../src/music/disney/2.mp3", ["The Lion King","I Just Can't Wait to be King","El Rey Leon"]),
+    new SongData("../src/music/disney/3.mp3", ["The Lion King","Circle of Life","El Rey Leon"]),
     new SongData("../src/music/disney/4.mp3", ["Aladdin","A Whole New World"]),
     new SongData("../src/music/disney/5.mp3", ["Tangled","Then Will My Life Begin","Enredados"]),
     new SongData("../src/music/disney/6.mp3", ["I'll make a man out of you","Mulan"]),
@@ -680,6 +680,33 @@ function Error_20(){
 	alert("You need to add more categories! Press Reset");
 	vec = [];
 }
+
+function ResetGame() {
+	var ir, ic;
+	for(ir = 0; ir < CategoryMatrix.length; ++ir) {
+		for(ic = 0; ic < CategoryMatrix[ir].length; ++ic) {
+			CategoryMatrix[ir][ic].used1 = false;
+			CategoryMatrix[ir][ic].used2 = false;
+		}
+	}
+	Nused = 0;
+	NGo = 0;
+	Hhit = 0;
+	score = 0;
+	vec = [];
+	i = 0;
+	j = 0;
+	r = 0;
+	x = 0;
+	objection = true;
+	solr = 0;
+	multiplier = 1;
+	interval
+	vSong = [];
+	combo = 1;
+	omboBreak = 0;
+}
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -780,5 +807,14 @@ $(document).ready(function() {
 			$("#Song").attr("src", vSong[x].link);
 			show_cat();
 		}
+	});
+	$("#Back2").click(function(){
+		$("#Song").trigger("pause");
+		$(".res").hide();
+		$(".suck").hide();
+		$(".game").hide();
+		$(".cat").show();
+		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
+		ResetGame()
 	});
 });

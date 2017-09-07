@@ -197,6 +197,15 @@ td > div {
     background-size: 100% 100%;
     height:100px;
 }
+
+#Back2 {
+	width: 50%;
+	background-image: url(../src/images/bttns/back.png);
+    background-size: 100% 100%;
+    height:100px;
+    margin: auto;
+}
+
 /*TABLE ONLY*/
 table {
 	width: 100%;
