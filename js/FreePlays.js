@@ -338,21 +338,21 @@ var	Square = [
     new SongData("../src/music/square/51.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Squirming Evil"]),
     new SongData("../src/music/square/52.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Gummi Ship Level 3"]),
     new SongData("../src/music/square/53.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Hollow Bastion"]),
-    new SongData("../src/music/square/54.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","One Winged Angel"]),
-	new SongData("../src/music/square/55.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","The sunleth Waterscape"]),
-	new SongData("../src/music/square/56.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Fabula Nova Crystallis"]),
-	new SongData("../src/music/square/57.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Aerith's Theme"]),
-	new SongData("../src/music/square/58.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Saber's Edge"]),
-	new SongData("../src/music/square/59.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Blinded By Light"]),
-	new SongData("../src/music/square/60.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII","Maybe I'm a Lion"]),
-	new SongData("../src/music/square/61.mp3", ["Final Fantasy IV","Final Fantasy 4", "FF 4","FF IV","Battle 2"]),
-	new SongData("../src/music/square/62.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Pulse de Chocobo"]),
-	new SongData("../src/music/square/63.mp3", ["Final Fantasy I","Final Fantasy 1", "FF 1","FF I","Opening"]),
-	new SongData("../src/music/square/64.mp3", ["Final Fantasy III","Final Fantasy 3", "FF 3","FF III","Elia, the Maiden of Water"]),
-	new SongData("../src/music/square/65.mp3", ["Final Fantasy VI","Final Fantasy 6", "FF 6","FF VI","Terra's theme"]),
-	new SongData("../src/music/square/66.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Cocoon de Chocobo"]),
-	new SongData("../src/music/square/67.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Cosmo Canyon"]),
-	new SongData("../src/music/square/68.mp3", ["Final Fantasy V","Final Fantasy V", "FF 5","FF V","Clash on the Big Bridge"])
+    new SongData("../src/music/square/54.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII","Maybe I'm a Lion"]),
+	new SongData("../src/music/square/55.mp3", ["Final Fantasy IV","Final Fantasy 4", "FF 4","FF IV","Battle 2"]),
+	new SongData("../src/music/square/56.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Blinded By Light"]),
+	new SongData("../src/music/square/57.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Cocoon de Chocobo"]),
+	new SongData("../src/music/square/58.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Cosmo Canyon"]),
+	new SongData("../src/music/square/59.mp3", ["Final Fantasy V","Final Fantasy V", "FF 5","FF V","Clash on the Big Bridge"]),
+	new SongData("../src/music/square/60.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Pulse de Chocobo"]),
+	new SongData("../src/music/square/61.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Aerith's Theme"]),
+	new SongData("../src/music/square/62.mp3", ["Final Fantasy III","Final Fantasy 3", "FF 3","FF III","Elia, the Maiden of Water"]),
+	new SongData("../src/music/square/63.mp3", ["Final Fantasy VI","Final Fantasy 6", "FF 6","FF VI","Terra's theme"]),
+	new SongData("../src/music/square/64.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Saber's Edge"]),
+    new SongData("../src/music/square/65.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","One Winged Angel"]),
+	new SongData("../src/music/square/66.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","The sunleth Waterscape"]),
+	new SongData("../src/music/square/67.mp3", ["Final Fantasy I","Final Fantasy 1", "FF 1","FF I","Opening"]),
+	new SongData("../src/music/square/68.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Fabula Nova Crystallis"])
     ];
     
 var Sonic = [
@@ -744,11 +744,20 @@ $(document).ready(function() {
 	});
 	$("#Back").click(function(){
 		$("#Song").trigger("pause");
-		$(".cat").show();
 		$(".res").hide();
 		$(".suck").hide();
 		$(".game").hide();
 		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
+		$(".cat").show();
+
+		ResetGame();
+	});
+	$("#Back2").click(function(){
+		$(".res").hide();
+		$(".suck").hide();
+		$(".game").hide();
+		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
+		$(".cat").show();
 		ResetGame();
 	});
 });
