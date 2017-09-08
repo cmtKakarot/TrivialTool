@@ -111,7 +111,31 @@ var Anime = [
     new SongData("../src/music/anime/49.mp3", ["steins;gate","steins gate","gate of steiner"]),
     new SongData("../src/music/anime/50.mp3", ["steins;gate","steins gate","hacking to the gate"]),
     new SongData("../src/music/anime/51.mp3", ["tokyo ghoul","glassy sky"]),
-	new SongData("../src/music/anime/52.mp3", ["Dragon Ball Z","Bola de Drac Z","We got the power"])
+	new SongData("../src/music/anime/52.mp3", ["Dragon Ball Z","Bola de Drac Z","We got the power"]),
+	new SongData("../src/music/anime/56.mp3", ["Another"]),
+	new SongData("../src/music/anime/57.mp3", ["Digimon"]),
+	new SongData("../src/music/anime/58.mp3", ["Digimon Adventure Tri", "Digimon Adventure"]),
+	new SongData("../src/music/anime/59.mp3", ["Digimon Adventure Tri", "Digimon Adventure"]),
+	new SongData("../src/music/anime/60.mp3", ["Fairy Tail"]),
+	new SongData("../src/music/anime/61.mp3", ["Full Metal Alchemist Brotherhood", "FMAB", "Chemistry"]),
+	new SongData("../src/music/anime/62.mp3", ["Kill la Kill", "Ambiguous"]),
+	new SongData("../src/music/anime/63.mp3", ["Haikyuu", "Haikyu"]),
+	new SongData("../src/music/anime/64.mp3", ["Hajime no Ippo", "Under Star"]),
+	new SongData("../src/music/anime/65.mp3", ["Highschool of the Dead", "HOTD"]),
+	new SongData("../src/music/anime/66.mp3", ["Puella Magi Madoka Magica", "Madoka Magica"]),
+	new SongData("../src/music/anime/67.mp3", ["Mirai Nikki", "Dead End"]),
+	new SongData("../src/music/anime/68.mp3", ["Lucky Star"]),
+	new SongData("../src/music/anime/69.mp3", ["Naruto Shippuden", "GO"]),
+	new SongData("../src/music/anime/70.mp3", ["Full Metal Alchemist Brotherhood", "FMAB", "Rain"]),
+	new SongData("../src/music/anime/71.mp3", ["Shigatsu Wa Kimi no Uso"]),
+	new SongData("../src/music/anime/72.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"]),
+	new SongData("../src/music/anime/73.mp3", ["Tengen Toppa Gurren Lagann", "TTGL", "Sorairo Days"]),
+	new SongData("../src/music/anime/74.mp3", ["Fairy Tail"]),
+	new SongData("../src/music/anime/75.mp3", ["Fairy Tail"]),
+	new SongData("../src/music/anime/76.mp3", ["Full Metal Alchemist Brotherhood", "FMAB", "Hologram"]),
+	new SongData("../src/music/anime/77.mp3", ["Naruto Shippuden", "Sign"]),
+	new SongData("../src/music/anime/78.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"]),
+	new SongData("../src/music/anime/79.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"])
     ];
 
 var Remix = [ 
@@ -314,6 +338,21 @@ var	Square = [
     new SongData("../src/music/square/51.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Squirming Evil"]),
     new SongData("../src/music/square/52.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Gummi Ship Level 3"]),
     new SongData("../src/music/square/53.mp3", ["Kingdom Hearts","Kingdom Hearts 1", "KH","KH 1","Hollow Bastion"]),
+    new SongData("../src/music/square/54.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","One Winged Angel"]),
+	new SongData("../src/music/square/55.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","The sunleth Waterscape"]),
+	new SongData("../src/music/square/56.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Fabula Nova Crystallis"]),
+	new SongData("../src/music/square/57.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Aerith's Theme"]),
+	new SongData("../src/music/square/58.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Saber's Edge"]),
+	new SongData("../src/music/square/59.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Blinded By Light"]),
+	new SongData("../src/music/square/60.mp3", ["Final Fantasy VIII","Final Fantasy 8", "FF 8","FF VIII","Maybe I'm a Lion"]),
+	new SongData("../src/music/square/61.mp3", ["Final Fantasy IV","Final Fantasy 4", "FF 4","FF IV","Battle 2"]),
+	new SongData("../src/music/square/62.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Pulse de Chocobo"]),
+	new SongData("../src/music/square/63.mp3", ["Final Fantasy I","Final Fantasy 1", "FF 1","FF I","Opening"]),
+	new SongData("../src/music/square/64.mp3", ["Final Fantasy III","Final Fantasy 3", "FF 3","FF III","Elia, the Maiden of Water"]),
+	new SongData("../src/music/square/65.mp3", ["Final Fantasy VI","Final Fantasy 6", "FF 6","FF VI","Terra's theme"]),
+	new SongData("../src/music/square/66.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Cocoon de Chocobo"]),
+	new SongData("../src/music/square/67.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","Cosmo Canyon"]),
+	new SongData("../src/music/square/68.mp3", ["Final Fantasy V","Final Fantasy V", "FF 5","FF V","Clash on the Big Bridge"])
     ];
     
 var Sonic = [
@@ -431,7 +470,8 @@ var K3 = [
 	new SongData("../src/music/k3/52.mp3", ["Hey Arnold"]),
 	new SongData("../src/music/k3/53.mp3", ["Get Backers"]),
 	new SongData("../src/music/k3/54.mp3", ["Ninja Boy Rantaro","Nintama Rantaro","Rantaro"]),
-	new SongData("../src/music/k3/55.mp3", ["DNA2","DNA 2","DNA"])
+	new SongData("../src/music/k3/55.mp3", ["DNA2","DNA 2","DNA"]),
+	new SongData("../src/music/k3/56.mp3", ["Cowboy bebop"])
 ];
 
 var Disney = [
