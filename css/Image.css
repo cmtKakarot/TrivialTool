@@ -1,0 +1,58 @@
+body {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	background-image: url("../src/images/other/xmas.png");
+    overflow-x: hidden;
+}
+
+div {
+  	display: flex; 
+  	flex-direction: column;
+}
+
+#Image {
+	position: relative;
+	z-index: 2;
+	border:solid white 1.5px;
+	display: block; 
+	height: 600px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background-size: 100% 100%;
+}
+
+p {
+	color: #f0dddd;
+	font-family: 'Passion One', cursive;
+	font-size: 70px;
+	font-weight: 800; 
+	line-height: 72px; 
+	margin: 0 0 15px; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+#TextN {
+  margin: auto 0;
+  font-family: 'Passion One', cursive;
+  font-size: 50px;
+  pointer-events: none;
+  color: #f0dddd;
+}
+
+#solsong {
+	width: 50%;
+	height: 40px;
+	margin:auto;
+}
+
+#Sol {
+	width: 100%;
+	margin:auto;
+	height: 40px;
+	font-size:20px;
+	border:solid #b00c0c 2.5px;
+	font-family: 'Press Start 2P', cursive;
+}
