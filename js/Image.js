@@ -68,6 +68,12 @@ var ImageVec = [
     new ImageData("../src/images/imt/27.jpg", ["Pikmin 3"], "Gerard"),
     new ImageData("../src/images/imt/28.jpg", ["Smash Bros 4 WiiU"], "Gerard"),
     new ImageData("../src/images/imt/29.jpg", ["Metal Gear Solid 2"], "Eric"),
+    new ImageData("../src/images/imt/14.png", ["A Hat in Time"], "Kano"),
+    new ImageData("../src/images/imt/15.png", ["Danganronpa V3"], "Kano"),
+    new ImageData("../src/images/imt/16.png", ["Enter the Gungeon"], "Kano"),
+    new ImageData("../src/images/imt/17.png", ["Civilization VI"], "Kano"),
+    new ImageData("../src/images/imt/18.png", ["Ori and the Blind Forest"], "Kano"),
+    new ImageData("../src/images/imt/18.png", ["Shovel Knight"], "Kano"),
     ];
  
  var XmasVec = [
