@@ -73,7 +73,7 @@ var ImageVec = [
     new ImageData("../src/images/imt/16.png", ["Enter the Gungeon"], "Kano"),
     new ImageData("../src/images/imt/17.png", ["Civilization VI"], "Kano"),
     new ImageData("../src/images/imt/18.png", ["Ori and the Blind Forest"], "Kano"),
-    new ImageData("../src/images/imt/18.png", ["Shovel Knight"], "Kano"),
+    new ImageData("../src/images/imt/19.png", ["Shovel Knight"], "Kano"),
     ];
  
  var XmasVec = [
