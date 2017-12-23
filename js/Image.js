@@ -122,6 +122,7 @@ var objection = true;
 var solr = 0;
 var interval;
 var interval2;
+var solvec = [];
  
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
@@ -156,6 +157,7 @@ function next() {
 		while(ImageVec[x].used == true) {
 			x = Math.floor((Math.random() * ImageVec.length));
         }
+        solvec.push(ImageVec[x].sols[0]);
         $("#Image").css("backgroundImage",'url('+ImageVec[x].link+')');
      }
 }
@@ -189,6 +191,7 @@ $(document).ready(function() {
 	$("#Song").prop("volume", 0.25);
 	x = Math.floor((Math.random() * ImageVec.length));
 	r = Math.floor((Math.random() * XmasVec.length));
+	solvec.push(ImageVec[x].sols[0]);
 	$("#Image").css("backgroundImage",'url('+ImageVec[x].link+')');
 	$("#Song").attr("src", XmasVec[r].link);
 	interval = setInterval(function() {
