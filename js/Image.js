@@ -74,6 +74,14 @@ var ImageVec = [
     new ImageData("../src/images/imt/17.png", ["Civilization VI"], "Kano"),
     new ImageData("../src/images/imt/18.png", ["Ori and the Blind Forest"], "Kano"),
     new ImageData("../src/images/imt/19.png", ["Shovel Knight"], "Kano"),
+    new ImageData("../src/images/imt/20.png", ["Dofus"], "Eric"),
+    new ImageData("../src/images/imt/30.jpg", ["Skyward Sword"], "Eric"),
+    new ImageData("../src/images/imt/31.jpg", ["Rust"], "Eric"),
+    new ImageData("../src/images/imt/21.png", ["Dissidia NT"], "Eric"),
+    new ImageData("../src/images/imt/32.jpg", ["Fire Emblem Heroes"], "Eric"),
+    new ImageData("../src/images/imt/33.jpg", ["Clash Royale"], "Eric"),
+    new ImageData("../src/images/imt/34.jpg", ["Kid Icarus Uprising"], "Eric"),
+    new ImageData("../src/images/imt/35.jpg", ["Baten Kaitos"], "Eric"),
     ];
  
  var XmasVec = [
@@ -82,6 +90,7 @@ var ImageVec = [
 	new XmasSongData("../src/music/other/xmas3.mp3",182),
 	new XmasSongData("../src/music/other/xmas4.mp3",283),
 	new XmasSongData("../src/music/other/xmas5.mp3",121),
+	new XmasSongData("../src/music/other/xmas6.mp3",217),
 	];
 	
 var VeyronVec = [
