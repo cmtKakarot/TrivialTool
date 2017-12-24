@@ -477,10 +477,10 @@ var K3 = [
 var Disney = [
 	new SongData("../src/music/disney/1.mp3", ["The Little Mermaid","Under the sea","La Sirenita","Sirenita"]),
     new SongData("../src/music/disney/2.mp3", ["The Lion King","I Just Can't Wait to be King","El Rey Leon"]),
-    new SongData("../src/music/disney/3.mp3", ["The Lion King","Circle of Life"]),
+    new SongData("../src/music/disney/3.mp3", ["The Lion King","Circle of Life","El Rey Leon"]),
     new SongData("../src/music/disney/4.mp3", ["Aladdin","A Whole New World"]),
     new SongData("../src/music/disney/5.mp3", ["Tangled","Then Will My Life Begin","Enredados"]),
-    new SongData("../src/music/disney/6.mp3", ["Mulan","I'll make a man out of you"]),
+    new SongData("../src/music/disney/6.mp3", ["I'll make a man out of you","Mulan"]),
     new SongData("../src/music/disney/7.mp3", ["Hercules","Zero to Hero"]),
     new SongData("../src/music/disney/8.mp3", ["Tarzan","Song of a Man"]),
     new SongData("../src/music/disney/9.mp3", ["Tarzan","You'll be in my heart"]),
@@ -522,7 +522,17 @@ var Disney = [
     new SongData("../src/music/disney/45.mp3", ["The Jungle Book","El libro de la selva","I wanna be like you"]),
     new SongData("../src/music/disney/46.mp3", ["Moana","How far i'll go"]),
     new SongData("../src/music/disney/47.mp3", ["Zootopia","Try Everything"]),
-	new SongData("../src/music/disney/48.mp3", ["Johnny Test"])
+	new SongData("../src/music/disney/48.mp3", ["Johnny Test"]),
+	new SongData("../src/music/disney/49.mp3", ["Monsters Inc","Monstruos SA"]),
+	new SongData("../src/music/disney/50.mp3", ["The Nightmare before Christmas","Pesadilla antes de navidad"]),
+	new SongData("../src/music/disney/51.mp3", ["Oliver and Company","Oliver y su pandilla"]),
+	new SongData("../src/music/disney/52.mp3", ["The Hunchback of Notre Dame","El jorobado de Notre Dame"]),
+	new SongData("../src/music/disney/53.mp3", ["Aladdin"]),
+	new SongData("../src/music/disney/54.mp3", ["Anastasia"]),
+	new SongData("../src/music/disney/55.mp3", ["Moana","You're welcome"]),
+	new SongData("../src/music/disney/56.mp3", ["Moana","Shiny"]),
+	new SongData("../src/music/disney/57.mp3", ["Tangled","I've got a dream","Enredados"]),
+	new SongData("../src/music/disney/58.mp3", ["The Lion King 2","The Lion King II","My Lullaby","El Rey Leon 2"]),
 	];
 
 var Indie = [
