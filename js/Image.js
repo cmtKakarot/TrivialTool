@@ -7,7 +7,8 @@ function ImageData(link, sols, author) {
     this.author = author;
     this.sols = sols;
     this.used = false;
-    this.time = 30;
+    this.used2 = false;
+    this.time = 15;
 }
  
 function XmasSongData(link, time) {
@@ -25,15 +26,62 @@ function MemeSongData(link) {
 //--------------------------------- IMAGE DATABASE --------------------------------------
 //---------------------------------------------------------------------------------------
  
-var ImageVec = [
-    new ImageData("../src/images/imt/2.png", ["Final Fantasy X"], "Eric"),
+var TestVec = [
+	new ImageData("../src/images/imt/0T.jpg", ["Shrek"], "Veyron"),
+	new ImageData("../src/images/imt/1T.jpg", ["Shrek"], "Veyron"),
+	new ImageData("../src/images/imt/2T.jpg", ["Shrek"], "Veyron"),
+	new ImageData("../src/images/imt/3T.jpg", ["Shrek"], "Veyron"),
+	new ImageData("../src/images/imt/4T.png", ["Shrek"], "Veyron"),
+	];
+ 
+//26
+var EricVec = [
+	new ImageData("../src/images/imt/2.png", ["Final Fantasy X"], "Eric"),
     new ImageData("../src/images/imt/1.png", ["Metal Gear Solid 3"], "Eric"),
     new ImageData("../src/images/imt/1.jpg", ["Persona 4"], "Eric"),
-    new ImageData("../src/images/imt/3.png", ["Mario Party 4"], "Fernando"),
+    new ImageData("../src/images/imt/29.jpg", ["Metal Gear Solid 2"], "Eric"),
+    new ImageData("../src/images/imt/20.png", ["Dofus"], "Eric"),
+    new ImageData("../src/images/imt/30.jpg", ["Skyward Sword"], "Eric"),
+    new ImageData("../src/images/imt/31.jpg", ["Rust"], "Eric"),
+    new ImageData("../src/images/imt/21.png", ["Dissidia NT"], "Eric"),
+    new ImageData("../src/images/imt/32.jpg", ["Fire Emblem Heroes"], "Eric"),
+    new ImageData("../src/images/imt/33.jpg", ["Clash Royale"], "Eric"),
+    new ImageData("../src/images/imt/34.jpg", ["Kid Icarus Uprising"], "Eric"),
+    new ImageData("../src/images/imt/35.jpg", ["Baten Kaitos"], "Eric"),
+    new ImageData("../src/images/imt/70.jpg", ["Osu!"], "Eric"),
+    new ImageData("../src/images/imt/71.jpg", ["Persona 5: Dancing Star Night"], "Eric"),
+    new ImageData("../src/images/imt/72.jpg", ["Osu!"], "Eric"),
+    new ImageData("../src/images/imt/73.jpg", ["Persona 4: Dancing all Night"], "Eric"),
+    new ImageData("../src/images/imt/74.jpg", ["Soul Calibur 2"], "Eric"),
+    new ImageData("../src/images/imt/75.jpg", ["Tekken x Street Fighter"], "Eric"),
+    new ImageData("../src/images/imt/76.jpg", ["Okami"], "Eric"),
+    new ImageData("../src/images/imt/77.jpg", ["Ultimate Marvel vs Capcom 3"], "Eric"),
+    new ImageData("../src/images/imt/78.jpg", ["Persona 4: Arena"], "Eric"),
+    new ImageData("../src/images/imt/79.jpg", ["Tony Hawk's Pro Skater 2"], "Eric"),
+    new ImageData("../src/images/imt/80.jpg", ["Metal Gear Solid V"], "Eric"),
+    new ImageData("../src/images/imt/81.jpg", ["Super Smash Bros Brawl"], "Eric"),
+    new ImageData("../src/images/imt/82.jpg", ["Kingdom Hears 3D"], "Eric"),
+    new ImageData("../src/images/imt/83.jpg", ["Soul Calibur 4"], "Eric"),
+    new ImageData("../src/images/imt/84.jpg", ["Osu Tatakae Ouendan 2"], "Eric"),
+];
+
+//10
+var FerVec = [
+	new ImageData("../src/images/imt/3.png", ["Mario Party 4"], "Fernando"),
     new ImageData("../src/images/imt/4.png", ["Final Fantasy VII"], "Fernando"),
     new ImageData("../src/images/imt/5.png", ["Street Fighter II"], "Fernando"),
     new ImageData("../src/images/imt/6.png", ["Call of duty Black Ops 2"], "Fernando"),
-    new ImageData("../src/images/imt/2.jpg", ["Golden Sun 2"], "Marc"),
+    new ImageData("../src/images/imt/11.png", ["Touhou 8"], "Fernando"),
+    new ImageData("../src/images/imt/65.jpg", ["Conker's bad fur day"], "Fernando"),
+    new ImageData("../src/images/imt/66.jpg", ["Halo 2"], "Fernando"),
+    new ImageData("../src/images/imt/67.jpg", ["Metroid prime"], "Fernando"),
+    new ImageData("../src/images/imt/68.jpg", ["Shadow of the Colossus"], "Fernando"),
+    new ImageData("../src/images/imt/69.jpg", ["Wii Fit"], "Fernando"),
+];
+
+//29
+var MarcVec = [
+	new ImageData("../src/images/imt/2.jpg", ["Golden Sun 2"], "Marc"),
     new ImageData("../src/images/imt/7.png", ["Bravely Default"], "Marc"),
     new ImageData("../src/images/imt/3.jpg", ["Tales of Phantasia"], "Marc"),
     new ImageData("../src/images/imt/4.jpg", ["Dragon Ball Adventure"], "Marc"),
@@ -53,8 +101,21 @@ var ImageVec = [
     new ImageData("../src/images/imt/9.png", ["Metroid Prime 3"], "Marc"),
     new ImageData("../src/images/imt/10.png", ["Metroid Prime Hunters"], "Marc"),
     new ImageData("../src/images/imt/17.jpg", ["Metroid Federation Forces"], "Marc"),
-    new ImageData("../src/images/imt/11.png", ["Touhou 8"], "Fernando"),
-    new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Veyronverse 2"], "Gerard"),
+    new ImageData("../src/images/imt/37.jpg", ["Persona 5"], "Marc"),
+    new ImageData("../src/images/imt/38.jpg", ["Persona 4"], "Marc"),
+    new ImageData("../src/images/imt/39.jpg", ["Mario Power Tennis GBA"], "Marc"),
+    new ImageData("../src/images/imt/40.jpg", ["Kid Icarus Uprising"], "Marc"),
+    new ImageData("../src/images/imt/29.png", ["Ace Attorney: Apollo Justice"], "Marc"),
+    new ImageData("../src/images/imt/41.jpg", ["Ace Attorney: Spirit of Justice"], "Marc"),
+    new ImageData("../src/images/imt/42.jpg", ["Pokemon OR/AS"], "Marc"),
+    new ImageData("../src/images/imt/43.jpg", ["Pokemon Sun/Moon"], "Marc"),
+    new ImageData("../src/images/imt/44.jpg", ["Pokemon Ultra Sun/Moon"], "Marc"),
+    new ImageData("../src/images/imt/45.jpg", ["Xenoblade Chronicle X"], "Marc"),
+];
+
+//12
+var GrewVec = [
+	new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Veyronverse 2"], "Gerard"),
     new ImageData("../src/images/imt/12.png", ["Pikmin"], "Gerard"),
     new ImageData("../src/images/imt/19.jpg", ["Smash Bros 4 3DS"], "Gerard"),
     new ImageData("../src/images/imt/13.png", ["AC: Happy Home Designer"], "Gerard"),
@@ -67,23 +128,55 @@ var ImageVec = [
     new ImageData("../src/images/imt/26.jpg", ["Pikmin 2"], "Gerard"),
     new ImageData("../src/images/imt/27.jpg", ["Pikmin 3"], "Gerard"),
     new ImageData("../src/images/imt/28.jpg", ["Smash Bros 4 WiiU"], "Gerard"),
-    new ImageData("../src/images/imt/29.jpg", ["Metal Gear Solid 2"], "Eric"),
-    new ImageData("../src/images/imt/14.png", ["A Hat in Time"], "Kano"),
+];
+
+//6
+var KanoVec = [
+	new ImageData("../src/images/imt/14.png", ["A Hat in Time"], "Kano"),
     new ImageData("../src/images/imt/15.png", ["Danganronpa V3"], "Kano"),
     new ImageData("../src/images/imt/16.png", ["Enter the Gungeon"], "Kano"),
     new ImageData("../src/images/imt/17.png", ["Civilization VI"], "Kano"),
     new ImageData("../src/images/imt/18.png", ["Ori and the Blind Forest"], "Kano"),
     new ImageData("../src/images/imt/19.png", ["Shovel Knight"], "Kano"),
-    new ImageData("../src/images/imt/20.png", ["Dofus"], "Eric"),
-    new ImageData("../src/images/imt/30.jpg", ["Skyward Sword"], "Eric"),
-    new ImageData("../src/images/imt/31.jpg", ["Rust"], "Eric"),
-    new ImageData("../src/images/imt/21.png", ["Dissidia NT"], "Eric"),
-    new ImageData("../src/images/imt/32.jpg", ["Fire Emblem Heroes"], "Eric"),
-    new ImageData("../src/images/imt/33.jpg", ["Clash Royale"], "Eric"),
-    new ImageData("../src/images/imt/34.jpg", ["Kid Icarus Uprising"], "Eric"),
-    new ImageData("../src/images/imt/35.jpg", ["Baten Kaitos"], "Eric"),
-    ];
- 
+];
+
+//9
+var YerayVec = [
+    new ImageData("../src/images/imt/22.png", ["Majora's Mask"], "Yeray"),
+    new ImageData("../src/images/imt/23.png", ["A Hat in Time"], "Yeray"),
+    new ImageData("../src/images/imt/24.png", ["Sonic Adventure 2"], "Yeray"),
+    new ImageData("../src/images/imt/25.png", ["Spyro 2"], "Yeray"),
+    new ImageData("../src/images/imt/36.jpg", ["Ratchet and Clank: Tools of Destruction"], "Yeray"),
+    new ImageData("../src/images/imt/26.png", ["Portal"], "Yeray"),
+    new ImageData("../src/images/imt/27.png", ["Kingdom Hearts 1"], "Yeray"),
+    new ImageData("../src/images/imt/28.png", ["Castle Crashers"], "Yeray"),
+    new ImageData("../src/images/imt/85.jpg", ["Final Fantasy VII"], "Yeray"),
+];
+
+//20
+var EliraVec = [
+    new ImageData("../src/images/imt/46.jpg", ["Danganronpa 2"], "Elira"),
+    new ImageData("../src/images/imt/47.jpg", ["Banjo Tooie"], "Elira"),
+    new ImageData("../src/images/imt/48.jpg", ["Bastion"], "Elira"),
+    new ImageData("../src/images/imt/49.jpg", ["Bravely Default"], "Elira"),
+    new ImageData("../src/images/imt/50.jpg", ["Child of Light"], "Elira"),
+    new ImageData("../src/images/imt/51.jpg", ["Crystal Chronicles"], "Elira"),
+    new ImageData("../src/images/imt/52.jpg", ["Diddy Kong Racing"], "Elira"),
+    new ImageData("../src/images/imt/53.jpg", ["Donkey Kong 64"], "Elira"),
+    new ImageData("../src/images/imt/54.jpg", ["Donkey Kong 64"], "Elira"),
+    new ImageData("../src/images/imt/55.jpg", ["Final Fantasy VIII"], "Elira"),
+    new ImageData("../src/images/imt/56.jpg", ["Kingdom Hearts 258/2"], "Elira"),
+    new ImageData("../src/images/imt/57.jpg", ["Ori and the blind forest"], "Elira"),
+    new ImageData("../src/images/imt/30.png", ["Majora's Mask"], "Elira"),
+    new ImageData("../src/images/imt/58.jpg", ["Smash Bros Melee"], "Elira"),
+    new ImageData("../src/images/imt/31.png", ["Mickey Mania"], "Elira"),
+    new ImageData("../src/images/imt/59.jpg", ["Persona 4"], "Elira"),
+    new ImageData("../src/images/imt/60.jpg", ["Pokemon OR/AS"], "Elira"),
+    new ImageData("../src/images/imt/61.jpg", ["Pokemon GO"], "Elira"),
+    new ImageData("../src/images/imt/62.jpg", ["Sushi Striker"], "Elira"),
+    new ImageData("../src/images/imt/63.jpg", ["Twilight Princess"], "Elira"),
+    new ImageData("../src/images/imt/64.jpg", ["Xenoblade Chronicles X"], "Elira"),
+ ];
  var XmasVec = [
 	new XmasSongData("../src/music/other/xmas1.mp3",174),
 	new XmasSongData("../src/music/other/xmas2.mp3",213),
@@ -105,6 +198,7 @@ var IvanVec = [
 	new MemeSongData("../src/music/other/ivan5.ogg"),
 	new MemeSongData("../src/music/other/ivan6.ogg"),
 	];
+	
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -123,13 +217,36 @@ var solr = 0;
 var interval;
 var interval2;
 var solvec = [];
- 
+var ImageVec = [];
+var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec];
+var ImageMat = [YerayVec];
+//var ImageMat = [TestVec];
+var itot = 9;
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
 //---------------------------------------------------------------------------------------
  
- function show_sol() {
-	document.getElementById("Last").innerHTML = "Juego anterior: " + ImageVec[x].sols[0] + " (" + ImageVec[x].author + ")";
+ function fill_vec() {
+	var ns = 0;
+	var rot = 0;
+	while (ns < itot) {
+		var ran = Math.floor((Math.random() * ImageMat[rot].length));
+		while(ImageMat[rot][ran].used2) {
+			ran = Math.floor((Math.random() * ImageMat[rot].length));
+		}
+		ImageVec.push(ImageMat[rot][ran])
+		ImageMat[rot][ran].used2 = true;
+		ns = ns + 1;
+		rot = rot + 1;
+		if(rot == ImageMat.length) {
+			rot = 0;
+		}
+	}
+ }
+ 
+ function show_name() {
+	document.getElementById("Last").innerHTML = "Imagen de " + ImageVec[x].author
 	$(".suck").show();
 }
 
@@ -148,7 +265,6 @@ var solvec = [];
 
 function next() {
 	$("body").css("backgroundImage","url(../src/images/other/xmas.png)");
-	show_sol();
 	show_meme();
     ++Nused
     ImageVec[x].used = true;
@@ -158,7 +274,10 @@ function next() {
 			x = Math.floor((Math.random() * ImageVec.length));
         }
         solvec.push(ImageVec[x].sols[0]);
+        show_name();
         $("#Image").css("backgroundImage",'url('+ImageVec[x].link+')');
+        document.getElementById("demo").innerHTML = ImageVec[x].time;
+        $("#demo").show()
      }
 }
  
@@ -189,18 +308,25 @@ function next_xmas() {
  
 $(document).ready(function() {
 	$("#Song").prop("volume", 0.25);
+	fill_vec();
 	x = Math.floor((Math.random() * ImageVec.length));
 	r = Math.floor((Math.random() * XmasVec.length));
 	solvec.push(ImageVec[x].sols[0]);
 	$("#Image").css("backgroundImage",'url('+ImageVec[x].link+')');
+	document.getElementById("demo").innerHTML = ImageVec[x].time;
 	$("#Song").attr("src", XmasVec[r].link);
 	interval = setInterval(function() {
 			--ImageVec[x].time;
 			document.getElementById("demo").innerHTML = ImageVec[x].time;
-			if(ImageVec[x].time <= 0) {
-				 next()
-			 }
+			if(ImageVec[x].time == -1) {
+				$("#demo").hide()
+				document.getElementById("Last").innerHTML = "Solución: " + ImageVec[x].sols[0]
+			}
+			else if(ImageVec[x].time == -6) {
+				next();
+			} 
 		},1000);
+	show_name();
 		interval2 = setInterval(function() {
 			--XmasVec[r].time;
 			if(XmasVec[r].time <= 0) {
