@@ -63,6 +63,7 @@ var EricVec = [
     new ImageData("../src/images/imt/82.jpg", ["Kingdom Hears 3D"], "Eric"),
     new ImageData("../src/images/imt/83.jpg", ["Soul Calibur 4"], "Eric"),
     new ImageData("../src/images/imt/84.jpg", ["Osu Tatakae Ouendan 2"], "Eric"),
+    new ImageData("../src/images/imt/112.jpg", ["Breath of the Wild"], "Eric"),
 ];
 
 //10
