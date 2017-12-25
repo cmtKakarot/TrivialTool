@@ -255,6 +255,23 @@ var CrisPQVec = [
 	new ImageData("../src/images/imt/146.jpg", ["Advance Wars: Dark Conflict"], "CrisPQ"),
 ];
 
+var Cp2Vec = [
+	new ImageData("../src/images/imt/42.png", ["Bioshock"], "Cp2"),
+	new ImageData("../src/images/imt/43.png", ["Borderlands 2"], "Cp2"),
+	new ImageData("../src/images/imt/44.png", ["Civilization VI"], "Cp2"),
+	new ImageData("../src/images/imt/45.png", ["Doom"], "Cp2"),
+	new ImageData("../src/images/imt/46.png", ["Dark souls 3"], "Cp2"),
+	new ImageData("../src/images/imt/47.png", ["Mirror's Edge"], "Cp2"),
+	new ImageData("../src/images/imt/48.png", ["Ori and the blind forest"], "Cp2"),
+	new ImageData("../src/images/imt/49.png", ["Sacred"], "Cp2"),
+	new ImageData("../src/images/imt/50.png", ["Team Fortress 2"], "Cp2"),
+	new ImageData("../src/images/imt/51.png", ["The witcher 3: Wild hunt"], "Cp2"),
+	new ImageData("../src/images/imt/52.png", ["Fallout 4"], "Cp2"),
+	new ImageData("../src/images/imt/53.png", ["Half life 2"], "Cp2"),
+	new ImageData("../src/images/imt/54.png", ["Mass Effect 3"], "Cp2"),
+	new ImageData("../src/images/imt/55.png", ["GTA Vice City"], "Cp2"),
+];
+
  var XmasVec = [
 	new XmasSongData("../src/music/other/xmas1.mp3",174),
 	new XmasSongData("../src/music/other/xmas2.mp3",213),
@@ -297,10 +314,10 @@ var interval;
 var interval2;
 var solvec = [];
 var ImageVec = [];
-var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec];
-//var ImageMat = [CrisPQVec];
+var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec,Cp2Vec];
+//var ImageMat = [Cp2Vec];
 //var ImageMat = [TestVec];
-var itot = 90;
+var itot = 100;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
