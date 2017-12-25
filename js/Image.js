@@ -114,7 +114,7 @@ var MarcVec = [
     new ImageData("../src/images/imt/45.jpg", ["Xenoblade Chronicle X"], "Marc"),
 ];
 
-//36
+//44
 var GrewVec = [
 	new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Veyronverse 2"], "Gerard"),
     new ImageData("../src/images/imt/12.png", ["Pikmin"], "Gerard"),
@@ -153,6 +153,13 @@ var GrewVec = [
     new ImageData("../src/images/imt/106.jpg", ["Xenosuk Chronicles 2"], "Gerard"),
     new ImageData("../src/images/imt/107.jpg", ["Second Life"], "Gerard"),
     new ImageData("../src/images/imt/108.jpg", ["Metal Gear Solid"], "Gerard"),
+    new ImageData("../src/images/imt/113.jpg", ["Tony Hawk's Pro Skater"], "Gerard"),
+    new ImageData("../src/images/imt/114.jpg", ["Shrek Game Boy"], "Gerard"),
+    new ImageData("../src/images/imt/115.jpg", ["Shenmue"], "Gerard"),
+    new ImageData("../src/images/imt/116.jpg", ["Parappa the Rapper"], "Gerard"),
+    new ImageData("../src/images/imt/117.jpg", ["WarioWare: Smooth Moves"], "Gerard"),
+    new ImageData("../src/images/imt/118.jpg", ["Grush"], "Gerard"),
+    new ImageData("../src/images/imt/119.jpg", ["Metroid"], "Gerard"),
 ];
 
 //10
@@ -214,6 +221,40 @@ var EliraVec = [
     new ImageData("../src/images/imt/63.jpg", ["Twilight Princess"], "Elira"),
     new ImageData("../src/images/imt/64.jpg", ["Xenoblade Chronicles X"], "Elira"),
  ];
+ 
+ var MarcPQVec = [
+	new ImageData("../src/images/imt/120.jpg", ["Dark Souls"], "MarcPQ"),
+	new ImageData("../src/images/imt/121.jpg", ["Golden Sun 2"], "MarcPQ"),
+	new ImageData("../src/images/imt/122.jpg", ["Ib"], "MarcPQ"),
+	new ImageData("../src/images/imt/123.jpg", ["Yugioh Forbidden Memories"], "MarcPQ"),
+	new ImageData("../src/images/imt/124.jpg", ["Devil Daggers"], "MarcPQ"),
+	new ImageData("../src/images/imt/126.jpg", ["Digimon Rumble Arena"], "MarcPQ"),
+	new ImageData("../src/images/imt/127.jpg", ["Earthworm Jim"], "MarcPQ"),
+	new ImageData("../src/images/imt/128.jpg", ["Lost Magic"], "MarcPQ"),
+	new ImageData("../src/images/imt/129.jpg", ["Xenoblade Chronicles 2"], "MarcPQ"),
+	new ImageData("../src/images/imt/130.jpg", ["LSD Dream Emulator"], "MarcPQ"),
+	new ImageData("../src/images/imt/132.jpg", ["Spec Ops: The Line"], "MarcPQ"),
+	new ImageData("../src/images/imt/139.jpg", ["Pandora's Tower"], "MarcPQ"),
+];
+
+var CrisPQVec = [
+	new ImageData("../src/images/imt/125.jpg", ["Talmit's adventure"], "CrisPQ"),
+	new ImageData("../src/images/imt/133.jpg", ["Kula World"], "CrisPQ"),
+	new ImageData("../src/images/imt/131.jpg", ["The Blue Brothers"], "CrisPQ"),
+	new ImageData("../src/images/imt/134.jpg", ["Bomberman Generation"], "CrisPQ"),
+	new ImageData("../src/images/imt/135.jpg", ["Final Fantasy Tactics"], "CrisPQ"),
+	new ImageData("../src/images/imt/136.jpg", ["Dragon's Lair"], "CrisPQ"),
+	new ImageData("../src/images/imt/137.jpg", ["Hamtaro Ham Ham Games"], "CrisPQ"),
+	new ImageData("../src/images/imt/138.jpg", ["The Witch's House"], "CrisPQ"),
+	new ImageData("../src/images/imt/140.jpg", ["Shining Force"], "CrisPQ"),
+	new ImageData("../src/images/imt/141.jpg", ["Final Fantasy: Echoes of Time"], "CrisPQ"),
+	new ImageData("../src/images/imt/142.jpg", ["Final Fantasy 12: Revenant Wings"], "CrisPQ"),
+	new ImageData("../src/images/imt/143.jpg", ["Another Code R"], "CrisPQ"),
+	new ImageData("../src/images/imt/144.jpg", ["Bubble Bobble"], "CrisPQ"),
+	new ImageData("../src/images/imt/145.jpg", ["Frogger"], "CrisPQ"),
+	new ImageData("../src/images/imt/146.jpg", ["Advance Wars: Dark Conflict"], "CrisPQ"),
+];
+
  var XmasVec = [
 	new XmasSongData("../src/music/other/xmas1.mp3",174),
 	new XmasSongData("../src/music/other/xmas2.mp3",213),
@@ -221,11 +262,12 @@ var EliraVec = [
 	new XmasSongData("../src/music/other/xmas4.mp3",283),
 	new XmasSongData("../src/music/other/xmas5.mp3",121),
 	new XmasSongData("../src/music/other/xmas6.mp3",217),
-	];
+];
 	
+
 var VeyronVec = [
 	new MemeSongData("../src/music/other/veyron1.ogg"),
-	];
+];
 
 var IvanVec = [
 	new MemeSongData("../src/music/other/ivan1.ogg"),
@@ -234,7 +276,7 @@ var IvanVec = [
 	new MemeSongData("../src/music/other/ivan4.ogg"),
 	new MemeSongData("../src/music/other/ivan5.ogg"),
 	new MemeSongData("../src/music/other/ivan6.ogg"),
-	];
+];
 	
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
@@ -255,10 +297,10 @@ var interval;
 var interval2;
 var solvec = [];
 var ImageVec = [];
-var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec];
-//var ImageMat = [YerayVec];
+var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec];
+//var ImageMat = [CrisPQVec];
 //var ImageMat = [TestVec];
-var itot = 70;
+var itot = 90;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
