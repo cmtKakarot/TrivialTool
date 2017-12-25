@@ -523,7 +523,17 @@ var Disney = [
     new SongData("../src/music/disney/45.mp3", ["The Jungle Book","El libro de la selva","I wanna be like you"]),
     new SongData("../src/music/disney/46.mp3", ["Moana","How far i'll go"]),
     new SongData("../src/music/disney/47.mp3", ["Zootopia","Try Everything"]),
-	new SongData("../src/music/disney/48.mp3", ["Johnny Test"])
+	new SongData("../src/music/disney/48.mp3", ["Johnny Test"]),
+	new SongData("../src/music/disney/49.mp3", ["Monsters Inc","Monstruos SA"]),
+	new SongData("../src/music/disney/50.mp3", ["The Nightmare before Christmas","Pesadilla antes de navidad"]),
+	new SongData("../src/music/disney/51.mp3", ["Oliver and Company","Oliver y su pandilla"]),
+	new SongData("../src/music/disney/52.mp3", ["The Hunchback of Notre Dame","El jorobado de Notre Dame"]),
+	new SongData("../src/music/disney/53.mp3", ["Aladdin"]),
+	new SongData("../src/music/disney/54.mp3", ["Anastasia"]),
+	new SongData("../src/music/disney/55.mp3", ["Moana","You're welcome"]),
+	new SongData("../src/music/disney/56.mp3", ["Moana","Shiny"]),
+	new SongData("../src/music/disney/57.mp3", ["Tangled","I've got a dream","Enredados"]),
+	new SongData("../src/music/disney/58.mp3", ["The Lion King 2","The Lion King II","My Lullaby","El Rey Leon 2"]),
 	];
 
 var Indie = [
