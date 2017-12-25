@@ -113,7 +113,7 @@ var MarcVec = [
     new ImageData("../src/images/imt/45.jpg", ["Xenoblade Chronicle X"], "Marc"),
 ];
 
-//12
+//36
 var GrewVec = [
 	new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Veyronverse 2"], "Gerard"),
     new ImageData("../src/images/imt/12.png", ["Pikmin"], "Gerard"),
@@ -128,9 +128,33 @@ var GrewVec = [
     new ImageData("../src/images/imt/26.jpg", ["Pikmin 2"], "Gerard"),
     new ImageData("../src/images/imt/27.jpg", ["Pikmin 3"], "Gerard"),
     new ImageData("../src/images/imt/28.jpg", ["Smash Bros 4 WiiU"], "Gerard"),
+    new ImageData("../src/images/imt/35.png", ["Banjo Tooie"], "Gerard"),
+    new ImageData("../src/images/imt/90.jpg", ["Bioshock"], "Gerard"),
+    new ImageData("../src/images/imt/91.jpg", ["Cuphead"], "Gerard"),
+    new ImageData("../src/images/imt/36.png", ["Danganronpa"], "Gerard"),
+    new ImageData("../src/images/imt/37.png", ["Ultra Despair Girls"], "Gerard"),
+    new ImageData("../src/images/imt/92.jpg", ["Danganronpa V3"], "Gerard"),
+    new ImageData("../src/images/imt/93.jpg", ["Danganronpa V3"], "Gerard"),
+    new ImageData("../src/images/imt/94.jpg", ["A Dad Dating Simulator"], "Gerard"),
+    new ImageData("../src/images/imt/95.jpg", ["Hatoful Boyfriend"], "Gerard"),
+    new ImageData("../src/images/imt/96.jpg", ["Hey you, Pikachu!"], "Gerard"),
+    new ImageData("../src/images/imt/97.jpg", ["Limbo"], "Gerard"),
+    new ImageData("../src/images/imt/98.jpg", ["Majora's Mask"], "Gerard"),
+    new ImageData("../src/images/imt/38.png", ["Persona 5"], "Gerard"),
+    new ImageData("../src/images/imt/99.jpg", ["Owlboy"], "Gerard"),
+    new ImageData("../src/images/imt/39.png", ["Ocarina of Time"], "Gerard"),
+    new ImageData("../src/images/imt/100.jpg", ["Yooka Laylee"], "Gerard"),
+    new ImageData("../src/images/imt/101.jpg", ["Ori and the blind forest"], "Gerard"),
+    new ImageData("../src/images/imt/102.jpg", ["Super Mario Maker"], "Gerard"),
+    new ImageData("../src/images/imt/103.jpg", ["Super Mario Maker"], "Gerard"),
+    new ImageData("../src/images/imt/104.jpg", ["One Thousand Lies"], "Gerard"),
+    new ImageData("../src/images/imt/105.jpg", ["Sonic Forces"], "Gerard"),
+    new ImageData("../src/images/imt/106.jpg", ["Xenosuk Chronicles 2"], "Gerard"),
+    new ImageData("../src/images/imt/107.jpg", ["Second Life"], "Gerard"),
+    new ImageData("../src/images/imt/108.jpg", ["Metal Gear Solid"], "Gerard"),
 ];
 
-//6
+//10
 var KanoVec = [
 	new ImageData("../src/images/imt/14.png", ["A Hat in Time"], "Kano"),
     new ImageData("../src/images/imt/15.png", ["Danganronpa V3"], "Kano"),
@@ -138,9 +162,13 @@ var KanoVec = [
     new ImageData("../src/images/imt/17.png", ["Civilization VI"], "Kano"),
     new ImageData("../src/images/imt/18.png", ["Ori and the Blind Forest"], "Kano"),
     new ImageData("../src/images/imt/19.png", ["Shovel Knight"], "Kano"),
+    new ImageData("../src/images/imt/109.jpg", ["Garry's Mod"], "Kano"),
+    new ImageData("../src/images/imt/110.jpg", ["Overwatch"], "Kano"),
+    new ImageData("../src/images/imt/41.png", ["Portal 2"], "Kano"),
+    new ImageData("../src/images/imt/111.jpg", ["Sonic Generations"], "Kano"),
 ];
 
-//9
+//17
 var YerayVec = [
     new ImageData("../src/images/imt/22.png", ["Majora's Mask"], "Yeray"),
     new ImageData("../src/images/imt/23.png", ["A Hat in Time"], "Yeray"),
@@ -151,6 +179,14 @@ var YerayVec = [
     new ImageData("../src/images/imt/27.png", ["Kingdom Hearts 1"], "Yeray"),
     new ImageData("../src/images/imt/28.png", ["Castle Crashers"], "Yeray"),
     new ImageData("../src/images/imt/85.jpg", ["Final Fantasy VII"], "Yeray"),
+    new ImageData("../src/images/imt/86.jpg", ["Phoenix Wright: Ace Attorney"], "Yeray"),
+    new ImageData("../src/images/imt/87.jpg", ["Touhou 8"], "Yeray"),
+    new ImageData("../src/images/imt/88.jpg", ["Final Fantasy 8"], "Yeray"),
+    new ImageData("../src/images/imt/89.jpg", ["Binding of Isaac"], "Yeray"),
+    new ImageData("../src/images/imt/32.png", ["Persona 5"], "Yeray"),
+    new ImageData("../src/images/imt/33.png", ["Sonic R"], "Yeray"),
+    new ImageData("../src/images/imt/34.png", ["Undertale"], "Yeray"),
+    new ImageData("../src/images/imt/40.png", ["A Link to the Past"], "Yeray"),
 ];
 
 //20
@@ -219,9 +255,9 @@ var interval2;
 var solvec = [];
 var ImageVec = [];
 var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec];
-var ImageMat = [YerayVec];
+//var ImageMat = [YerayVec];
 //var ImageMat = [TestVec];
-var itot = 9;
+var itot = 70;
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- SOME FUNCTIONS --------------------------------------
