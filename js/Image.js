@@ -20,6 +20,7 @@ function XmasSongData(link, time) {
 
 function MemeSongData(link) {
 	this.link = link;
+	this.used = false;
 }
 
 //---------------------------------------------------------------------------------------
@@ -279,6 +280,7 @@ var Cp2Vec = [
 	new XmasSongData("../src/music/other/xmas4.mp3",283),
 	new XmasSongData("../src/music/other/xmas5.mp3",121),
 	new XmasSongData("../src/music/other/xmas6.mp3",217),
+	new XmasSongData("../src/music/other/xmas7.mp3",321),
 ];
 	
 
@@ -348,14 +350,20 @@ var itot = 100;
 
  function show_meme() {
 	i = Math.floor((Math.random() * 100));
-	if (i <= 2) {
-		$("#Song2").attr("src", VeyronVec[0].link);
-		$("body").css("backgroundImage","url(../src/images/other/veyron.png)");
+	if (i <= 5) {
+		if(!VeyronVec[0].used) {
+			$("#Song2").attr("src", VeyronVec[0].link);
+			$("body").css("backgroundImage","url(../src/images/other/veyron.png)");
+			VeyronVec[0].used = true;
+		}
 	}
-	else if (i <= 4) {
+	else if (i <= 10) {
 		j = Math.floor((Math.random() * IvanVec.length));
-		$("#Song2").attr("src", IvanVec[j].link);
-		$("body").css("backgroundImage","url(../src/images/other/ivan.png)");
+		if(!IvanVec[j].used) {
+			$("#Song2").attr("src", IvanVec[j].link);
+			$("body").css("backgroundImage","url(../src/images/other/ivan.png)");
+			IvanVec[j].used = true;
+		}
 	}	 
 }
 
