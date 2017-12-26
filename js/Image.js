@@ -291,6 +291,9 @@ var Cp2Vec = [
 	new XmasSongData("../src/music/other/xmas7.mp3",321),
 ];
 	
+var EndingVec = [
+	new XmasSongData("../src/music/other/xmasend.mp3",2080),
+];
 
 var VeyronVec = [
 	new MemeSongData("../src/music/other/veyron1.ogg"),
@@ -333,8 +336,7 @@ var interval3;
 var interval4;
 var ImageVec = [];
 var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec,Cp2Vec];
-var ImageMat = [YerayVec]
-var itot = 17;
+var itot = 100;
 var tei = 0;
 var tej = 0;
 var first = true;
@@ -442,7 +444,7 @@ function next() {
     ++Nused
     ImageVec[x].used = true;
     if (Nused < ImageVec.length) {
-		show_meme();
+		//show_meme();
 		x = Math.floor((Math.random() * ImageVec.length));
 		while(ImageVec[x].used == true) {
 			x = Math.floor((Math.random() * ImageVec.length));
@@ -454,7 +456,7 @@ function next() {
      }
      else {
 		 end = 1;
-		 //show_cred();
+		 show_cred();
 	 }
 }
  
@@ -480,10 +482,11 @@ function next_xmas() {
 }
 
 function true_ending() {
+	$("#Song").attr("src", EndingVec[0].link);
 	first = false;
 	document.getElementById("TextN").innerHTML = "TRUE ENDING UNLOCKED!"	
-	clearInterval(interval)
-	clearInterval(interval2)
+	clearInterval(interval);
+	clearInterval(interval2);
 	while(ImageMat[tei][tej].used) {
 		tej = tej + 1;
 		if (tej == ImageMat[tei].length) {
