@@ -23,6 +23,12 @@ function MemeSongData(link) {
 	this.used = false;
 }
 
+function CredData(link,author,time) {
+    this.link = link;
+    this.author = author;
+    this.time = time;
+}
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- IMAGE DATABASE --------------------------------------
 //---------------------------------------------------------------------------------------
@@ -65,6 +71,8 @@ var EricVec = [
     new ImageData("../src/images/imt/83.jpg", ["Soul Calibur 4"], "Eric"),
     new ImageData("../src/images/imt/84.jpg", ["Osu Tatakae Ouendan 2"], "Eric"),
     new ImageData("../src/images/imt/112.jpg", ["Breath of the Wild"], "Eric"),
+    new ImageData("../src/images/imt/147.jpg", ["Stanley Parable"], "Eric"),
+    new ImageData("../src/images/imt/148.jpg", ["Stanley Parable"], "Eric"),
 ];
 
 //10
@@ -296,25 +304,33 @@ var IvanVec = [
 	new MemeSongData("../src/music/other/ivan5.ogg"),
 	new MemeSongData("../src/music/other/ivan6.ogg"),
 ];
-	
+
+var CredVec = [
+	new CredData("../src/images/icred/background.png","",8),
+	new CredData("../src/images/icred/gremar.jpg","GREWMAN & MARCBRAI",10),
+	new CredData("../src/images/icred/soria.jpg","AMICS DE SORIA",10),
+	new CredData("../src/images/icred/senpq.jpg","SENAIDA & PQBROS",10),
+	new CredData("../src/images/icred/pica.jpg","NOT YOU",5),
+	new CredData("../src/images/icred/yeray.jpg","WAIFULOVER",10),
+	new CredData("../src/images/icred/kano.jpg","XPEDROX",10),
+]
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
  
 var Nused = 0;
 var Nused2 = 0;
-var NGo = 0;
-var Hhit = 0;
-var score = 0;
+var iter = 0;
 var i = 0;
 var j = 0;
 var r = 0;
 var x = 0;
-var objection = true;
+var end = 0;
 var solr = 0;
 var interval;
 var interval2;
-var solvec = [];
+var interval3;
 var ImageVec = [];
 var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec,Cp2Vec];
 //var ImageMat = [Cp2Vec];
@@ -367,13 +383,32 @@ var itot = 100;
 	}	 
 }
 
+function next_cred() {
+	iter = iter + 1;
+	$("#Image").css("backgroundImage",'url('+CredVec[iter].link+')');
+	document.getElementById("Last").innerHTML = CredVec[iter].author
+}
+
+function show_cred() {
+	$("#Image").css("backgroundImage",'url('+CredVec[iter].link+')');
+	document.getElementById("Last").innerHTML = CredVec[iter].author
+	interval3 = setInterval(function() {
+			--CredVec[iter].time;
+			if(CredVec[iter].time <= 0) {
+				next_cred()
+			}
+		},1000);
+	$("#Song").attr("src", "../src/music/other/xmascred.mp3");
+	document.getElementById("TextN").innerHTML = "THANKS ALL FOR PLAYING AND SPECIAL THANKS TO ..."	
+}
+
 function next() {
 	$("body").css("backgroundImage","url(../src/images/other/xmas.png)");
-	show_meme();
     ++Nused
     ImageVec[x].used = true;
-    x = Math.floor((Math.random() * ImageVec.length));
     if (Nused < ImageVec.length) {
+		show_meme();
+		x = Math.floor((Math.random() * ImageVec.length));
 		while(ImageVec[x].used == true) {
 			x = Math.floor((Math.random() * ImageVec.length));
         }
@@ -383,6 +418,10 @@ function next() {
         document.getElementById("demo").innerHTML = ImageVec[x].time;
         $("#demo").show()
      }
+     else {
+		 end = 1;
+		 show_cred();
+	 }
 }
  
 function next_xmas() {
@@ -415,7 +454,6 @@ $(document).ready(function() {
 	fill_vec();
 	x = Math.floor((Math.random() * ImageVec.length));
 	r = Math.floor((Math.random() * XmasVec.length));
-	solvec.push(ImageVec[x].sols[0]);
 	$("#Image").css("backgroundImage",'url('+ImageVec[x].link+')');
 	document.getElementById("demo").innerHTML = ImageVec[x].time;
 	$("#Song").attr("src", XmasVec[r].link);
@@ -433,7 +471,7 @@ $(document).ready(function() {
 	show_name();
 		interval2 = setInterval(function() {
 			--XmasVec[r].time;
-			if(XmasVec[r].time <= 0) {
+			if(XmasVec[r].time <= 0 && end == 0) {
 				next_xmas()
 			}
 		},1000);
