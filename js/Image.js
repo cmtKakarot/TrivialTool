@@ -281,6 +281,19 @@ var Cp2Vec = [
 	new ImageData("../src/images/imt/55.png", ["GTA Vice City"], "Cp2"),
 ];
 
+var AlbertVec = [
+	new ImageData("../src/images/imt/56.png", ["Advance Wars"], "Albert"),
+	new ImageData("../src/images/imt/57.png", ["Animal Crossing"], "Albert"),
+	new ImageData("../src/images/imt/58.png", ["Battalion Wars"], "Albert"),
+	new ImageData("../src/images/imt/59.png", ["Final Fantasy: Crystal Chronicles"], "Albert"),
+	new ImageData("../src/images/imt/60.png", ["Fire Emblem 7"], "Albert"),
+	new ImageData("../src/images/imt/61.png", ["Pokemon Channel"], "Albert"),
+	new ImageData("../src/images/imt/62.png", ["Pokemon Esmeralda"], "Albert"),
+	new ImageData("../src/images/imt/63.png", ["Pokemon Heart Gold"], "Albert"),
+	new ImageData("../src/images/imt/64.png", ["Minish Cap"], "Albert"),
+	new ImageData("../src/images/imt/65.png", ["Wind Waker"], "Albert"),
+];
+
  var XmasVec = [
 	new XmasSongData("../src/music/other/xmas1.mp3",174),
 	new XmasSongData("../src/music/other/xmas2.mp3",213),
@@ -313,7 +326,7 @@ var CredVec = [
 	new CredData("../src/images/icred/gremar.jpg","GREWMAN & MARCBRAI",10),
 	new CredData("../src/images/icred/soria.jpg","AMICS DE SORIA",10),
 	new CredData("../src/images/icred/senpq.jpg","SENAIDA & PQBROS",10),
-	new CredData("../src/images/icred/pica.jpg","NOT YOU",5),
+	new CredData("../src/images/icred/pica.jpg","POCAFERRAN",10),
 	new CredData("../src/images/icred/yeray.jpg","WAIFULOVER",10),
 	new CredData("../src/images/icred/kano.jpg","YOUNG KANO",10),
 ]
@@ -335,8 +348,8 @@ var interval2;
 var interval3;
 var interval4;
 var ImageVec = [];
-var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,MarcPQVec,CrisPQVec,Cp2Vec];
-var itot = 100;
+var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,Cp2Vec,AlbertVec,MarcPQVec,CrisPQVec];
+var itot = 110;
 var tei = 0;
 var tej = 0;
 var first = true;
