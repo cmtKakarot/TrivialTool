@@ -33,14 +33,6 @@ function CredData(link,author,time) {
 //--------------------------------- IMAGE DATABASE --------------------------------------
 //---------------------------------------------------------------------------------------
  
-var TestVec = [
-	new ImageData("../src/images/imt/0T.jpg", ["Shrek"], "Veyron"),
-	new ImageData("../src/images/imt/1T.jpg", ["Shrek"], "Veyron"),
-	new ImageData("../src/images/imt/2T.jpg", ["Shrek"], "Veyron"),
-	new ImageData("../src/images/imt/3T.jpg", ["Shrek"], "Veyron"),
-	new ImageData("../src/images/imt/4T.png", ["Shrek"], "Veyron"),
-	];
- 
 //26
 var EricVec = [
 	new ImageData("../src/images/imt/2.png", ["Final Fantasy X"], "Eric"),
@@ -73,6 +65,7 @@ var EricVec = [
     new ImageData("../src/images/imt/112.jpg", ["Breath of the Wild"], "Eric"),
     new ImageData("../src/images/imt/147.jpg", ["Stanley Parable"], "Eric"),
     new ImageData("../src/images/imt/148.jpg", ["Stanley Parable"], "Eric"),
+    new ImageData("../src/images/imt/156.jpg", ["Death Stranding"], "Eric"),
 ];
 
 //10
@@ -120,12 +113,20 @@ var MarcVec = [
     new ImageData("../src/images/imt/42.jpg", ["Pokemon OR/AS"], "Marc"),
     new ImageData("../src/images/imt/43.jpg", ["Pokemon Sun/Moon"], "Marc"),
     new ImageData("../src/images/imt/44.jpg", ["Pokemon Ultra Sun/Moon"], "Marc"),
-    new ImageData("../src/images/imt/45.jpg", ["Xenoblade Chronicle X"], "Marc"),
+    new ImageData("../src/images/imt/45.jpg", ["Xenoblade Chronicles X"], "Marc"),
+    new ImageData("../src/images/imt/67.png", ["Xenoblade Chronicles"], "Marc"),
+    new ImageData("../src/images/imt/68.png", ["persona 3 portable"], "Marc"),
+    new ImageData("../src/images/imt/188.jpg", ["persona 3"], "Marc"),
+    new ImageData("../src/images/imt/189.jpg", ["Fire Emblem: Sword of Seals"], "Marc"),
+    new ImageData("../src/images/imt/69.png", ["Fire Embem: Geneology of Holy War"], "Marc"),
+    new ImageData("../src/images/imt/70.png", ["Fire Embem: Sacred Stones"], "Marc"),
+    new ImageData("../src/images/imt/190.jpg", ["Fire Emblem: Radiant Dawn"], "Marc"),
+    new ImageData("../src/images/imt/71.png", ["Advance Wars"], "Marc"),
 ];
 
 //44
 var GrewVec = [
-	new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Veyronverse 2"], "Gerard"),
+	new ImageData("../src/images/imt/18.jpg", ["Dragon Ball Xenoverse 2"], "Gerard"),
     new ImageData("../src/images/imt/12.png", ["Pikmin"], "Gerard"),
     new ImageData("../src/images/imt/19.jpg", ["Smash Bros 4 3DS"], "Gerard"),
     new ImageData("../src/images/imt/13.png", ["AC: Happy Home Designer"], "Gerard"),
@@ -159,7 +160,7 @@ var GrewVec = [
     new ImageData("../src/images/imt/103.jpg", ["Super Mario Maker"], "Gerard"),
     new ImageData("../src/images/imt/104.jpg", ["One Thousand Lies"], "Gerard"),
     new ImageData("../src/images/imt/105.jpg", ["Sonic Forces"], "Gerard"),
-    new ImageData("../src/images/imt/106.jpg", ["Xenosuk Chronicles 2"], "Gerard"),
+    new ImageData("../src/images/imt/106.jpg", ["Xenoblade Chronicles 2"], "Gerard"),
     new ImageData("../src/images/imt/107.jpg", ["Second Life"], "Gerard"),
     new ImageData("../src/images/imt/108.jpg", ["Metal Gear Solid"], "Gerard"),
     new ImageData("../src/images/imt/113.jpg", ["Tony Hawk's Pro Skater"], "Gerard"),
@@ -187,7 +188,7 @@ var KanoVec = [
 
 //17
 var YerayVec = [
-    new ImageData("../src/images/imt/22.png", ["Majora's Mask"], "Yeray"),
+    new ImageData("../src/images/imt/22.png", ["Ocarina of Time"], "Yeray"),
     new ImageData("../src/images/imt/23.png", ["A Hat in Time"], "Yeray"),
     new ImageData("../src/images/imt/24.png", ["Sonic Adventure 2"], "Yeray"),
     new ImageData("../src/images/imt/25.png", ["Spyro 2"], "Yeray"),
@@ -204,6 +205,9 @@ var YerayVec = [
     new ImageData("../src/images/imt/33.png", ["Sonic R"], "Yeray"),
     new ImageData("../src/images/imt/34.png", ["Undertale"], "Yeray"),
     new ImageData("../src/images/imt/40.png", ["A Link to the Past"], "Yeray"),
+    new ImageData("../src/images/imt/149.jpg", ["Majora's Mask"], "Yeray"),
+    new ImageData("../src/images/imt/150.jpg", ["Pokemon Amarillo"], "Yeray"),
+    new ImageData("../src/images/imt/66.png", ["Final Fantasy IX"], "Yeray"),
 ];
 
 //20
@@ -294,6 +298,64 @@ var AlbertVec = [
 	new ImageData("../src/images/imt/65.png", ["Wind Waker"], "Albert"),
 ];
 
+var SejuVec = [
+	new ImageData("../src/images/imt/151.jpg", ["Metal Gear: Peace Walker"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/152.jpg", ["Monmusu Quest"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/153.jpg", ["League of Legends"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/154.jpg", ["Pyre"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/155.jpg", ["Risk of Rain"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/157.jpg", ["Habbo Hotel"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/158.jpg", ["Travian"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/159.jpg", ["Metin 2"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/160.jpg", ["Lost Odyssey"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/161.jpg", ["Mass Effect"], "Sejuani Mainer"),
+	new ImageData("../src/images/imt/162.jpg", ["Dragon's Dogma"], "Sejuani Mainer"),
+];
+
+var FeriVec = [
+	new ImageData("../src/images/imt/163.jpg", ["Phoenix Wright: Ace Attorney"], "Toni"),
+	new ImageData("../src/images/imt/164.jpg", ["Pokemon: Trading Card Game"], "Toni"),
+	new ImageData("../src/images/imt/165.jpg", ["Steins Gate"], "Toni"),
+	new ImageData("../src/images/imt/166.jpg", ["Persona 4"], "Toni"),
+	new ImageData("../src/images/imt/167.jpg", ["Pokemon Stadium"], "Toni"),
+	new ImageData("../src/images/imt/168.jpg", ["Mario Party 2"], "Toni"),
+	new ImageData("../src/images/imt/169.jpg", ["Shovel Knight"], "Toni"),
+	new ImageData("../src/images/imt/170.jpg", ["Pokemon Snap"], "Toni"),
+	new ImageData("../src/images/imt/171.jpg", ["Fire Emblem Echoes"], "Toni"),
+	new ImageData("../src/images/imt/172.jpg", ["Xenoblade Chronicles"], "Toni"),
+];
+
+var BansVec = [
+	new ImageData("../src/images/imt/173.jpg", ["Nemesis 2"], "Bans"),
+	new ImageData("../src/images/imt/174.jpg", ["Rekka summer carnival 92"], "Bans"),
+	new ImageData("../src/images/imt/175.jpg", ["Metroid"], "Bans"),
+	new ImageData("../src/images/imt/176.jpg", ["Bionic commando"], "Bans"),
+	new ImageData("../src/images/imt/177.jpg", ["Uforia"], "Bans"),
+	new ImageData("../src/images/imt/178.jpg", ["Maze of galious"], "Bans"),
+	new ImageData("../src/images/imt/179.jpg", ["Rogue dawn Homebrew"], "Bans"),
+	new ImageData("../src/images/imt/180.jpg", ["R-type 3"], "Bans"),
+	new ImageData("../src/images/imt/181.jpg", ["Shinning force 2"], "Bans"),
+	new ImageData("../src/images/imt/182.jpg", ["Sega rally"], "Bans"),
+	new ImageData("../src/images/imt/183.jpg", ["Panzer dragoon"], "Bans"),
+	new ImageData("../src/images/imt/184.jpg", ["Flashback"], "Bans"),
+	new ImageData("../src/images/imt/185.jpg", ["Dune 2 battle for arrakis"], "Bans"),
+	new ImageData("../src/images/imt/186.jpg", ["Streets of rage 2"], "Bans"),
+	new ImageData("../src/images/imt/187.jpg", ["F-zero"], "Bans"),
+];
+
+var VynVec = [
+	new ImageData("../src/images/imt/72.png", ["Don't Starve Together"], "Victor"),
+	new ImageData("../src/images/imt/73.png", ["Final Fantasy 4"], "Victor"),
+	new ImageData("../src/images/imt/191.jpg", ["Ys Origin"], "Victor"),
+	new ImageData("../src/images/imt/192.jpg", ["Yooka-Laylee"], "Victor"),
+	new ImageData("../src/images/imt/193.jpg", ["Torchlight II"], "Victor"),
+	new ImageData("../src/images/imt/194.jpg", ["Sanctum 2"], "Victor"),
+	new ImageData("../src/images/imt/195.jpg", ["Guilty Gear Xrd Revelator"], "Victor"),
+	new ImageData("../src/images/imt/196.jpg", ["Human Fall Flat"], "Victor"),
+	new ImageData("../src/images/imt/197.jpg", ["Ibb & Obb"], "Victor"),
+	new ImageData("../src/images/imt/198.jpg", ["Warframe"], "Victor"),
+];
+
  var XmasVec = [
 	new XmasSongData("../src/music/other/xmas1.mp3",174),
 	new XmasSongData("../src/music/other/xmas2.mp3",213),
@@ -326,9 +388,14 @@ var CredVec = [
 	new CredData("../src/images/icred/gremar.jpg","GREWMAN & MARCBRAI",10),
 	new CredData("../src/images/icred/soria.jpg","AMICS DE SORIA",10),
 	new CredData("../src/images/icred/senpq.jpg","SENAIDA & PQBROS",10),
+	new CredData("../src/images/icred/toni.jpg","FERTILAB & FOX",10),
+	new CredData("../src/images/icred/sejua.jpg","SEJUANI MAINER",10),
+	new CredData("../src/images/icred/tiet.jpg","NOT SEJUANI MAINER, MI TIO (BANS) & NOT KAKAROT ",10),
 	new CredData("../src/images/icred/pica.jpg","POCAFERRAN",10),
 	new CredData("../src/images/icred/yeray.jpg","WAIFULOVER",10),
+	new CredData("../src/images/icred/vic.jpg","YERAY'S NAKAMA",10),
 	new CredData("../src/images/icred/kano.jpg","YOUNG KANO",10),
+	new CredData("../src/images/icred/end.png","",1),
 ]
 
 //---------------------------------------------------------------------------------------
@@ -348,8 +415,8 @@ var interval2;
 var interval3;
 var interval4;
 var ImageVec = [];
-var ImageMat = [EricVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,Cp2Vec,AlbertVec,MarcPQVec,CrisPQVec];
-var itot = 110;
+var ImageMat = [MarcPQVec,CrisPQVec,SejuVec,VynVec,EricVec,BansVec,FerVec,GrewVec,KanoVec,MarcVec,YerayVec,EliraVec,Cp2Vec,AlbertVec,FeriVec];
+var itot = 105;
 var tei = 0;
 var tej = 0;
 var first = true;
@@ -495,6 +562,7 @@ function next_xmas() {
 }
 
 function true_ending() {
+	clearInterval(interval3)
 	$("#Song").attr("src", EndingVec[0].link);
 	first = false;
 	document.getElementById("TextN").innerHTML = "TRUE ENDING UNLOCKED!"	
@@ -564,8 +632,10 @@ $(document).ready(function() {
     });
     $("body").keyup(function(event){
         if(event.keyCode == 187) {
-			if (first) true_ending();
-			else ImageMat[tei][tej].time = 0;
+			if (end == 1) {
+				if (first) true_ending();
+				else ImageMat[tei][tej].time = 0;
+			}
 		}
     });
 });
