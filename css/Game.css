@@ -164,6 +164,14 @@ td > div {
 	background-image: url(../src/images/cat/disney.png);
 }
 
+#Zelda {
+	background-image: url(../src/images/cat/zelda.png);
+}
+
+#ComingSoon {
+	background-image: url(../src/images/cat/cs.png);
+}
+
 #Acc {
 	width: 100%;
 	background-image: url(../src/images/bttns/start.png);
