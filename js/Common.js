@@ -545,8 +545,8 @@ var Disney = [
 var Zelda = [
 	new SongData("../src/music/zelda/1.mp3", ["Skyward Sword", "Ballad of the Goddess"]),
 	new SongData("../src/music/zelda/2.mp3", ["Link's Awakening","Tal Tal Heights"]),
-	new SongData("../src/music/zelda/3.mp3", ["A link Between Worlds", "Death Mountain"]),
-	new SongData("../src/music/zelda/4.mp3", ["Breath of the Wild", "Daruk's Theme"]),
+	new SongData("../src/music/zelda/3.mp3", ["Breath of the Wild", "Daruk's Theme"]),
+	new SongData("../src/music/zelda/4.mp3", ["A link Between Worlds", "Death Mountain"]),
 	new SongData("../src/music/zelda/5.mp3", ["Breath of the Wild", "Divine Beast Vah Medoh"]),
 	new SongData("../src/music/zelda/6.mp3", ["Breath of the Wild", "Divine Beast Vah Naboris"]),
 	new SongData("../src/music/zelda/7.mp3", ["Breath of the Wild", "Divine Beast Vah Ruta"]),
@@ -658,7 +658,7 @@ function act_catV() {
     return vec;
 }
 
-function show_cat() {
+function show_cat_S() {
 	var wallpaper;
 	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
 	if(vSong[x].link.indexOf("square") != -1) {
@@ -681,6 +681,28 @@ function show_cat() {
 	if(vSong[x].link.indexOf("zelda") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/zelda.jpg)");
 }
 
+function show_cat_F() {
+	var wallpaper;
+	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("square") != -1) {
+		 wallpaper = SquareWall[Math.floor((Math.random() * SquareWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
+	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
+	if(CategoryMatrix[i][j].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("atlus") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) {
+		 wallpaper = SonicWall[Math.floor((Math.random() * SonicWall.length))];
+		 $("body").css("backgroundImage",'url('+wallpaper+')');
+	}
+	if(CategoryMatrix[i][j].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
+	if(CategoryMatrix[i][j].link.indexOf("zelda") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/zelda.jpg)");
+}
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------

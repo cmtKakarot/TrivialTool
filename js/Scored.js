@@ -89,7 +89,7 @@ function check_valid() {
 					x = Math.floor((Math.random() * vSong.length));
 				}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat();
+			show_cat_S();
 			}
 			else show_res();
 		}
@@ -189,7 +189,7 @@ $(document).ready(function() {
 			},1000);
 			$("#Song").prop("volume", 0.35);
 			$("#Song").attr("src", vSong[x].link);
-			show_cat();
+			show_cat_S();
 		}
     });
     $("#Sol").keyup(function(event){
@@ -216,7 +216,7 @@ $(document).ready(function() {
 				x = x + 1;
 			}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat();
+			show_cat_S();
 		}
 	});
 	$("#Discard").click(function() {
@@ -236,7 +236,7 @@ $(document).ready(function() {
 				x = Math.floor((Math.random() * vSong.length));
 			}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat();
+			show_cat_S();
 		}
 	});
 	$("#Back2").click(function(){
