@@ -48,12 +48,16 @@ function check_valid() {
 					randomize();
 				}
 			$("#Song").attr("src", CategoryMatrix[i][j].link);
-			show_cat_F();
+			get_category_F()
+			document.getElementById('complete').innerHTML = "";
+			show_cat();
+			$("#Sol").focus();
 			}
 			else show_res();
 		}
 	}
 	if(objection) {
+		document.getElementById('complete').innerHTML = "";
 		$("#Sol").val("");
 		var h = Math.floor((Math.random() * Missclick.length))
 		$("#errS").attr("src", Missclick[h].link);
@@ -75,8 +79,10 @@ function ResetGame() {
 	r = 0;
 	objection = true;
 	solr = 0;	
+	$("#Sol").val("");
 }
-	
+
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
@@ -106,7 +112,9 @@ $(document).ready(function() {
 		$(".game").show();
 		$("#Song").prop("volume", 0.35);
 		$("#Song").attr("src", CategoryMatrix[i][j].link);
-		show_cat_F();
+		get_category_F()
+		show_cat();
+		$("#Sol").focus();
     });
     $("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
@@ -129,7 +137,10 @@ $(document).ready(function() {
 				randomize();
 			}
 			$("#Song").attr("src", CategoryMatrix[i][j].link);
-			show_cat_F();
+			get_category_F()
+			show_cat();
+			document.getElementById('complete').innerHTML = "";
+			$("#Sol").focus();
 		}
 	});
 	$("#Back").click(function(){
@@ -139,7 +150,6 @@ $(document).ready(function() {
 		$(".game").hide();
 		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 		$(".cat").show();
-
 		ResetGame();
 	});
 	$("#Back2").click(function(){
@@ -149,5 +159,9 @@ $(document).ready(function() {
 		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 		$(".cat").show();
 		ResetGame();
+	});
+	$("#Sol").on("input", function() {
+		if($("#Sol").val().length >= 3) EditDatalist()
+		else document.getElementById('complete').innerHTML = "";
 	});
 });

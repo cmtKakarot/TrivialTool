@@ -136,7 +136,14 @@ var Anime = [
 	new SongData("../src/music/anime/76.mp3", ["Full Metal Alchemist Brotherhood", "FMAB", "Hologram"]),
 	new SongData("../src/music/anime/77.mp3", ["Naruto Shippuden", "Sign"]),
 	new SongData("../src/music/anime/78.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"]),
-	new SongData("../src/music/anime/79.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"])
+	new SongData("../src/music/anime/79.mp3", ["The Melancholy of Haruhi Suzumiya", "Haruhi Suzumiya"]),
+	new SongData("../src/music/anime/80.mp3", ["Baka to Test to Shoukanjuu", "Baka to Test", "Perfect Area Complete"]),
+	new SongData("../src/music/anime/81.mp3", ["Ping Pong The Animation", "Hero Theme"]),
+	new SongData("../src/music/anime/82.mp3", ["Ping Pong The Animation", "Like a Dance"]),
+	new SongData("../src/music/anime/83.mp3", ["Ping Pong The Animation", "Peco"]),
+	new SongData("../src/music/anime/84.mp3", ["Ping Pong The Animation", "Ping Pong Phase 2"]),
+	new SongData("../src/music/anime/85.mp3", ["Ping Pong The Animation", "Hero Appears"]),
+
     ];
 
 var Remix = [ 
@@ -155,9 +162,13 @@ var Remix = [
     new SongData("../src/music/remix/13.mp3", ["Kingdom Hearts","Simple and Clean", "Hikari"]),
     new SongData("../src/music/remix/14.mp3", ["The Legend of Zelda: Ocarina of Time","Ocarina of Time", "Song of Storms"]),
     new SongData("../src/music/remix/15.mp3", ["Super Mario World", "Overworld"]),
-    new SongData("../src/music/remix/16.mp3", ["Red","Blue","Yellow","RBY","Title Theme"]),
+    new SongData("../src/music/remix/16.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Title Theme"]),
     new SongData("../src/music/remix/17.mp3", ["The Legend of Zelda: Ocarina of Time","Ocarina of Time", "Lost Woods"]),
-    new SongData("../src/music/remix/18.mp3", ["Donkey Kong 64","DK 64", "DK Rap"])
+    new SongData("../src/music/remix/18.mp3", ["Donkey Kong 64","DK 64", "DK Rap"]),
+	new SongData("../src/music/remix/19.mp3", ["Touhou 8","Eirin's Theme", "Imperishable Night"]),
+	new SongData("../src/music/remix/20.mp3", ["Touhou 4","Bad Apple","Lotus Land Story"]),
+	new SongData("../src/music/remix/21.mp3", ["Persona 5","Rivers in the desert"]),
+	new SongData("../src/music/remix/22.mp3", ["Touhou 6","UN OWEN WAS HER","U.N. OWEN WAS HER?","Flandre's Theme","The Embodiment of Scarlet Devil"]),
     ];
     
 var Mario = [
@@ -211,7 +222,7 @@ var Touhou = [
     new SongData("../src/music/touhou/3.mp3", ["Touhou 7","Yukari's Theme","Necrofantasia","Perfect Cherry Blossom"]),
     new SongData("../src/music/touhou/4.mp3", ["Touhou 7.5","Demystify Feast","Immaterial and Missing Power"]),
     new SongData("../src/music/touhou/5.mp3", ["Touhou 8","Marisa Kirisame's Theme","Love-colored Master Spark","Imperishable Night"]),
-    new SongData("../src/music/touhou/6.mp3", ["Touhou 8","Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night","Touhou 8"]),
+    new SongData("../src/music/touhou/6.mp3", ["Touhou 8","Flight of the Bamboo Cutter","Kaguya's Theme","Imperishable Night"]),
     new SongData("../src/music/touhou/7.mp3", ["Touhou 8","Mokou's Theme","Reach for the moon","Inmortal smoke","Imperishable Night",]),
     new SongData("../src/music/touhou/8.mp3", ["Touhou 10","Road of the Apotropaic God","Dark Road","Mountain of Faith"]),
     new SongData("../src/music/touhou/9.mp3", ["Touhou 10","Nitori's Theme","The Candid Friend","Candid Friend","Mountain of Faith"]),
@@ -219,7 +230,48 @@ var Touhou = [
     new SongData("../src/music/touhou/11.mp3", ["Touhou 10","Suwako's Theme","Mountain of Faith","Native Faith"]),
     new SongData("../src/music/touhou/12.mp3", ["Touhou 9","Sakuya's Theme","Flowering Night","Phantasmagoria of Flower View"]),
     new SongData("../src/music/touhou/13.mp3", ["Touhou 11","Utsuho Reiuji's Theme","Solar Sect of Mystic Wisdom","Nuclear Fusion","Subterranean Animism"]),
-    new SongData("../src/music/touhou/14.mp3", ["Touhou 4","Bad Apple","Lotus Land Story"])
+    new SongData("../src/music/touhou/14.mp3", ["Touhou 4","Bad Apple","Lotus Land Story"]),
+	new SongData("../src/music/touhou/15.mp3", ["Touhou 16","A pair of Divine Beasts","Hidden Star in Four Seasons"]),
+	new SongData("../src/music/touhou/16.mp3", ["Touhou 10","Aya's Theme","Mountain of faith"]),
+	new SongData("../src/music/touhou/17.mp3", ["Touhou 6","Cirno's Theme","The Embodiment of Scarlet Devil"]),
+	new SongData("../src/music/touhou/18.mp3", ["Touhou 8","Nostalgic Blood of the East","Imperishable Night"]),
+	new SongData("../src/music/touhou/19.mp3", ["Touhou 8","Reimu Hakurei's Theme","Imperishable Night"]),
+	new SongData("../src/music/touhou/20.mp3", ["Touhou 8","Voyage 1969","Imperishable Night"]),
+	new SongData("../src/music/touhou/21.mp3", ["Touhou 10","Kanako's Theme","Mountain of faith"]),
+	new SongData("../src/music/touhou/22.mp3", ["Touhou 11","Koishi Komeiji's Theme","Subterranean Animism"]),
+	new SongData("../src/music/touhou/23.mp3", ["Touhou 10","Tomorrow is Feast Yesterday is not","Mountain of faith"]),
+	new SongData("../src/music/touhou/24.mp3", ["Touhou 10","The Gensokyo the Gods Loved","Mountain of faith"]),
+	new SongData("../src/music/touhou/25.mp3", ["Touhou 11","Orin's Theme","Subterranean Animism"]),
+	new SongData("../src/music/touhou/26.mp3", ["Touhou 7","Yuyuko's Final Theme","Perfect Cherry Blossom"]),
+	new SongData("../src/music/touhou/27.mp3", ["Touhou 10.5","Agra As Seen Through A Childs Mind"," Scarlet Weather Rhapsody"]),
+	new SongData("../src/music/touhou/28.mp3", ["Touhou 6","Sakuya Izayaoi's Theme","The Embodiment of Scarlet Devil"]),
+	new SongData("../src/music/touhou/29.mp3", ["Touhou 6","The Young Descendant of Tepes","The Embodiment of Scarlet Devil"]),
+	new SongData("../src/music/touhou/30.mp3", ["Touhou 12.8","Fairy Wars","The Refrain of the Lovely Great War"]),
+	new SongData("../src/music/touhou/31.mp3", ["Touhou 7.5","Sakuya Izayoi's Night Theme","Immaterial and Missing Power"]),
+	new SongData("../src/music/touhou/32.mp3", ["Touhou 7.5","Bad Omen","Immaterial and Missing Power"]),
+	new SongData("../src/music/touhou/33.mp3", ["Touhou 7.5","Silence","Immaterial and Missing Power"]),
+	new SongData("../src/music/touhou/34.mp3", ["Touhou 7","Paradise Deep Mountain","Perfect Cherry Blossom"]),
+	new SongData("../src/music/touhou/35.mp3", ["Touhou 7","Letty Whiterock's Theme","Perfect Cherry Blossom"]),
+	new SongData("../src/music/touhou/36.mp3", ["Touhou 7","The Fantastic Legend of Tohno","Perfect Cherry Blossom"]),
+	new SongData("../src/music/touhou/37.mp3", ["Touhou 9","Komachi Onozuka's Theme","Phantasmagoria of Flower View"]),
+	new SongData("../src/music/touhou/38.mp3", ["Touhou 9","Medicine Melancholy's Theme","Phantasmagoria of Flower View"]),
+	new SongData("../src/music/touhou/39.mp3", ["Touhou 9","Reisen Udongein Inaba's Theme","Phantasmagoria of Flower View"]),
+	new SongData("../src/music/touhou/40.mp3", ["Touhou 6","Remilia's Theme","The Embodiment of Scarlet Devil"]),
+	new SongData("../src/music/touhou/41.mp3", ["Touhou 11","The Bridge People No Longer Cross","Subterranean Animism"]),
+	new SongData("../src/music/touhou/42.mp3", ["Touhou 11","Parsee Mizuhashi's Theme","Subterranean Animism"]),
+	new SongData("../src/music/touhou/43.mp3", ["Touhou 11","Walking the Streets of a Former Hell","Subterranean Animism"]),
+	new SongData("../src/music/touhou/44.mp3", ["Touhou 11","Satori Komeji's Theme","Subterranean Animism"]),
+	new SongData("../src/music/touhou/45.mp3", ["Touhou 11","Awakening of the Earth Spirits","Subterranean Animism"]),
+	new SongData("../src/music/touhou/46.mp3", ["Touhou 10.5","Reisen Udongein Inaba's Theme"," Scarlet Weather Rhapsody"]),
+	new SongData("../src/music/touhou/47.mp3", ["Touhou 12","Nazrin's Theme","Undefined Fantastic Object"]),
+	new SongData("../src/music/touhou/48.mp3", ["Touhou 12","Interdimensonal Voyage of a Ghostly Passenger Ship","Undefined Fantastic Object"]),
+	new SongData("../src/music/touhou/49.mp3", ["Touhou 12","Murusa Minamitsu's Theme","Undefined Fantastic Object"]),
+	new SongData("../src/music/touhou/50.mp3", ["Touhou 12","A Shadow in the blue sky","Undefined Fantastic Object"]),
+	new SongData("../src/music/touhou/51.mp3", ["Touhou 12.3","Final Boss Theme","Touhouh Hisoutensoku"]),
+	new SongData("../src/music/touhou/52.mp3", ["Touhou 12.3","Honh Meiling's Theme","Touhouh Hisoutensoku"]),
+	new SongData("../src/music/touhou/53.mp3", ["Touhou 12.3","Credit's Theme","Touhouh Hisoutensoku"]),
+	new SongData("../src/music/touhou/54.mp3", ["Touhou 12.3","Our Hisou Tensoku","Touhouh Hisoutensoku"]),
+
     ];
     
 var Kirby = [
@@ -230,60 +282,60 @@ var Kirby = [
     new SongData("../src/music/kirby/5.mp3", ["Kirby's Dream Land","Mt. Dedede","Kirby's DreamLand"]),
     new SongData("../src/music/kirby/6.mp3", ["Kirby Super Star","Gourmet Race"]),
     new SongData("../src/music/kirby/7.mp3", ["Kirby 64: The Crystal Shards","Gourmet Race", "Kirby 64", "Kirby64"]),
-    new SongData("../src/music/kirby/8.mp3", ["Kirby 64: The Crystal Shards","Pop Star","Kirby 64", "Kirby64"])
+    new SongData("../src/music/kirby/8.mp3", ["Kirby 64: The Crystal Shards","Pop Star","Kirby 64", "Kirby64"]),
 	];
     
 var Pokemon = [
-    new SongData("../src/music/pokemon/1.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Champion"]),
-    new SongData("../src/music/pokemon/2.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rival"]),
-    new SongData("../src/music/pokemon/3.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Zinnia"]),
-    new SongData("../src/music/pokemon/4.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Wally"]),
-    new SongData("../src/music/pokemon/5.mp3", ["Sun","Moon","Battle! Legend Red"]),
-    new SongData("../src/music/pokemon/6.mp3", ["Sun","Moon","Battle! Champion"]),   
-    new SongData("../src/music/pokemon/7.mp3", ["Sun","Moon","Battle! Kahuna"]),
-    new SongData("../src/music/pokemon/8.mp3", ["Sun","Moon","Battle! Hau"]),
-    new SongData("../src/music/pokemon/9.mp3", ["X","Y","Snowbelee City"]),
-    new SongData("../src/music/pokemon/10.mp3", ["X","Y","Battle! Gym Leader"]),
-    new SongData("../src/music/pokemon/11.mp3", ["X","Y","Battle! Lyssandre"]),
-    new SongData("../src/music/pokemon/12.mp3", ["X","Y","Battle! Diantha"]),
-    new SongData("../src/music/pokemon/13.mp3", ["Black","White","Battle! N"]),
-    new SongData("../src/music/pokemon/14.mp3", ["Black","White","Battle! Reshiram","Battle! Zekrom","Battle! Kyurem"]),
-    new SongData("../src/music/pokemon/15.mp3", ["Black","White","Battle! Elite Four"]),
-    new SongData("../src/music/pokemon/16.mp3", ["Diamond","Pearl","Battle! Cynthia"]),
-    new SongData("../src/music/pokemon/17.mp3", ["Diamond","Pearl","Battle! Team Galactic Boss"]),
-    new SongData("../src/music/pokemon/18.mp3", ["Sun","Moon","Battle! Gladion"]),
-    new SongData("../src/music/pokemon/19.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Champion","Battle! Red"]),
-    new SongData("../src/music/pokemon/20.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Ho-oh"]),
-    new SongData("../src/music/pokemon/21.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Rayquaza"]),
-    new SongData("../src/music/pokemon/22.mp3", ["Diamond","Pearl","Battle! Rival"]),
-    new SongData("../src/music/pokemon/23.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Rival"]),
-    new SongData("../src/music/pokemon/24.mp3", ["Fire Red","Leaf Green","FRLG","Battle! Champion"]),
-    new SongData("../src/music/pokemon/25.mp3", ["X","Y","Professor Sycanore's Theme"]),
-    new SongData("../src/music/pokemon/26.mp3", ["Black 2","White 2","Battle! Rival"]),
-    new SongData("../src/music/pokemon/27.mp3", ["Black","White","Emotion"]),
-    new SongData("../src/music/pokemon/28.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Gym Leader"]),
-    new SongData("../src/music/pokemon/29.mp3", ["Black","White","Last Pokemon"]),
-    new SongData("../src/music/pokemon/30.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Team Rocket"]),
-    new SongData("../src/music/pokemon/31.mp3", ["Omega Ruby","Alpha Sapphire","ORAS","Battle! Elite Four"]),
-    new SongData("../src/music/pokemon/32.mp3", ["Red","Blue","Yellow","RBY","Indigo Plateau"]),
-    new SongData("../src/music/pokemon/33.mp3", ["X","Y","Battle! Mewtwo"]),
-    new SongData("../src/music/pokemon/34.mp3", ["X","Y","Emotion"]),
-    new SongData("../src/music/pokemon/35.mp3", ["Red","Blue","Yellow","RBY","Opening"]),
-    new SongData("../src/music/pokemon/36.mp3", ["Red","Blue","Yellow","RBY","Pallet Town"]),
-    new SongData("../src/music/pokemon/37.mp3", ["Red","Blue","Yellow","RBY","Professor Oak"]),
-    new SongData("../src/music/pokemon/38.mp3", ["Red","Blue","Yellow","RBY","Oak's Research Lab"]),
-    new SongData("../src/music/pokemon/39.mp3", ["Red","Blue","Yellow","RBY","Rival appears"]),
-    new SongData("../src/music/pokemon/40.mp3", ["Red","Blue","Yellow","RBY","Victory Fanfare"]),
-    new SongData("../src/music/pokemon/41.mp3", ["Heart Gold","Soul Silver","HGSS","Battle! Kanto Gym Leader"]),
-    new SongData("../src/music/pokemon/42.mp3", ["Fire Red","Leaf Green","FRLG","Battle! Gym Leader"]),
-    new SongData("../src/music/pokemon/43.mp3", ["Ruby","Sapphire","Emerald", "Battle! Rival"]),
-    new SongData("../src/music/pokemon/44.mp3", ["Ruby","Sapphire","Emerald", "Opening"]),
-    new SongData("../src/music/pokemon/45.mp3", ["Ruby","Sapphire","Emerald", "Title Screen"]),
-    new SongData("../src/music/pokemon/46.mp3", ["Ruby","Sapphire","Emerald", "Petalburg City"]),
-    new SongData("../src/music/pokemon/47.mp3", ["Colosseum","Battle! Cipher Admin"]),
-    new SongData("../src/music/pokemon/48.mp3", ["Colosseum","First Battle"]),
-    new SongData("../src/music/pokemon/49.mp3", ["Colosseum","Normal Battle"]),
-    new SongData("../src/music/pokemon/50.mp3", ["Black 2","White 2","Battle! Cynthia"])
+    new SongData("../src/music/pokemon/1.mp3", ["Pokemon Omega Ruby","Pokemoon Alpha Sapphire","ORAS","Battle! Champion"]),
+    new SongData("../src/music/pokemon/2.mp3", ["Pokemon Omega Ruby","Pokemoon Alpha Sapphire","ORAS","Battle! Rival"]),
+    new SongData("../src/music/pokemon/3.mp3", ["Pokemon Omega Ruby","Pokemoon Alpha Sapphire","ORAS","Battle! Zinnia"]),
+    new SongData("../src/music/pokemon/4.mp3", ["Pokemon Omega Ruby","Pokemoon Alpha Sapphire","ORAS","Battle! Wally"]),
+    new SongData("../src/music/pokemon/5.mp3", ["Pokemon Sun","Pokemon Moon","Battle! Legend Red"]),
+    new SongData("../src/music/pokemon/6.mp3", ["Pokemon Sun","Pokemon Moon","Battle! Champion"]),   
+    new SongData("../src/music/pokemon/7.mp3", ["Pokemon Sun","Pokemon Moon","Battle! Kahuna"]),
+    new SongData("../src/music/pokemon/8.mp3", ["Pokemon Sun","Pokemon Moon","Battle! Hau"]),
+    new SongData("../src/music/pokemon/9.mp3", ["Pokemon X","Pokemon Y","Snowbelee City"]),
+    new SongData("../src/music/pokemon/10.mp3", ["Pokemon X","Pokemon Y","Battle! Gym Leader"]),
+    new SongData("../src/music/pokemon/11.mp3", ["Pokemon X","Pokemon Y","Battle! Lyssandre"]),
+    new SongData("../src/music/pokemon/12.mp3", ["Pokemon X","Pokemon Y","Battle! Diantha"]),
+    new SongData("../src/music/pokemon/13.mp3", ["Pokemon Black","Pokemon White","Battle! N"]),
+    new SongData("../src/music/pokemon/14.mp3", ["Pokemon Black","Pokemon White","Battle! Reshiram","Battle! Zekrom","Battle! Kyurem"]),
+    new SongData("../src/music/pokemon/15.mp3", ["Pokemon Black","Pokemon White","Battle! Elite Four"]),
+    new SongData("../src/music/pokemon/16.mp3", ["Pokemon Diamond","Pokemon Pearl","Battle! Cynthia"]),
+    new SongData("../src/music/pokemon/17.mp3", ["Pokemon Diamond","Pokemon Pearl","Battle! Team Galactic Boss"]),
+    new SongData("../src/music/pokemon/18.mp3", ["Pokemon Sun","Pokemon Moon","Battle! Gladion"]),
+    new SongData("../src/music/pokemon/19.mp3", ["Pokemon Heart Gold","Pokemon Soul Silver","HGSS","Battle! Champion","Battle! Red"]),
+    new SongData("../src/music/pokemon/20.mp3", ["Pokemon Omega Ruby","Pokemon Alpha Sapphire","ORAS","Battle! Ho-oh"]),
+    new SongData("../src/music/pokemon/21.mp3", ["Pokemon Omega Ruby","Pokemon Alpha Sapphire","ORAS","Battle! Rayquaza"]),
+    new SongData("../src/music/pokemon/22.mp3", ["Pokemon Diamond","Pokemon Pearl","Battle! Rival"]),
+    new SongData("../src/music/pokemon/23.mp3", ["Pokemon Heart Gold","Pokemon Soul Silver","HGSS","Battle! Rival"]),
+    new SongData("../src/music/pokemon/24.mp3", ["Pokemon Fire Red","Pokemon Leaf Green","FRLG","Battle! Champion"]),
+    new SongData("../src/music/pokemon/25.mp3", ["Pokemon X","Pokemon Y","Professor Sycanore's Theme"]),
+    new SongData("../src/music/pokemon/26.mp3", ["Pokemon Black 2","Pokemon White 2","Battle! Rival"]),
+    new SongData("../src/music/pokemon/27.mp3", ["Pokemon Black","Pokemon White","Emotion"]),
+    new SongData("../src/music/pokemon/28.mp3", ["Pokemon Omega Ruby","Pokemon Alpha Sapphire","ORAS","Battle! Gym Leader"]),
+    new SongData("../src/music/pokemon/29.mp3", ["Pokemon Black","Pokemon White","Last Pokemon"]),
+    new SongData("../src/music/pokemon/30.mp3", ["Pokemon Heart Gold","Pokemon Soul Silver","HGSS","Battle! Team Rocket"]),
+    new SongData("../src/music/pokemon/31.mp3", ["Pokemon Omega Ruby","Pokemon Alpha Sapphire","ORAS","Battle! Elite Four"]),
+    new SongData("../src/music/pokemon/32.mp3", ["Pokemon  Red","Pokemon Blue","Pokemon Yellow","RBY","Indigo Plateau"]),
+    new SongData("../src/music/pokemon/33.mp3", ["Pokemon X","Pokemon Y","Battle! Mewtwo"]),
+    new SongData("../src/music/pokemon/34.mp3", ["Pokemon X","Pokemon Y","Emotion"]),
+    new SongData("../src/music/pokemon/35.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Opening"]),
+    new SongData("../src/music/pokemon/36.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Pallet Town"]),
+    new SongData("../src/music/pokemon/37.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Professor Oak"]),
+    new SongData("../src/music/pokemon/38.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Oak's Research Lab"]),
+    new SongData("../src/music/pokemon/39.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Rival appears"]),
+    new SongData("../src/music/pokemon/40.mp3", ["Pokemon Red","Pokemon Blue","Pokemon Yellow","RBY","Victory Fanfare"]),
+    new SongData("../src/music/pokemon/41.mp3", ["Pokemon Heart Gold","Pokemon Soul Silver","HGSS","Battle! Kanto Gym Leader"]),
+    new SongData("../src/music/pokemon/42.mp3", ["Pokemon Fire Red","Pokemon Leaf Green","FRLG","Battle! Gym Leader"]),
+    new SongData("../src/music/pokemon/43.mp3", ["Pokemon Ruby","Pokemon Sapphire","Pokemon Emerald", "Battle! Rival"]),
+    new SongData("../src/music/pokemon/44.mp3", ["Pokemon Ruby","Pokemon Sapphire","Pokemon Emerald", "Opening"]),
+    new SongData("../src/music/pokemon/45.mp3", ["Pokemon Ruby","Pokemon Sapphire","Pokemon Emerald", "Title Screen"]),
+    new SongData("../src/music/pokemon/46.mp3", ["Pokemon Ruby","Pokemon Sapphire","Pokemon Emerald", "Petalburg City"]),
+    new SongData("../src/music/pokemon/47.mp3", ["Pokemon Colosseum","Battle! Cipher Admin"]),
+    new SongData("../src/music/pokemon/48.mp3", ["Pokemon Colosseum","First Battle"]),
+    new SongData("../src/music/pokemon/49.mp3", ["Pokemon Colosseum","Normal Battle"]),
+    new SongData("../src/music/pokemon/50.mp3", ["Pokemon Black 2","White 2","Battle! Cynthia"]),
 	];
 	
 var	Square = [
@@ -354,7 +406,7 @@ var	Square = [
     new SongData("../src/music/square/65.mp3", ["Final Fantasy VII","Final Fantasy 7", "FF 7","FF VII","One Winged Angel"]),
 	new SongData("../src/music/square/66.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","The sunleth Waterscape"]),
 	new SongData("../src/music/square/67.mp3", ["Final Fantasy I","Final Fantasy 1", "FF 1","FF I","Opening"]),
-	new SongData("../src/music/square/68.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Fabula Nova Crystallis"])
+	new SongData("../src/music/square/68.mp3", ["Final Fantasy XIII","Final Fantasy 13", "FF 13","FF XIII","Fabula Nova Crystallis"]),
     ];
     
 var Sonic = [
@@ -377,7 +429,7 @@ var Sonic = [
     new SongData("../src/music/sonic/17.mp3", ["Sonic The Hedgehog 2006","Sonic The Hedgehog","Sonic 2006","Dreams of an Absolution"]),
     new SongData("../src/music/sonic/18.mp3", ["Sonic Unleashed","Perfect Dark Gaia"]),
     new SongData("../src/music/sonic/19.mp3", ["Sonic Adventure 2 Battle","Sonic Vs Shadow"]),
-    new SongData("../src/music/sonic/11.mp3", ["Sonic Heroes","What I'm made of"])
+    new SongData("../src/music/sonic/20.mp3", ["Sonic Heroes","What I'm made of"]),
     ];
     
 var SpikeChun = [
@@ -414,7 +466,7 @@ var SpikeChun = [
 	new SongData("../src/music/spikechun/31.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Wonderful Dead"]),
 	new SongData("../src/music/spikechun/32.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Welcome to TOWA Tower"]),
 	new SongData("../src/music/spikechun/33.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Warriors of Hope"]),
-	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Alice in the Childrens Land"])
+	new SongData("../src/music/spikechun/34.mp3", ["Danganronpa Ultra Despair Girls","Ultra Despair Girls","Alice in the Childrens Land"]),
 	];
 
 var K3 = [
@@ -473,7 +525,7 @@ var K3 = [
 	new SongData("../src/music/k3/53.mp3", ["Get Backers"]),
 	new SongData("../src/music/k3/54.mp3", ["Ninja Boy Rantaro","Nintama Rantaro","Rantaro"]),
 	new SongData("../src/music/k3/55.mp3", ["DNA2","DNA 2","DNA"]),
-	new SongData("../src/music/k3/56.mp3", ["Cowboy bebop"])
+	new SongData("../src/music/k3/56.mp3", ["Cowboy bebop"]),
 ];
 
 var Disney = [
@@ -482,7 +534,7 @@ var Disney = [
     new SongData("../src/music/disney/3.mp3", ["The Lion King","Circle of Life","El Rey Leon"]),
     new SongData("../src/music/disney/4.mp3", ["Aladdin","A Whole New World"]),
     new SongData("../src/music/disney/5.mp3", ["Tangled","Then Will My Life Begin","Enredados"]),
-    new SongData("../src/music/disney/6.mp3", ["I'll make a man out of you","Mulan"]),
+    new SongData("../src/music/disney/6.mp3", ["Mulan","I'll make a man out of you"]),
     new SongData("../src/music/disney/7.mp3", ["Hercules","Zero to Hero"]),
     new SongData("../src/music/disney/8.mp3", ["Tarzan","Song of a Man"]),
     new SongData("../src/music/disney/9.mp3", ["Tarzan","You'll be in my heart"]),
@@ -543,55 +595,89 @@ var Disney = [
 	];
 
 var Zelda = [
-	new SongData("../src/music/zelda/1.mp3", ["Skyward Sword", "Ballad of the Goddess"]),
-	new SongData("../src/music/zelda/2.mp3", ["Link's Awakening","Tal Tal Heights"]),
-	new SongData("../src/music/zelda/3.mp3", ["Breath of the Wild", "Daruk's Theme"]),
-	new SongData("../src/music/zelda/4.mp3", ["A link Between Worlds", "Death Mountain"]),
-	new SongData("../src/music/zelda/5.mp3", ["Breath of the Wild", "Divine Beast Vah Medoh"]),
-	new SongData("../src/music/zelda/6.mp3", ["Breath of the Wild", "Divine Beast Vah Naboris"]),
-	new SongData("../src/music/zelda/7.mp3", ["Breath of the Wild", "Divine Beast Vah Ruta"]),
-	new SongData("../src/music/zelda/8.mp3", ["Wind Waker", "Dragon Roost Island"]),
-	new SongData("../src/music/zelda/9.mp3", ["Breath of the Wild", "Epilogue"]),
-	new SongData("../src/music/zelda/10.mp3", ["Wind Waker", "Farewell Hyrule King"]),
-	new SongData("../src/music/zelda/11.mp3", ["Skyward Sword", "Fi's Farewell"]),
-	new SongData("../src/music/zelda/12.mp3", ["Ocarina of Time", "Gerudo Valley"]),
-	new SongData("../src/music/zelda/13.mp3", ["Skyward Sword", "Ghirahim Battle"]),
-	new SongData("../src/music/zelda/14.mp3", ["Breath of the Wild", "Hateno Village"]),
-	new SongData("../src/music/zelda/15.mp3", ["Twilight Princess", "Hidden Skill Training"]),
-	new SongData("../src/music/zelda/16.mp3", ["Twilight Princess", "Hidden Village"]),
-	new SongData("../src/music/zelda/17.mp3", ["Breath of the Wild", "Hyrule Castle"]),
-	new SongData("../src/music/zelda/18.mp3", ["Twilight Princess", "Hyrule Field"]),
-	new SongData("../src/music/zelda/19.mp3", ["Breath of the Wild", "Kas's Theme"]),
-	new SongData("../src/music/zelda/20.mp3", ["Skyward Sword", "Koloktos Moldarach"]),
-	new SongData("../src/music/zelda/21.mp3", ["Breath of the Wild", "Korok Forest"]),
-	new SongData("../src/music/zelda/22.mp3", ["Skyward Sword", "Lanayru Sand Sea"]),
-	new SongData("../src/music/zelda/23.mp3", ["A Link Between Worlds", "Lorule Castle"]),
-	new SongData("../src/music/zelda/24.mp3", ["A Link Between Worlds", "Lorule Field 2"]),
-	new SongData("../src/music/zelda/25.mp3", ["Twilight Princess", "Midna's Lament"]),
-	new SongData("../src/music/zelda/26.mp3", ["Wind Waker", "Mini-Boss"]),
-	new SongData("../src/music/zelda/27.mp3", ["Breath of the Wild", "Parasail"]),
-	new SongData("../src/music/zelda/28.mp3", ["Breath of the Wild", "Mipha's Theme"]),
-	new SongData("../src/music/zelda/29.mp3", ["Wind Waker", "Outset Island"]),
-	new SongData("../src/music/zelda/30.mp3", ["Breath of the Wild", "Prince Sidon"]),
-	new SongData("../src/music/zelda/31.mp3", ["Breath of the Wild", "Revali's Theme"]),
-	new SongData("../src/music/zelda/32.mp3", ["Breath of the Wild", "Rito Village"]),
-	new SongData("../src/music/zelda/33.mp3", ["Skyward Sword", "Romance in the air"]),
-	new SongData("../src/music/zelda/34.mp3", ["Skyward Sword", "Separation"]),
-	new SongData("../src/music/zelda/35.mp3", ["Ocarina of time", "Sheik's theme"]),
-	new SongData("../src/music/zelda/36.mp3", ["Skyward Sword", "Skyloft"]),
-	new SongData("../src/music/zelda/37.mp3", ["Skyward Sword", "Staff Roll"]),
-	new SongData("../src/music/zelda/38.mp3", ["Majora's Mask", "Stone Tower Temple"]),
-	new SongData("../src/music/zelda/39.mp3", ["Breath of the wild", "Tarrey Town"]),
-	new SongData("../src/music/zelda/40.mp3", ["Wind Waker", "The great sea"]),
-	new SongData("../src/music/zelda/41.mp3", ["Phantom Hourglass", "Linebeck's Theme"]),
-	new SongData("../src/music/zelda/42.mp3", ["Breath of the Wild", "Main Theme"]),
-	new SongData("../src/music/zelda/43.mp3", ["Spirit Tracks", "Final Boss Battle"]),
-	new SongData("../src/music/zelda/44.mp3", ["Spirit Tracks", "Full steam ahead"]),
-	new SongData("../src/music/zelda/45.mp3", ["Spirit Tracks", "Fraaz Master of Icy Fire"]),
-	new SongData("../src/music/zelda/46.mp3", ["Wind Waker", "The Legendary Hero"]),
-	new SongData("../src/music/zelda/47.mp3", ["Ocarina of time", "Windmill Hut"]),
-	new SongData("../src/music/zelda/48.mp3", ["A Link Between Worlds", "Yuga Battle"]),
+	new SongData("../src/music/zelda/1.mp3", ["The Legend of Zelda: Skyward Sword", "Ballad of the Goddess"]),
+	new SongData("../src/music/zelda/2.mp3", ["The Legend of Zelda: Link's Awakening","Tal Tal Heights"]),
+	new SongData("../src/music/zelda/3.mp3", ["The Legend of Zelda: Breath of the Wild", "Daruk's Theme"]),
+	new SongData("../src/music/zelda/4.mp3", ["The Legend of Zelda: A link Between Worlds", "Death Mountain"]),
+	new SongData("../src/music/zelda/5.mp3", ["The Legend of Zelda: Breath of the Wild", "Divine Beast Vah Medoh"]),
+	new SongData("../src/music/zelda/6.mp3", ["The Legend of Zelda: Breath of the Wild", "Divine Beast Vah Naboris"]),
+	new SongData("../src/music/zelda/7.mp3", ["The Legend of Zelda: Breath of the Wild", "Divine Beast Vah Ruta"]),
+	new SongData("../src/music/zelda/8.mp3", ["The Legend of Zelda: Wind Waker", "Dragon Roost Island"]),
+	new SongData("../src/music/zelda/9.mp3", ["The Legend of Zelda: Breath of the Wild", "Epilogue"]),
+	new SongData("../src/music/zelda/10.mp3", ["The Legend of Zelda: Wind Waker", "Farewell Hyrule King"]),
+	new SongData("../src/music/zelda/11.mp3", ["The Legend of Zelda: Skyward Sword", "Fi's Farewell"]),
+	new SongData("../src/music/zelda/12.mp3", ["The Legend of Zelda: Ocarina of Time", "Gerudo Valley"]),
+	new SongData("../src/music/zelda/13.mp3", ["The Legend of Zelda: Skyward Sword", "Ghirahim Battle"]),
+	new SongData("../src/music/zelda/14.mp3", ["The Legend of Zelda: Breath of the Wild", "Hateno Village"]),
+	new SongData("../src/music/zelda/15.mp3", ["The Legend of Zelda: Twilight Princess", "Hidden Skill Training"]),
+	new SongData("../src/music/zelda/16.mp3", ["The Legend of Zelda: Twilight Princess", "Hidden Village"]),
+	new SongData("../src/music/zelda/17.mp3", ["The Legend of Zelda: Breath of the Wild", "Hyrule Castle"]),
+	new SongData("../src/music/zelda/18.mp3", ["The Legend of Zelda: Twilight Princess", "Hyrule Field"]),
+	new SongData("../src/music/zelda/19.mp3", ["The Legend of Zelda: Breath of the Wild", "Kas's Theme"]),
+	new SongData("../src/music/zelda/20.mp3", ["The Legend of Zelda: Skyward Sword", "Koloktos Moldarach"]),
+	new SongData("../src/music/zelda/21.mp3", ["The Legend of Zelda: Breath of the Wild", "Korok Forest"]),
+	new SongData("../src/music/zelda/22.mp3", ["The Legend of Zelda: Skyward Sword", "Lanayru Sand Sea"]),
+	new SongData("../src/music/zelda/23.mp3", ["The Legend of Zelda: A Link Between Worlds", "Lorule Castle"]),
+	new SongData("../src/music/zelda/24.mp3", ["The Legend of Zelda: A Link Between Worlds", "Lorule Field 2"]),
+	new SongData("../src/music/zelda/25.mp3", ["The Legend of Zelda: Twilight Princess", "Midna's Lament"]),
+	new SongData("../src/music/zelda/26.mp3", ["The Legend of Zelda: Wind Waker", "Mini-Boss"]),
+	new SongData("../src/music/zelda/27.mp3", ["The Legend of Zelda: Breath of the Wild", "Parasail"]),
+	new SongData("../src/music/zelda/28.mp3", ["The Legend of Zelda: Breath of the Wild", "Mipha's Theme"]),
+	new SongData("../src/music/zelda/29.mp3", ["The Legend of Zelda: Wind Waker", "Outset Island"]),
+	new SongData("../src/music/zelda/30.mp3", ["The Legend of Zelda: Breath of the Wild", "Prince Sidon"]),
+	new SongData("../src/music/zelda/31.mp3", ["The Legend of Zelda: Breath of the Wild", "Revali's Theme"]),
+	new SongData("../src/music/zelda/32.mp3", ["The Legend of Zelda: Breath of the Wild", "Rito Village"]),
+	new SongData("../src/music/zelda/33.mp3", ["The Legend of Zelda: Skyward Sword", "Romance in the air"]),
+	new SongData("../src/music/zelda/34.mp3", ["The Legend of Zelda: Skyward Sword", "Separation"]),
+	new SongData("../src/music/zelda/35.mp3", ["The Legend of Zelda: Ocarina of time", "Sheik's theme"]),
+	new SongData("../src/music/zelda/36.mp3", ["The Legend of Zelda: Skyward Sword", "Skyloft"]),
+	new SongData("../src/music/zelda/37.mp3", ["The Legend of Zelda: Skyward Sword", "Staff Roll"]),
+	new SongData("../src/music/zelda/38.mp3", ["The Legend of Zelda: Majora's Mask", "Stone Tower Temple"]),
+	new SongData("../src/music/zelda/39.mp3", ["The Legend of Zelda: Breath of the wild", "Tarrey Town"]),
+	new SongData("../src/music/zelda/40.mp3", ["The Legend of Zelda: Wind Waker", "The great sea"]),
+	new SongData("../src/music/zelda/41.mp3", ["The Legend of Zelda: Phantom Hourglass", "Linebeck's Theme"]),
+	new SongData("../src/music/zelda/42.mp3", ["The Legend of Zelda: Breath of the Wild", "Main Theme"]),
+	new SongData("../src/music/zelda/43.mp3", ["The Legend of Zelda: Spirit Tracks", "Final Boss Battle"]),
+	new SongData("../src/music/zelda/44.mp3", ["The Legend of Zelda: Spirit Tracks", "Full steam ahead"]),
+	new SongData("../src/music/zelda/45.mp3", ["The Legend of Zelda: Spirit Tracks", "Fraaz Master of Icy Fire"]),
+	new SongData("../src/music/zelda/46.mp3", ["The Legend of Zelda: Wind Waker", "The Legendary Hero"]),
+	new SongData("../src/music/zelda/47.mp3", ["The Legend of Zelda: Ocarina of time", "Windmill Hut"]),
+	new SongData("../src/music/zelda/48.mp3", ["The Legend of Zelda: A Link Between Worlds", "Yuga Battle"]),
 ];
+
+var Attorney = [
+	new SongData("../src/music/attorney/1.mp3", ["Ace Attorney Investigations: Miles Edgeworth", "Lying Coldly","Ace Attorney Investigations"]),
+	new SongData("../src/music/attorney/2.mp3", ["Apollo Justice: Ace Attorney","Cornered","Apollo Justice", "Ace Attorney 4"]),
+	new SongData("../src/music/attorney/3.mp3", ["Phoenix Wright: Ace Attorney: Dual Destinies", "Ace Attorney 5", "Court Begins"]),
+	new SongData("../src/music/attorney/4.mp3", ["Phoenix Wright: Ace Attorney: Dual Destinies", "Ace Attorney 5", "Keep Pressing on"]),
+	new SongData("../src/music/attorney/5.mp3", ["Phoenix Wright: Ace Attorney: Dual Destinies", "Ace Attorney 5", "Announce the Truth 2013"]),
+	new SongData("../src/music/attorney/6.mp3", ["Phoenix Wright: Ace Attorney: Dual Destinies", "Ace Attorney 5", "Bobby Fullbright"]),
+	new SongData("../src/music/attorney/7.mp3", ["Phoenix Wright: Ace Attorney: Dual Destinies", "Ace Attorney 5", "Pursuit 2"]),
+	new SongData("../src/music/attorney/8.mp3", ["Ace Attorney Investigations 2", "Wanting to find the truth"]),
+	new SongData("../src/music/attorney/9.mp3", ["Apollo Justice: Ace Attorney","A New trial is in Session!","Apollo Justice", "Ace Attorney 4"]),
+	new SongData("../src/music/attorney/10.mp3", ["Phoenix Wright: Ace Attorney", "Ace Attorney 1", "Jake Marshall's Theme"]),
+	new SongData("../src/music/attorney/11.mp3", ["Phoenix Wright: Ace Attorney: Spirit of Justice", "With Pearly 2013", "Ace Attorney 6"]),
+	new SongData("../src/music/attorney/12.mp3", ["Phoenix Wright: Ace Attorney: Justice for All", "Ace Attorney 2", "Cornered"]),
+	new SongData("../src/music/attorney/13.mp3", ["Phoenix Wright: Ace Attorney: Justice for All", "Ace Attorney 2", "Hotline of Fate"]),
+	new SongData("../src/music/attorney/14.mp3", ["Phoenix Wright: Ace Attorney: Justice for All", "Ace Attorney 2", "Search Core 2002"]),
+	new SongData("../src/music/attorney/15.mp3", ["Phoenix Wright: Ace Attorney: Justice for All", "Ace Attorney 2", "Search in The Midst 2002"]),
+	new SongData("../src/music/attorney/16.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Pressing Pursuit"]),
+	new SongData("../src/music/attorney/17.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "I just want love"]),
+	new SongData("../src/music/attorney/18.mp3", ["Professor Layton vs. Phoenix Wright: Ace Attorney","Professor Layton vs Phoenix Wright", "Objection! 2012"]),
+	new SongData("../src/music/attorney/19.mp3", ["Professor Layton vs. Phoenix Wright: Ace Attorney","Professor Layton vs Phoenix Wright", "Mob Cross Examination"]),
+	new SongData("../src/music/attorney/20.mp3", ["Professor Layton vs. Phoenix Wright: Ace Attorney","Professor Layton vs Phoenix Wright", "Announce the Truth 2012"]),
+	new SongData("../src/music/attorney/21.mp3", ["Professor Layton vs. Phoenix Wright: Ace Attorney","Professor Layton vs Phoenix Wright", "Pursuit Casting Magic"]),
+	new SongData("../src/music/attorney/22.mp3", ["Phoenix Wright: Ace Attorney", "Ace Attorney 1", "Steel Samurai Theme"]),
+	new SongData("../src/music/attorney/23.mp3", ["Phoenix Wright: Ace Attorney", "Ace Attorney 1", "Objection! 2001"]),
+	new SongData("../src/music/attorney/24.mp3", ["Phoenix Wright: Ace Attorney", "Ace Attorney 1", "Cornered"]),
+	new SongData("../src/music/attorney/25.mp3", ["Phoenix Wright: Ace Attorney", "Ace Attorney 1", "Turnabout Sisters"]),
+	new SongData("../src/music/attorney/26.mp3", ["Phoenix Wright: Ace Attorney: Justice for All", "Ace Attorney 2", "The great Revival"]),
+	new SongData("../src/music/attorney/27.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Godot's Theme"]),
+	new SongData("../src/music/attorney/28.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Beauty Hermitage"]),
+	new SongData("../src/music/attorney/29.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Lordly Tailor"]),
+	new SongData("../src/music/attorney/30.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Search in the Midst 2004"]),
+];
+
 
 var Indie = [
 	new SongData("../src/music/indie/1.mp3", ["Shovel knight","In the halls of the usurper","Pridemor keep"]), 
@@ -605,20 +691,20 @@ var Indie = [
     new SongData("../src/music/indie/9.mp3", ["lisa","goodbye baby"]), 
     new SongData("../src/music/indie/10.mp3", ["lisa","summer love"]), 
     new SongData("../src/music/indie/11.mp3", ["Crypt of the Necrodancer","For Whom the Knell Tolls","dead ringer"]),
-    new SongData("../src/music/indie/12.mp3", ["Crypt of the Necrodancer","The Wight to Remain"]) 
+    new SongData("../src/music/indie/12.mp3", ["Crypt of the Necrodancer","The Wight to Remain"]), 
 ];
 
 var	Missclick = [
 	new SoundData("../src/music/other/err1.mp3"),
 	new SoundData("../src/music/other/err2.wav"),
-	new SoundData("../src/music/other/err3.wav")
+	new SoundData("../src/music/other/err3.wav"),
 	];
 	
 var Ganbatte = [
 	new SoundData("../src/music/other/go1.wav"),
 	new SoundData("../src/music/other/go2.wav"),
 	new SoundData("../src/music/other/go3.wav"),
-	new SoundData("../src/music/other/go4.wav")
+	new SoundData("../src/music/other/go4.wav"),
 	];
 	
 //---------------------------------------------------------------------------------------
@@ -627,12 +713,12 @@ var Ganbatte = [
 
 var SonicWall = [
 	"../src/images/wallpaper/sonic.jpg",
-	"../src/images/wallpaper/sonic.png"
+	"../src/images/wallpaper/sonic.png",
 	];
 
 var SquareWall = [
 	"../src/images/wallpaper/square.jpg",
-	"../src/images/wallpaper/square2.jpg"
+	"../src/images/wallpaper/square2.jpg",
 	];
 
 
@@ -655,59 +741,99 @@ function act_catV() {
     if (!$("#K3").is(":hidden")) vec.push(10);
     if (!$("#Disney").is(":hidden")) vec.push(11);
     if (!$("#Zelda").is(":hidden")) vec.push(12);
+    if (!$("#Attorney").is(":hidden")) vec.push(13);
     return vec;
 }
 
-function show_cat_S() {
+function show_cat() {
 	var wallpaper;
-	if(vSong[x].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
-	if(vSong[x].link.indexOf("square") != -1) {
+	if(category == "disney") $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
+	else if(category == "square") {
 		 wallpaper = SquareWall[Math.floor((Math.random() * SquareWall.length))];
 		 $("body").css("backgroundImage",'url('+wallpaper+')');
 	}
-	if(vSong[x].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
-	if(vSong[x].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
-	if(vSong[x].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
-	if(vSong[x].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
-	if(vSong[x].link.indexOf("atlus") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
-	if(vSong[x].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
-	if(vSong[x].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
-	if(vSong[x].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
-	if(vSong[x].link.indexOf("sonic") != -1) {
+	else if(category == "k3") $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
+	else if(category == "anime") $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
+	else if(category == "touhou") $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
+	else if(category == "mario") $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
+	else if(category == "atlus") $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
+	else if(category == "pokemon") $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
+	else if(category == "kirby") $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
+	else if(category == "spikechun") $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
+	else if(category == "sonic") {
 		 wallpaper = SonicWall[Math.floor((Math.random() * SonicWall.length))];
 		 $("body").css("backgroundImage",'url('+wallpaper+')');
 	}
-	if(vSong[x].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
-	if(vSong[x].link.indexOf("zelda") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/zelda.jpg)");
+	else if(category == "remix") $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
+	else if(category == "zelda") $("body").css("backgroundImage","url(../src/images/wallpaper/zelda.jpg)");
+	else if(category == "attorney") $("body").css("backgroundImage","url(../src/images/wallpaper/attorney.jpg)");
 }
 
-function show_cat_F() {
-	var wallpaper;
-	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/disney.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("square") != -1) {
-		 wallpaper = SquareWall[Math.floor((Math.random() * SquareWall.length))];
-		 $("body").css("backgroundImage",'url('+wallpaper+')');
-	}
-	if(CategoryMatrix[i][j].link.indexOf("k3") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/k3.png)");
-	if(CategoryMatrix[i][j].link.indexOf("anime") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/anime.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/touhou.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("mario") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/mario.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("atlus") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/atlus.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("pokemon") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/pokemon.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("kirby") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/kirby.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("spikechun") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/spikechun.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) {
-		 wallpaper = SonicWall[Math.floor((Math.random() * SonicWall.length))];
-		 $("body").css("backgroundImage",'url('+wallpaper+')');
-	}
-	if(CategoryMatrix[i][j].link.indexOf("remix") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/remix.jpg)");
-	if(CategoryMatrix[i][j].link.indexOf("zelda") != -1) $("body").css("backgroundImage","url(../src/images/wallpaper/zelda.jpg)");
+function get_category_S() {
+	if(vSong[x].link.indexOf("disney") != -1) category = "disney";
+	else if(vSong[x].link.indexOf("square") != -1) category = "square"
+	else if(vSong[x].link.indexOf("k3") != -1) category = "k3"
+	else if(vSong[x].link.indexOf("anime") != -1) category = "anime"
+	else if(vSong[x].link.indexOf("touhou") != -1) category = "touhou"
+	else if(vSong[x].link.indexOf("mario") != -1) category = "mario"
+	else if(vSong[x].link.indexOf("atlus") != -1) category = "atlus"
+	else if(vSong[x].link.indexOf("pokemon") != -1) category = "pokemon"
+	else if(vSong[x].link.indexOf("kirby") != -1) category = "kirby"
+	else if(vSong[x].link.indexOf("spikechun") != -1) category = "spikechun"
+	else if(vSong[x].link.indexOf("sonic") != -1) category = "sonic"
+	else if(vSong[x].link.indexOf("remix") != -1) category = "remix"
+	else if(vSong[x].link.indexOf("zelda") != -1) category = "zelda"
+	else if(vSong[x].link.indexOf("attorney") != -1) category = "attorney"
 }
+
+function get_category_F() {
+	if(CategoryMatrix[i][j].link.indexOf("disney") != -1) category = "disney";
+	else if(CategoryMatrix[i][j].link.indexOf("square") != -1) category = "square"
+	else if(CategoryMatrix[i][j].link.indexOf("k3") != -1) category = "k3"
+	else if(CategoryMatrix[i][j].link.indexOf("anime") != -1) category = "anime"
+	else if(CategoryMatrix[i][j].link.indexOf("touhou") != -1) category = "touhou"
+	else if(CategoryMatrix[i][j].link.indexOf("mario") != -1) category = "mario"
+	else if(CategoryMatrix[i][j].link.indexOf("atlus") != -1) category = "atlus"
+	else if(CategoryMatrix[i][j].link.indexOf("pokemon") != -1) category = "pokemon"
+	else if(CategoryMatrix[i][j].link.indexOf("kirby") != -1) category = "kirby"
+	else if(CategoryMatrix[i][j].link.indexOf("spikechun") != -1) category = "spikechun"
+	else if(CategoryMatrix[i][j].link.indexOf("sonic") != -1) category = "sonic"
+	else if(CategoryMatrix[i][j].link.indexOf("remix") != -1) category = "remix"
+	else if(CategoryMatrix[i][j].link.indexOf("zelda") != -1) category = "zelda"
+	else if(CategoryMatrix[i][j].link.indexOf("attorney") != -1) category = "attorney"
+}
+
+function EditDatalist() {
+  if(category == "square") sols = square_sols;
+  else if (category == "anime") sols = anime_sols;
+  else if (category == "atlus") sols = atlus_sols;
+  else if (category == "disney") sols = disney_sols;
+  else if (category == "k3") sols = k3_sols;
+  else if (category == "kirby") sols = kirby_sols;
+  else if (category == "mario") sols = mario_sols;
+  else if (category == "pokemon") sols = pokemon_sols;
+  else if (category == "remix") sols = remix_sols;
+  else if (category == "sonic") sols = sonic_sols;
+  else if (category == "spikechun") sols = spikechun_sols;
+  else if (category == "touhou") sols = touhou_sols;
+  else if (category == "zelda") sols = zelda_sols;
+  else if (category == "attorney") sols = attorney_sols;
+
+  var options = '';
+
+  for(var i = 0; i < sols.length; i++)
+    options += '<option value="'+sols[i]+'" />';
+
+  document.getElementById('complete').innerHTML = options;
+}	
+
+
 //---------------------------------------------------------------------------------------
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney,Zelda];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney,Zelda,Attorney];
+var category ="";
 
 
 

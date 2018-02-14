@@ -22,6 +22,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 	
 	<meta charset="utf-8">
+	<script id="js" type="text/javascript" src="../js/Autocomplete.js"></script>
 	<script id="js" type="text/javascript" src="../js/Common.js"></script>
 	<script id="js" type="text/javascript" src="../js/FreePlays.js"></script>
 	<link rel="stylesheet" type="text/css" href="../css/Game.css">
@@ -87,7 +88,7 @@
    					<div id="Zelda" class ="cat cat2"> </div> 
    				</td>
    				<td>
-   					<div id="ComingSoon" class ="cat cat2"> </div> 
+   					<div id="Attorney" class ="cat cat2"> </div> 
    				</td>
    			</tr>
    			<tr>
@@ -110,7 +111,8 @@
 			<tr>
 				<td>
 					<div id="solsong">
-						<input class ="game" id="Sol" type="text" spellcheck=false autofocus="autofocus" hidden>
+						<input class ="game" id="Sol" type="text" spellcheck=false autofocus="autofocus" list="complete" hidden>
+						<datalist id="complete"> </datalist>
 						<audio class ="game" id ="Song" autoplay controls controlsList="nodownload" src="" hidden> </audio>
 					</div>	
 				</td>

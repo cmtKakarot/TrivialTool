@@ -89,7 +89,10 @@ function check_valid() {
 					x = Math.floor((Math.random() * vSong.length));
 				}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat_S();
+			get_category_S();
+			document.getElementById('complete').innerHTML = "";
+			show_cat();
+			$("#Sol").focus();
 			}
 			else show_res();
 		}
@@ -101,6 +104,7 @@ function check_valid() {
 			combo_break = 0;
 			$(".combo").hide();
 		}
+		document.getElementById('complete').innerHTML = "";
 		$("#Sol").val("");
 		var h = Math.floor((Math.random() * Missclick.length))
 		$("#errS").attr("src", Missclick[h].link);
@@ -137,6 +141,7 @@ function ResetGame() {
 	vSong = [];
 	combo = 1;
 	omboBreak = 0;
+	$("#Sol").val("");
 }
 
 //---------------------------------------------------------------------------------------
@@ -189,7 +194,9 @@ $(document).ready(function() {
 			},1000);
 			$("#Song").prop("volume", 0.35);
 			$("#Song").attr("src", vSong[x].link);
-			show_cat_S();
+			get_category_S();
+			show_cat();
+			$("#Sol").focus();
 		}
     });
     $("#Sol").keyup(function(event){
@@ -216,7 +223,10 @@ $(document).ready(function() {
 				x = x + 1;
 			}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat_S();
+			get_category_S();
+			document.getElementById('complete').innerHTML = "";
+			show_cat();
+			$("#Sol").focus();
 		}
 	});
 	$("#Discard").click(function() {
@@ -236,7 +246,10 @@ $(document).ready(function() {
 				x = Math.floor((Math.random() * vSong.length));
 			}
 			$("#Song").attr("src", vSong[x].link);
-			show_cat_S();
+			get_category_S();
+			document.getElementById('complete').innerHTML = "";
+			show_cat();
+			$("#Sol").focus();
 		}
 	});
 	$("#Back2").click(function(){
@@ -248,4 +261,8 @@ $(document).ready(function() {
 		$("body").css("backgroundImage","url(../src/images/wallpaper/black.jpg)");
 		ResetGame()
 	});
+	$("#Sol").on("input", function() {
+		if($("#Sol").val().length >= 3) EditDatalist()
+		else document.getElementById('complete').innerHTML = "";
+	});	
 });
