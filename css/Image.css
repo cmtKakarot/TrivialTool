@@ -2,7 +2,7 @@ body {
 	width: 100%;
 	height: 100%;
 	max-width: 100%;
-	background-image: url("../src/images/other/xmas.png");
+	background-image: url("../src/images/other/img.png");
     overflow-x: hidden;
 }
 
@@ -48,11 +48,21 @@ p {
 	margin:auto;
 }
 
+input[type="text"]{
+    color : transparent;
+    text-shadow : 0 0 0 #000;
+}
+
+input[type="text"]:focus{
+    outline : none;
+}
+
 #Sol {
 	width: 100%;
 	margin:auto;
+	margin-top: 5px;
 	height: 40px;
 	font-size:20px;
-	border:solid #b00c0c 2.5px;
+	border:solid #990a18 2.5px;
 	font-family: 'Press Start 2P', cursive;
 }

@@ -161,7 +161,11 @@ $(document).ready(function() {
 		ResetGame();
 	});
 	$("#Sol").on("input", function() {
-		if($("#Sol").val().length >= 3) EditDatalist()
-		else document.getElementById('complete').innerHTML = "";
+		if ($("#Sol").val().length >= 3) EditDatalist()
+		if ($("#Sol").val().length >= 3 && word_in_sols($("#Sol").val())) document.getElementById('complete').innerHTML = "";
+		else if ($("#Sol").val().length < 3) document.getElementById('complete').innerHTML = "";
+	});
+	$("#complete").click(function() {
+		document.getElementById('complete').innerHTML = "";
 	});
 });

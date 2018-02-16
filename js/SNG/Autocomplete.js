@@ -10,6 +10,7 @@ var atlus_sols = [
 	"Persona 3",
 	"Catherine",
 	"Etrian odyssey 4",
+	"Persona 4 Dancing All Night",
 ];
 
 var anime_sols = [
