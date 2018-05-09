@@ -57,6 +57,7 @@ function fill_vec() {
 function next() {
 	$("#Sol").val("");
 	document.getElementById("Last").innerHTML = ""
+	document.getElementById('complete').innerHTML = "";
     ++Nused
     ImageVec[x].used = true;
     if (Nused < ImageVec.length) {
@@ -103,11 +104,26 @@ function check_valid() {
 		next();
 	}
 	else {
-		//document.getElementById('complete').innerHTML = "";
+		document.getElementById('complete').innerHTML = "";
 		$("#Sol").val("");
 	}
 }
 	
+function EditDatalist() {
+	var options = '';
+	for(var i = 0; i < sols.length; i++) {
+		options += '<option value="'+sols[i]+'" />';
+	}
+	document.getElementById('complete').innerHTML = options;
+}
+
+function word_in_sols(word) {
+	var itera = 0;
+	for(itera;itera < sols.length;++itera) {
+		if(word == sols[itera]) return true;
+	}
+	return false;
+}
 
 //---------------------------------------------------------------------------------------
 //--------------------------------- MAIN CODE -------------------------------------------
@@ -127,7 +143,7 @@ $(document).ready(function() {
 			document.getElementById("demo").innerHTML = ImageVec[x].time;
 			if(ImageVec[x].time == -1) {
 				$("#demo").hide()
-				document.getElementById("Last").innerHTML = "Solution: " + ImageVec[x].sols[0]
+				document.getElementById("Last").innerHTML = ImageVec[x].sols[0]
 			}
 			else if(ImageVec[x].time == -6) {
 				next();
@@ -142,4 +158,9 @@ $(document).ready(function() {
 	$("#Sol").keyup(function(event){
         if(event.keyCode == 13) check_valid();
     });
+    $("#Sol").on("input", function() {
+		if ($("#Sol").val().length >= 3) EditDatalist()
+		if ($("#Sol").val().length >= 3 && word_in_sols($("#Sol").val())) document.getElementById('complete').innerHTML = "";
+		else if ($("#Sol").val().length < 3) document.getElementById('complete').innerHTML = "";
+	});
 });

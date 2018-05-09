@@ -470,10 +470,10 @@ var SpikeChun = [
 	];
 
 var K3 = [
-    new SongData("../../src/music/k3/1.mp3", ["One Piece","Overtaken"]),
-    new SongData("../../src/music/k3/2.mp3", ["One Piece","The very very very strongest"]),
-    new SongData("../../src/music/k3/3.mp3", ["One Piece","Brand New World"]),
-    new SongData("../../src/music/k3/4.mp3", ["One Piece","We go"]),
+    new SongData("../../src/music/k3/1.mp3", ["One Piece","We Go"]),
+    new SongData("../../src/music/k3/2.mp3", ["One Piece","Overtaken"]),
+    new SongData("../../src/music/k3/3.mp3", ["One Piece","The very very very strongest"]),
+    new SongData("../../src/music/k3/4.mp3", ["One Piece","Brand New World"]),
     new SongData("../../src/music/k3/5.mp3", ["One Piece","Crazy Rainbow Star"]),
     new SongData("../../src/music/k3/6.mp3", ["Detective Conan","Detectiu Conan"]),
     new SongData("../../src/music/k3/7.mp3", ["Corrector Yui"]),
