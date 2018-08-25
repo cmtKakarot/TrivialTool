@@ -180,6 +180,14 @@ td > div {
 	background-image: url(../src/images/cat/attorney.png);
 }
 
+#Films {
+	background-image: url(../src/images/cat/films.png);
+}
+
+#Series {
+	background-image: url(../src/images/cat/series.png);
+}
+
 #Acc {
 	width: 100%;
 	background-image: url(../src/images/bttns/start.png);

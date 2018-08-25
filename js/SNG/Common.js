@@ -678,6 +678,57 @@ var Attorney = [
 	new SongData("../../src/music/attorney/30.mp3", ["Phoenix Wright: Ace Attorney: Trials and Tribulations", "Ace Attorney 3", "Search in the Midst 2004"]),
 ];
 
+var Films = [
+	new SongData("../../src/music/films/1.mp3", ["Harry Potter and the order of the phoenix"]),
+	new SongData("../../src/music/films/2.mp3", ["007: Skyfall"]),
+	new SongData("../../src/music/films/3.mp3", ["007: From Russia with Love"]),
+	new SongData("../../src/music/films/4.mp3", ["Gladiator"]),
+	new SongData("../../src/music/films/5.mp3", ["Goodfellas"]),
+	new SongData("../../src/music/films/6.mp3", ["Mission Impossible"]),
+	new SongData("../../src/music/films/7.mp3", ["Interestellar"]),
+	new SongData("../../src/music/films/8.mp3", ["Inception"]),
+	new SongData("../../src/music/films/9.mp3", ["Harry Potter and the philosopher's stone"]),
+	new SongData("../../src/music/films/10.mp3", ["Harry Potter and the prisoner of azkaban"]),
+	new SongData("../../src/music/films/11.mp3", ["Intouchables"]),
+	new SongData("../../src/music/films/12.mp3", ["Pirates of Caribbean"]),
+	new SongData("../../src/music/films/13.mp3", ["Pirates of Caribbean 2"]),
+	new SongData("../../src/music/films/14.mp3", ["Schindler's List"]),
+	new SongData("../../src/music/films/15.mp3", ["007: Tomorrow never dies"]),
+	new SongData("../../src/music/films/16.mp3", ["Shutter Island"]),
+	new SongData("../../src/music/films/17.mp3", ["Star Wars I"]),
+	new SongData("../../src/music/films/18.mp3", ["Star Wars VI"]),
+	new SongData("../../src/music/films/19.mp3", ["Star Wars IV"]),
+	new SongData("../../src/music/films/20.mp3", ["Star Wars V"]),
+	new SongData("../../src/music/films/21.mp3", ["The Dark Knight rises"]),
+	new SongData("../../src/music/films/22.mp3", ["The Exorcist"]),
+	new SongData("../../src/music/films/23.mp3", ["The Lord of the rings 1"]),
+	new SongData("../../src/music/films/24.mp3", ["The Godfather"]),
+	new SongData("../../src/music/films/25.mp3", ["The Good, the Bad and the Ugly"]),
+	new SongData("../../src/music/films/26.mp3", ["The last samurai"]),
+	new SongData("../../src/music/films/27.mp3", ["The lord of the rings 3"]),
+	new SongData("../../src/music/films/28.mp3", ["The Mummy"]),
+	new SongData("../../src/music/films/29.mp3", ["The Pianist"]),
+	new SongData("../../src/music/films/30.mp3", ["The lord of the rings 2"]),
+	new SongData("../../src/music/films/31.mp3", ["The Walking Dead"]),
+	new SongData("../../src/music/films/32.mp3", ["Rocky II"]),
+	new SongData("../../src/music/films/33.mp3", ["Rocky"]),
+	new SongData("../../src/music/films/34.mp3", ["Rocky"]),
+	new SongData("../../src/music/films/35.mp3", ["Breaking Bad"]),
+	new SongData("../../src/music/films/36.mp3", ["Game of thrones"]),
+	new SongData("../../src/music/films/37.mp3", ["Game of thrones"]),
+	new SongData("../../src/music/films/38.mp3", ["Game of thrones"]),
+	new SongData("../../src/music/films/39.mp3", ["Westworld"]),
+	new SongData("../../src/music/films/40.mp3", ["Star Wars: Rogue One"]),
+	new SongData("../../src/music/films/41.mp3", ["Pearl Harbor"]),
+	new SongData("../../src/music/films/42.mp3", ["Requiem for a Dream"]),
+	new SongData("../../src/music/films/43.mp3", ["Breaking Bad"]),
+	new SongData("../../src/music/films/44.mp3", ["Sherlock Holmes"]),
+	new SongData("../../src/music/films/45.mp3", ["Spider-Man"]),
+	new SongData("../../src/music/films/46.mp3", ["Westworld"]),
+	new SongData("../../src/music/films/47.mp3", ["The Avengers"]),
+	new SongData("../../src/music/films/48.mp3", ["The Walking Dead"]),
+];
+
 
 var Indie = [
 	new SongData("../../src/music/indie/1.mp3", ["Shovel knight","In the halls of the usurper","Pridemor keep"]), 
@@ -742,6 +793,7 @@ function act_catV() {
     if (!$("#Disney").is(":hidden")) vec.push(11);
     if (!$("#Zelda").is(":hidden")) vec.push(12);
     if (!$("#Attorney").is(":hidden")) vec.push(13);
+    if (!$("#Films").is(":hidden")) vec.push(14);
     return vec;
 }
 
@@ -767,6 +819,7 @@ function show_cat() {
 	else if(category == "remix") $("body").css("backgroundImage","url(../../src/images/wallpaper/remix.jpg)");
 	else if(category == "zelda") $("body").css("backgroundImage","url(../../src/images/wallpaper/zelda.jpg)");
 	else if(category == "attorney") $("body").css("backgroundImage","url(../../src/images/wallpaper/attorney.jpg)");
+	else if(category == "films") $("body").css("backgroundImage","url(../../src/images/wallpaper/films.jpg)");
 }
 
 function get_category_S() {
@@ -784,6 +837,7 @@ function get_category_S() {
 	else if(vSong[x].link.indexOf("remix") != -1) category = "remix"
 	else if(vSong[x].link.indexOf("zelda") != -1) category = "zelda"
 	else if(vSong[x].link.indexOf("attorney") != -1) category = "attorney"
+	else if(vSong[x].link.indexOf("films") != -1) category = "films"
 }
 
 function get_category_F() {
@@ -801,6 +855,7 @@ function get_category_F() {
 	else if(CategoryMatrix[i][j].link.indexOf("remix") != -1) category = "remix"
 	else if(CategoryMatrix[i][j].link.indexOf("zelda") != -1) category = "zelda"
 	else if(CategoryMatrix[i][j].link.indexOf("attorney") != -1) category = "attorney"
+	else if(CategoryMatrix[i][j].link.indexOf("films") != -1) category = "films"
 }
 
 function EditDatalist() {
@@ -818,6 +873,7 @@ function EditDatalist() {
   else if (category == "touhou") sols = touhou_sols;
   else if (category == "zelda") sols = zelda_sols;
   else if (category == "attorney") sols = attorney_sols;
+  else if (category == "films") sols = films_sols;
 
   var options = '';
 
@@ -838,7 +894,7 @@ function word_in_sols(word) {
 //--------------------------------- GLOBAL VARIABLES ------------------------------------
 //---------------------------------------------------------------------------------------
 
-var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney,Zelda,Attorney];
+var CategoryMatrix = [Atlus,Anime,Remix,Mario,Touhou,Kirby,Pokemon,Square,SpikeChun,Sonic,K3,Disney,Zelda,Attorney,Films];
 var category ="";
 
 
